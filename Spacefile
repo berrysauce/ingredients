@@ -1,0 +1,16 @@
+# Spacefile Docs: https://go.deta.dev/docs/spacefile/v0
+v: 0
+micros:
+  - name: ingredients-api
+    src: ./
+    engine: python3.9
+    primary: false
+    public: true
+    path: /api
+  - name: ingredients-ui
+    src: ./ui
+    engine: svelte-kit
+    primary: true
+    public: true
+    path: /
+
