@@ -5,7 +5,7 @@ Ingredients is a website scanner that is able to determine the "ingredients" of 
 It is an online tool designed to identify the technologies that power websites. It helps users discover the various software, frameworks, content management systems, analytics tools, and other technologies that are used to build and maintain a particular website.
 
 
----
+<br>
 
 
 ## 📚 How it works
@@ -13,7 +13,7 @@ It is an online tool designed to identify the technologies that power websites. 
 More on this soon!
 
 
-## 🧩 How to add ingredients
+## ⚙️ How to add Ingredients
 
 More on this soon!
 
