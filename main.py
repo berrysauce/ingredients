@@ -24,7 +24,8 @@ def get_root():
 @app.get("/scan")
 def get_scan(url: str, response: Response):
     try:
-        return ingredients.scan(url)
+        data = ingredients.scan(url)
+        return data
     except Exception as e:
         response.status_code = status.HTTP_400_BAD_REQUEST
         return {

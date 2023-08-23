@@ -1,0 +1,24 @@
+{
+    "name": "Ko-fi",
+    "icon": "https://www.cloudflare.com/favicon.ico",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "storage.ko-fi.com/cdn/scripts/*.js"
+            },
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "storage.ko-fi.com/cdn/widget/*.js"
+            },
+            {
+                "tag": "iframe",
+                "attribute": "src",
+                "value": "ko-fi.com"
+            }
+        ],
+        "headers": []
+    }
+}

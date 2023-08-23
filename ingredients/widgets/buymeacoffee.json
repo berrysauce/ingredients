@@ -1,0 +1,19 @@
+{
+    "name": "Buy Me a Coffee",
+    "icon": "https://www.cloudflare.com/favicon.ico",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "cdnjs.buymeacoffee.com/*.js"
+            },
+            {
+                "tag": "img",
+                "attribute": "src",
+                "value": "img.buymeacoffee.com"
+            }
+        ],
+        "headers": []
+    }
+}
