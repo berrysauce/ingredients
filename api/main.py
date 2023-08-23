@@ -3,7 +3,7 @@ from fastapi import FastAPI, Response, status
 from fastapi.responses import JSONResponse, HTMLResponse
 
 # local imports
-import ingredients
+import api.ingredients as ingredients
 
 
 app = FastAPI(
