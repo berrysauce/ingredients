@@ -7,13 +7,12 @@ micros:
     primary: true
     public: true
     path: /
+    dev: npm run dev
   - name: ingredients-api
-    src: ./api
+    src: ./
     engine: python3.9
     primary: false
     public: true
     path: /api
-    include:
-      - icons/
-      - ingredients/
+    dev: python3.9 main.py
 

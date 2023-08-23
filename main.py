@@ -3,7 +3,7 @@ from fastapi import FastAPI, Response, status
 from fastapi.responses import JSONResponse, HTMLResponse
 
 # local imports
-import api.ingredients as ingredients
+import ingredients
 
 
 app = FastAPI(
@@ -34,7 +34,7 @@ def get_scan(url: str, response: Response):
 @app.get("/icon/{icon}")
 def get_icon(icon: str, response: Response):
     try:
-        with open("icons/" + icon, "rb") as f:
+        with open("./icons/" + icon, "rb") as f:
             return Response(content=f.read(), media_type="image/png")
     except FileNotFoundError:
         response.status_code = status.HTTP_404_NOT_FOUND
