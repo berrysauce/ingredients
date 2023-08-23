@@ -1,4 +1,4 @@
-name: Push to Deta Space
+name: Deploy
 on: push
 
 jobs:
