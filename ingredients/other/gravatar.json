@@ -1,6 +1,6 @@
 {
     "name": "Gravatar",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/gravatar.png",
     "checks": {
         "tags": [
             {

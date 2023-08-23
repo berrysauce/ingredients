@@ -1,6 +1,6 @@
 {
     "name": "Highlight.js",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/highlight-js.png",
     "checks": {
         "tags": [
             {

@@ -1,6 +1,6 @@
 {
     "name": "Netlify",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/netlify.png",
     "checks": {
         "tags": [],
         "headers": [

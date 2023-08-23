@@ -31,6 +31,18 @@ def get_scan(url: str, response: Response):
         return {
             "error": str(e)
         }
+        
+        
+@app.get("/icon/{icon}")
+def get_icon(icon: str, response: Response):
+    try:
+        with open("icons/" + icon, "rb") as f:
+            return Response(content=f.read(), media_type="image/png")
+    except Exception as e:
+        response.status_code = status.HTTP_400_BAD_REQUEST
+        return {
+            "error": str(e)
+        }
 
 
 if __name__ == "__main__":

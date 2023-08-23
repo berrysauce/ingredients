@@ -1,6 +1,6 @@
 {
     "name": "Hotjar",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/hotjar.png",
     "checks": {
         "tags": [
             {

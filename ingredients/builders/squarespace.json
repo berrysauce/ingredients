@@ -1,6 +1,6 @@
 {
     "name": "Squarespace",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/squarespace.png",
     "checks": {
         "tags": [
             {

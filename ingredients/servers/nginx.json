@@ -1,6 +1,6 @@
 {
     "name": "Nginx",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/nginx.png",
     "checks": {
         "tags": [],
         "headers": [

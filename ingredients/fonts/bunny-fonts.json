@@ -1,6 +1,6 @@
 {
     "name": "Bunny Fonts",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/bunny-fonts.png",
     "checks": {
         "tags": [
             {

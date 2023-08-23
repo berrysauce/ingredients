@@ -1,6 +1,6 @@
 {
     "name": "Trustpilot",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/trustpilot.png",
     "checks": {
         "tags": [
             {

@@ -1,6 +1,6 @@
 {
     "name": "WordPress",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/wordpress.png",
     "checks": {
         "tags": [
             {

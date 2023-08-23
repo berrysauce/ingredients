@@ -1,6 +1,6 @@
 {
     "name": "Amazon AWS ALB",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/aws-alb.png",
     "checks": {
         "tags": [],
         "headers": [

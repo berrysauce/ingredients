@@ -1,6 +1,6 @@
 {
     "name": "Webflow",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/webflow.png",
     "checks": {
         "tags": [
             {

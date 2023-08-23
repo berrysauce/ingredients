@@ -1,6 +1,6 @@
 {
     "name": "Crisp Chat",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/crisp-chat.png",
     "checks": {
         "tags": [
             {

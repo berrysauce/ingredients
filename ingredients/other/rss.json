@@ -1,6 +1,6 @@
 {
     "name": "RSS",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/rss.png",
     "checks": {
         "tags": [
             {

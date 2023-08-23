@@ -1,6 +1,6 @@
 {
     "name": "Stripe",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/stripe.png",
     "checks": {
         "tags": [
             {

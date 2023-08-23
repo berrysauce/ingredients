@@ -1,6 +1,6 @@
 {
     "name": "Shopify",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/shopify.png",
     "checks": {
         "tags": [
             {

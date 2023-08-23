@@ -1,6 +1,6 @@
 {
     "name": "Vercel",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/vercel.png",
     "checks": {
         "tags": [],
         "headers": [

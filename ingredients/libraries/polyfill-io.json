@@ -1,6 +1,6 @@
 {
     "name": "Polyfill",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/polyfill-io.png",
     "checks": {
         "tags": [
             {

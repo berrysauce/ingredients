@@ -1,6 +1,6 @@
 {
     "name": "PHP",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/php.png",
     "checks": {
         "tags": [
             {

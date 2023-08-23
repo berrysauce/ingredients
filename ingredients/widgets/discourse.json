@@ -1,6 +1,6 @@
 {
     "name": "Discourse",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/discourse.png",
     "checks": {
         "tags": [
             {

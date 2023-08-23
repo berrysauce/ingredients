@@ -1,6 +1,6 @@
 {
     "name": "Intercom",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/intercom.png",
     "checks": {
         "tags": [
             {

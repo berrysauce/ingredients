@@ -1,6 +1,6 @@
 {
     "name": "Facebook Pixel",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/facebook-pixel.png",
     "checks": {
         "tags": [
             {

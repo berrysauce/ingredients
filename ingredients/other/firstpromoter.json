@@ -1,6 +1,6 @@
 {
     "name": "FirstPromoter",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/firstpromoter.png",
     "checks": {
         "tags": [
             {

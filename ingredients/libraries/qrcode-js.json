@@ -1,6 +1,6 @@
 {
     "name": "QRCode.js",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/qrcode-js.png",
     "checks": {
         "tags": [
             {

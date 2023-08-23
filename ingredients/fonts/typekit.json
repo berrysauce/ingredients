@@ -1,6 +1,6 @@
 {
     "name": "Typekit",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/typekit.png",
     "checks": {
         "tags": [
             {

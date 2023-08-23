@@ -1,6 +1,6 @@
 {
     "name": "Sift",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/sift.png",
     "checks": {
         "tags": [
             {

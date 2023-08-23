@@ -1,6 +1,6 @@
 {
     "name": "unpkg",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/unpkg.png",
     "checks": {
         "tags": [
             {

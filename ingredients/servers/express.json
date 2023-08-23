@@ -1,6 +1,6 @@
 {
     "name": "Express",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/express.png",
     "checks": {
         "tags": [],
         "headers": [

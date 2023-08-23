@@ -1,6 +1,6 @@
 {
     "name": "Deta",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/deta.png",
     "checks": {
         "tags": [],
         "headers": [

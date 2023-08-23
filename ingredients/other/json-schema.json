@@ -1,6 +1,6 @@
 {
     "name": "JSON Schema",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/json-schema.png",
     "checks": {
         "tags": [
             {

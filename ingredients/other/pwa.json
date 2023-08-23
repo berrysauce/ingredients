@@ -1,6 +1,6 @@
 {
     "name": "PWA (Progressive Web App)",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/pwa.png",
     "checks": {
         "tags": [
             {

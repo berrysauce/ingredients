@@ -1,6 +1,6 @@
 {
     "name": "Buy Me a Coffee",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/buymeacoffee.png",
     "checks": {
         "tags": [
             {

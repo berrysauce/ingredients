@@ -1,6 +1,6 @@
 {
     "name": "Reddit Ads",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/reddit-ads.png",
     "checks": {
         "tags": [
             {

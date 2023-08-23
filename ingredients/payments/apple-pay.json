@@ -1,6 +1,6 @@
 {
     "name": "Apple Pay",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/apple-pay.png",
     "checks": {
         "tags": [
             {

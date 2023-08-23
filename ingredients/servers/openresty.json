@@ -1,6 +1,6 @@
 {
     "name": "OpenResty",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/openresty.png",
     "checks": {
         "tags": [],
         "headers": [

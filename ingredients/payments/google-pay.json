@@ -1,6 +1,6 @@
 {
     "name": "Google Pay",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/google-pay.png",
     "checks": {
         "tags": [
             {

@@ -1,6 +1,6 @@
 {
     "name": "Lucky Orange",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/luckyorange.png",
     "checks": {
         "tags": [
             {

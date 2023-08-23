@@ -1,6 +1,6 @@
 {
     "name": "Bootstrap",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/bootstrap.png",
     "checks": {
         "tags": [
             {

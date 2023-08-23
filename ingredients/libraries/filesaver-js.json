@@ -1,6 +1,6 @@
 {
     "name": "Filesaver.js",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/filesaver-js.png",
     "checks": {
         "tags": [
             {

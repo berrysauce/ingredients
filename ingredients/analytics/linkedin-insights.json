@@ -1,6 +1,6 @@
 {
     "name": "LinkedIn Insights",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/linkedin-insights.png",
     "checks": {
         "tags": [
             {

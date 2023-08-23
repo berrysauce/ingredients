@@ -1,6 +1,6 @@
 {
     "name": "Nuxt.js",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/nuxt-js.png",
     "checks": {
         "tags": [
             {

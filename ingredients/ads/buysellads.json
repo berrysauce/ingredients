@@ -1,6 +1,6 @@
 {
     "name": "BuySellAds",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/buysellads.png",
     "checks": {
         "tags": [
             {

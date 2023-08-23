@@ -1,6 +1,6 @@
 {
     "name": "Clicky",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/clicky.png",
     "checks": {
         "tags": [
             {

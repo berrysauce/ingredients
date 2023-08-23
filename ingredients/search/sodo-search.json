@@ -1,6 +1,6 @@
 {
     "name": "Sodo Search",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/sodo-search.png",
     "checks": {
         "tags": [
             {

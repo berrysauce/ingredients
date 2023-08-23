@@ -1,6 +1,6 @@
 {
     "name": "Google Charts",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/google-charts.png",
     "checks": {
         "tags": [
             {

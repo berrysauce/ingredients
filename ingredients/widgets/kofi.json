@@ -1,6 +1,6 @@
 {
     "name": "Ko-fi",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/kofi.png",
     "checks": {
         "tags": [
             {

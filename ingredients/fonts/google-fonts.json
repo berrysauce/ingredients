@@ -1,6 +1,6 @@
 {
     "name": "Google Fonts",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/google-fonts.png",
     "checks": {
         "tags": [
             {

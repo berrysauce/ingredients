@@ -1,6 +1,6 @@
 {
     "name": "Clipboard.js",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/clipboard-js.png",
     "checks": {
         "tags": [
             {

@@ -1,6 +1,6 @@
 {
     "name": "Segment",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/segment.png",
     "checks": {
         "tags": [
             {

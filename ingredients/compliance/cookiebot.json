@@ -1,6 +1,6 @@
 {
     "name": "CookieBot",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/cookiebot.png",
     "checks": {
         "tags": [
             {

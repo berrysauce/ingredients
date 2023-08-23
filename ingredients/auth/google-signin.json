@@ -1,6 +1,6 @@
 {
     "name": "Google Signin",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/google-signin.png",
     "checks": {
         "tags": [
             {

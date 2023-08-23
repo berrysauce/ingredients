@@ -1,6 +1,6 @@
 {
     "name": "OneSignal",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/onesignal.png",
     "checks": {
         "tags": [
             {

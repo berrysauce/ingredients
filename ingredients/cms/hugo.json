@@ -1,6 +1,6 @@
 {
     "name": "Hugo",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/hugo.png",
     "checks": {
         "tags": [
             {

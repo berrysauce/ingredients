@@ -1,6 +1,6 @@
 {
     "name": "Popper.js",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/popper-js.png",
     "checks": {
         "tags": [
             {

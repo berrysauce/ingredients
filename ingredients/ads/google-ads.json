@@ -1,6 +1,6 @@
 {
     "name": "Google Ads",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/google-ads.png",
     "checks": {
         "tags": [
             {

@@ -1,6 +1,6 @@
 {
     "name": "Matomo Analytics",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/matomo.png",
     "checks": {
         "tags": [
             {

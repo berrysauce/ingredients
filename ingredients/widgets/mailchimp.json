@@ -1,6 +1,6 @@
 {
     "name": "Mailchimp",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/mailchimp.png",
     "checks": {
         "tags": [
             {

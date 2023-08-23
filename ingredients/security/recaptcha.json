@@ -1,6 +1,6 @@
 {
     "name": "reCaptcha",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/recaptcha.png",
     "checks": {
         "tags": [
             {

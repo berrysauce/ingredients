@@ -1,6 +1,6 @@
 {
     "name": "OpenGraph",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/opengraph.png",
     "checks": {
         "tags": [
             {

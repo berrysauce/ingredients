@@ -1,6 +1,6 @@
 {
     "name": "Helpscout",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/helpscout.png",
     "checks": {
         "tags": [
             {

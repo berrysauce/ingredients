@@ -1,6 +1,6 @@
 {
     "name": "GitHub Pages",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/github-pages.png",
     "checks": {
         "tags": [],
         "headers": [

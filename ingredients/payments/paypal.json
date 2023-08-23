@@ -1,6 +1,6 @@
 {
     "name": "PayPal",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/paypal.png",
     "checks": {
         "tags": [
             {

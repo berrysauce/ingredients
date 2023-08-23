@@ -1,6 +1,6 @@
 {
     "name": "Algolia",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/algolia.png",
     "checks": {
         "tags": [
             {

@@ -1,6 +1,6 @@
 {
     "name": "Imgix",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/imgix.png",
     "checks": {
         "tags": [
             {

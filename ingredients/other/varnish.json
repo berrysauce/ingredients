@@ -1,6 +1,6 @@
 {
     "name": "Varnish",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/varnish.png",
     "checks": {
         "tags": [],
         "headers": [

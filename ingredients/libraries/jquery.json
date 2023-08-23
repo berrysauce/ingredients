@@ -1,6 +1,6 @@
 {
     "name": "JQuery",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/jquery.png",
     "checks": {
         "tags": [
             {

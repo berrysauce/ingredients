@@ -1,6 +1,6 @@
 {
     "name": "Apple ID Signin",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/apple-signin.png",
     "checks": {
         "tags": [
             {

@@ -1,6 +1,6 @@
 {
     "name": "Google Analytics",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/google-analytics.png",
     "checks": {
         "tags": [
             {

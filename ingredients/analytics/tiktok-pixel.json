@@ -1,6 +1,6 @@
 {
     "name": "TikTok Pixel",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/tiktok-pixel.png",
     "checks": {
         "tags": [
             {

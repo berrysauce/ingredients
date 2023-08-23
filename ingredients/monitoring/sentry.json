@@ -1,6 +1,6 @@
 {
     "name": "Sentry",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/sentry.png",
     "checks": {
         "tags": [
             {

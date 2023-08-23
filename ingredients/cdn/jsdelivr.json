@@ -1,6 +1,6 @@
 {
     "name": "JSDelivr",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/jsdelivr.png",
     "checks": {
         "tags": [
             {

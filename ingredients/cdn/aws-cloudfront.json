@@ -1,6 +1,6 @@
 {
-    "name": "Amazon AWS S3",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "name": "Amazon AWS CloudFront",
+    "icon": "/icon/aws-cloudfront.png",
     "checks": {
         "tags": [
             {

@@ -1,6 +1,6 @@
 {
     "name": "Plausible Analytics",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/plausible.png",
     "checks": {
         "tags": [
             {

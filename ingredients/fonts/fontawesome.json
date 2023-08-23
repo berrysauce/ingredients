@@ -1,6 +1,6 @@
 {
     "name": "Fontawesome",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/fontawesome.png",
     "checks": {
         "tags": [
             {

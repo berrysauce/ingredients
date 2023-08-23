@@ -1,6 +1,6 @@
 {
     "name": "Cloudflare Analytics",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/cloudflare-analytics.png",
     "checks": {
         "tags": [
             {

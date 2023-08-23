@@ -1,6 +1,6 @@
 {
     "name": "HSTS",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/hsts.png",
     "checks": {
         "tags": [],
         "headers": [

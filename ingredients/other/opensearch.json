@@ -1,6 +1,6 @@
 {
     "name": "OpenSearch",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/opensearch.png",
     "checks": {
         "tags": [
             {

@@ -1,6 +1,6 @@
 {
     "name": "Cloudflare CDN",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/cloudflare-cdn.png",
     "checks": {
         "tags": [
             {

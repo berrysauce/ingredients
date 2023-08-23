@@ -1,6 +1,6 @@
 {
     "name": "Simple Analytics",
-    "icon": "https://www.cloudflare.com/favicon.ico",
+    "icon": "/icon/simpleanalytics.png",
     "checks": {
         "tags": [
             {
