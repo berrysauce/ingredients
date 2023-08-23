@@ -1,6 +1,9 @@
 # 🧪 Ingredients
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/berrysauce/ingredients)
+[![CodeQL](https://github.com/berrysauce/ingredients/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/berrysauce/ingredients/actions/workflows/github-code-scanning/codeql)
+[![Push to Deta Space](https://github.com/berrysauce/ingredients/actions/workflows/deta.yml/badge.svg)](https://github.com/berrysauce/ingredients/actions/workflows/deta.yml)
+
 
 Ingredients is a website scanner that is able to determine the "ingredients" of a website, like the server, host, framework, libraries, widgets, etc.
 
