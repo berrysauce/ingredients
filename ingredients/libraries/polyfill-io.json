@@ -1,0 +1,19 @@
+{
+    "name": "Polyfill",
+    "icon": "https://www.cloudflare.com/favicon.ico",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "polyfill.io/v3/polyfill.min.js"
+            },
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "/polyfill.min.js"
+            }
+        ],
+        "headers": []
+    }
+}

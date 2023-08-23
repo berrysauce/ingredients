@@ -1,0 +1,14 @@
+{
+    "name": "OpenGraph",
+    "icon": "https://www.cloudflare.com/favicon.ico",
+    "checks": {
+        "tags": [
+            {
+                "tag": "meta",
+                "attribute": "property",
+                "value": "og:"
+            }
+        ],
+        "headers": []
+    }
+}

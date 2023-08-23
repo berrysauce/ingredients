@@ -1,0 +1,24 @@
+{
+    "name": "Next.js",
+    "icon": "https://www.cloudflare.com/favicon.ico",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "_next/static"
+            },
+            {
+                "tag": "script",
+                "attribute": "id",
+                "value": "__NEXT_DATA__"
+            }
+        ],
+        "headers": [
+            {
+                "header": "X-Powered-By",
+                "value": "Next.js"
+            }
+        ]
+    }
+}

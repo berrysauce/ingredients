@@ -1,0 +1,14 @@
+{
+    "name": "Lucky Orange",
+    "icon": "https://www.cloudflare.com/favicon.ico",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "tools.luckyorange.com/core/*.js"
+            }
+        ],
+        "headers": []
+    }
+}

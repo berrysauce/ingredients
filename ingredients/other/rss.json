@@ -1,0 +1,14 @@
+{
+    "name": "RSS",
+    "icon": "https://www.cloudflare.com/favicon.ico",
+    "checks": {
+        "tags": [
+            {
+                "tag": "link",
+                "attribute": "type",
+                "value": "application/rss+xml"
+            }
+        ],
+        "headers": []
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "name": "Amazon AWS ALB",
+    "icon": "https://www.cloudflare.com/favicon.ico",
+    "checks": {
+        "tags": [],
+        "headers": [
+            {
+                "header": "Set-Cookie",
+                "value": "AWSALB"
+            },
+            {
+                "header": "Set-Cookie",
+                "value": "AWSALBCORS"
+            }
+        ]
+    }
+}

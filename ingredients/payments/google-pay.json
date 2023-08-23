@@ -1,0 +1,19 @@
+{
+    "name": "Google Pay",
+    "icon": "https://www.cloudflare.com/favicon.ico",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "pay.google.com/*js/pay*.js"
+            },
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "pay.google.com/*ui/payframe"
+            }
+        ],
+        "headers": []
+    }
+}

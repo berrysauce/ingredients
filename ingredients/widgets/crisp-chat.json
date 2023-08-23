@@ -1,0 +1,29 @@
+{
+    "name": "Crisp Chat",
+    "icon": "https://www.cloudflare.com/favicon.ico",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "client.crisp.chat/*.js"
+            },
+            {
+                "tag": "link",
+                "attribute": "href",
+                "value": "client.relay.crisp.chat"
+            },
+            {
+                "tag": "link",
+                "attribute": "href",
+                "value": "client.crisp.chat"
+            },
+            {
+                "tag": "link",
+                "attribute": "href",
+                "value": "client.crisp.chat/static/stylesheets/*.css"
+            }
+        ],
+        "headers": []
+    }
+}

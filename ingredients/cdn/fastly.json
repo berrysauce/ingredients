@@ -1,0 +1,13 @@
+{
+    "name": "Fastly",
+    "icon": "https://www.cloudflare.com/favicon.ico",
+    "checks": {
+        "tags": [],
+        "headers": [
+            {
+                "header": "X-Fastly-Request-Id",
+                "value": null
+            }
+        ]
+    }
+}

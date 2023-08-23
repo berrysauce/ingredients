@@ -1,0 +1,14 @@
+{
+    "name": "Facebook Pixel",
+    "icon": "https://www.cloudflare.com/favicon.ico",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "connect.facebook.net/*.js"
+            }
+        ],
+        "headers": []
+    }
+}

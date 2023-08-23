@@ -1,0 +1,29 @@
+{
+    "name": "Ghost",
+    "icon": "https://www.cloudflare.com/favicon.ico",
+    "checks": {
+        "tags": [
+            {
+                "tag": "meta",
+                "attribute": "generator",
+                "value": "Ghost"
+            },
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "/ghost/portal/*.js"
+            },
+            {
+                "tag": "script",
+                "attribute": "data-api",
+                "value": "/ghost/api/content"
+            },
+            {
+                "tag": "script",
+                "attribute": "data-ghost",
+                "value": null
+            }
+        ],
+        "headers": []
+    }
+}

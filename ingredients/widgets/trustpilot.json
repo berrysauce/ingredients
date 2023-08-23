@@ -1,0 +1,24 @@
+{
+    "name": "Trustpilot",
+    "icon": "https://www.cloudflare.com/favicon.ico",
+    "checks": {
+        "tags": [
+            {
+                "tag": "div",
+                "attribute": "class",
+                "value": "trustpilot-widget"
+            },
+            {
+                "tag": "div",
+                "attribute": "class",
+                "value": "tp-widget-loader"
+            },
+            {
+                "tag": "iframe",
+                "attribute": "src",
+                "value": "widget.trustpilot.com"
+            }
+        ],
+        "headers": []
+    }
+}

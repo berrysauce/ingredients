@@ -1,0 +1,29 @@
+{
+    "name": "WordPress",
+    "icon": "https://www.cloudflare.com/favicon.ico",
+    "checks": {
+        "tags": [
+            {
+                "tag": "link",
+                "attribute": "href",
+                "value": "/wp-content/themes"
+            },
+            {
+                "tag": "link",
+                "attribute": "href",
+                "value": "/wp-content/plugins"
+            },
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "/wp-content/cache"
+            },
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "/wp-content/plugins"
+            }
+        ],
+        "headers": []
+    }
+}

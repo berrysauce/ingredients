@@ -1,0 +1,39 @@
+{
+    "name": "Matomo Analytics",
+    "icon": "https://www.cloudflare.com/favicon.ico",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "/piwik.js"
+            },
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "/matomo.js"
+            },
+            {
+                "tag": "script",
+                "attribute": null,
+                "value": "var _paq = _paq || [];"
+            },
+            {
+                "tag": "script",
+                "attribute": null,
+                "value": "var _paq = window._paq || [];"
+            },
+            {
+                "tag": "script",
+                "attribute": null,
+                "value": "_paq.push(['setTrackerUrl', u+'piwik.php']);"
+            },
+            {
+                "tag": "script",
+                "attribute": null,
+                "value": "_paq.push(['setTrackerUrl', u+'matomo.php']);"
+            }
+        ],
+        "headers": []
+    }
+}

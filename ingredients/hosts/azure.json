@@ -1,0 +1,13 @@
+{
+    "name": "Azure",
+    "icon": "https://www.cloudflare.com/favicon.ico",
+    "checks": {
+        "tags": [],
+        "headers": [
+            {
+                "header": "X-Azure-Ref",
+                "value": null
+            }
+        ]
+    }
+}

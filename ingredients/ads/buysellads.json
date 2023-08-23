@@ -1,0 +1,19 @@
+{
+    "name": "BuySellAds",
+    "icon": "https://www.cloudflare.com/favicon.ico",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "buysellads.net/pub/"
+            },
+            {
+                "tag": "div",
+                "attribute": "id",
+                "value": "bsa-zone_"
+            }
+        ],
+        "headers": []
+    }
+}

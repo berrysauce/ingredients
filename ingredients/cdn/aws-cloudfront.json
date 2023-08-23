@@ -1,0 +1,29 @@
+{
+    "name": "Amazon AWS S3",
+    "icon": "https://www.cloudflare.com/favicon.ico",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "cloudfront.net"
+            },
+            {
+                "tag": "link",
+                "attribute": "href",
+                "value": "cloudfront.net"
+            },
+            {
+                "tag": "img",
+                "attribute": "src",
+                "value": "cloudfront.net"
+            },
+            {
+                "tag": "src",
+                "attribute": null,
+                "value": "cloudfront.net"
+            }
+        ],
+        "headers": []
+    }
+}

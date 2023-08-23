@@ -1,0 +1,14 @@
+{
+    "name": "Bunny Fonts",
+    "icon": "https://www.cloudflare.com/favicon.ico",
+    "checks": {
+        "tags": [
+            {
+                "tag": "link",
+                "attribute": "src",
+                "value": "fonts.bunny.net"
+            }
+        ],
+        "headers": []
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "name": "Simple Analytics",
+    "icon": "https://www.cloudflare.com/favicon.ico",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "scripts.simpleanalyticscdn.com/*.js"
+            },
+            {
+                "tag": "img",
+                "attribute": "src",
+                "value": "queue.simpleanalyticscdn.com/*.gif"
+            }
+        ],
+        "headers": []
+    }
+}

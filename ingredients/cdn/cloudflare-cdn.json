@@ -1,0 +1,28 @@
+{
+    "name": "Cloudflare CDN",
+    "icon": "https://www.cloudflare.com/favicon.ico",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "cdnjs.cloudflare.com"
+            },
+            {
+                "tag": "src",
+                "attribute": null,
+                "value": "cdnjs.cloudflare.com"
+            }
+        ],
+        "headers": [
+            {
+                "header": "Server",
+                "value": "cloudflare"
+            },
+            {
+                "header": "CF-Cache-Status",
+                "value": null
+            }
+        ]
+    }
+}

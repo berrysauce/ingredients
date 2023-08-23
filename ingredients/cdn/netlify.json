@@ -1,0 +1,17 @@
+{
+    "name": "Netlify",
+    "icon": "https://www.cloudflare.com/favicon.ico",
+    "checks": {
+        "tags": [],
+        "headers": [
+            {
+                "header": "Server",
+                "value": "Netlify"
+            },
+            {
+                "header": "X-Nf-Request-Id",
+                "value": null
+            }
+        ]
+    }
+}

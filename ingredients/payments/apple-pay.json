@@ -1,0 +1,14 @@
+{
+    "name": "Apple Pay",
+    "icon": "https://www.cloudflare.com/favicon.ico",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": "id",
+                "value": "apple-pay-shop-capabilities"
+            }
+        ],
+        "headers": []
+    }
+}

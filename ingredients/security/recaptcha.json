@@ -1,0 +1,39 @@
+{
+    "name": "reCaptcha",
+    "icon": "https://www.cloudflare.com/favicon.ico",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "recaptcha.net/recaptcha/*.js"
+            },
+            {
+                "tag": "script",
+                "attribute": "data-src",
+                "value": "google.com/recaptcha/*.js"
+            },
+            {
+                "tag": "script",
+                "attribute": "data-src",
+                "value": "gstatic.com/recaptcha/*.js"
+            },
+            {
+                "tag": "script",
+                "attribute": "recaptcha-v3-script",
+                "value": null
+            },
+            {
+                "tag": "script",
+                "attribute": "id",
+                "value": "grecaptchaLibrary"
+            },
+            {
+                "tag": "style",
+                "attribute": null,
+                "value": ".grecaptcha-badge"
+            }
+        ],
+        "headers": []
+    }
+}

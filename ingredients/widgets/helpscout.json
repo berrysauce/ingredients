@@ -1,0 +1,24 @@
+{
+    "name": "Helpscout",
+    "icon": "https://www.cloudflare.com/favicon.ico",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "beacon-v2.helpscout.net"
+            },
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": ".helpscout.net"
+            },
+            {
+                "tag": "div",
+                "attribute": "class",
+                "value": "hsds-beacon"
+            }
+        ],
+        "headers": []
+    }
+}

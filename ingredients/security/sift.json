@@ -1,0 +1,24 @@
+{
+    "name": "Sift",
+    "icon": "https://www.cloudflare.com/favicon.ico",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "cdn.sift.com/*.js"
+            },
+            {
+                "tag": "script",
+                "attribute": "id",
+                "value": "script-sift"
+            },
+            {
+                "tag": "script",
+                "attribute": "id",
+                "value": "sift_js_snippet"
+            }
+        ],
+        "headers": []
+    }
+}

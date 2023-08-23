@@ -1,0 +1,19 @@
+{
+    "name": "Reddit Ads",
+    "icon": "https://www.cloudflare.com/favicon.ico",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "redditstatic.com/ads/pixel.js"
+            },
+            {
+                "tag": "script",
+                "attribute": null,
+                "value": "redditstatic.com/ads/pixel.js"
+            }
+        ],
+        "headers": []
+    }
+}

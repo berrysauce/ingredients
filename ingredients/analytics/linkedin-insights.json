@@ -1,0 +1,19 @@
+{
+    "name": "LinkedIn Insights",
+    "icon": "https://www.cloudflare.com/favicon.ico",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": null,
+                "value": "_linkedin_data_partner_id"
+            },
+            {
+                "tag": "script",
+                "attribute": null,
+                "value": "snap.licdn.com/li.lms-analytics/insight*.js"
+            }
+        ],
+        "headers": []
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "name": "Google Fonts",
+    "icon": "https://www.cloudflare.com/favicon.ico",
+    "checks": {
+        "tags": [
+            {
+                "tag": "link",
+                "attribute": "href",
+                "value": "fonts.googleapis.com"
+            },
+            {
+                "tag": "link",
+                "attribute": "href",
+                "value": "fonts.gstatic.com"
+            },
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "ajax.googleapis.com/ajax/libs/webfont"
+            }
+        ],
+        "headers": []
+    }
+}

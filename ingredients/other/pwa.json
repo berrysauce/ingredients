@@ -1,0 +1,14 @@
+{
+    "name": "PWA (Progressive Web App)",
+    "icon": "https://www.cloudflare.com/favicon.ico",
+    "checks": {
+        "tags": [
+            {
+                "tag": "link",
+                "attribute": "rel",
+                "value": "manifest"
+            }
+        ],
+        "headers": []
+    }
+}

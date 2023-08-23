@@ -1,0 +1,4 @@
+httpx
+beautifulsoup4
+fastapi
+uvicorn

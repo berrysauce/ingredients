@@ -1,0 +1,19 @@
+{
+    "name": "Discourse",
+    "icon": "https://www.cloudflare.com/favicon.ico",
+    "checks": {
+        "tags": [
+            {
+                "tag": "link",
+                "attribute": "href",
+                "value": "discourse-cdn.com"
+            },
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "discourse-cdn.com"
+            }
+        ],
+        "headers": []
+    }
+}

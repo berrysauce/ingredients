@@ -1,0 +1,19 @@
+{
+    "name": "JSON Schema",
+    "icon": "https://www.cloudflare.com/favicon.ico",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": "type",
+                "value": "application/ld+json"
+            },
+            {
+                "tag": "head",
+                "attribute": "itemtype",
+                "value": "schema.org"
+            }
+        ],
+        "headers": []
+    }
+}

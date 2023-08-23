@@ -1,0 +1,19 @@
+{
+    "name": "OpenSearch",
+    "icon": "https://www.cloudflare.com/favicon.ico",
+    "checks": {
+        "tags": [
+            {
+                "tag": "link",
+                "attribute": "href",
+                "value": "/opensearch.xml"
+            },
+            {
+                "tag": "link",
+                "attribute": "type",
+                "value": "application/opensearchdescription+xml"
+            }
+        ],
+        "headers": []
+    }
+}

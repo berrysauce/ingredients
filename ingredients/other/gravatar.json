@@ -1,0 +1,14 @@
+{
+    "name": "Gravatar",
+    "icon": "https://www.cloudflare.com/favicon.ico",
+    "checks": {
+        "tags": [
+            {
+                "tag": "img",
+                "attribute": "src",
+                "value": "gravatar.com"
+            }
+        ],
+        "headers": []
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "name": "Squarespace",
+    "icon": "https://www.cloudflare.com/favicon.ico",
+    "checks": {
+        "tags": [
+            {
+                "tag": "link",
+                "attribute": "href",
+                "value": "images.squarespace-cdn.com"
+            },
+            {
+                "tag": "link",
+                "attribute": "href",
+                "value": "static1.squarespace.com"
+            }
+        ],
+        "headers": [
+            {
+                "header": "Server",
+                "value": "Squarespace"
+            }
+        ]
+    }
+}

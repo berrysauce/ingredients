@@ -1,0 +1,14 @@
+{
+    "name": "Shopify Pay",
+    "icon": "https://www.cloudflare.com/favicon.ico",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": null,
+                "value": "window.ShopifyPay"
+            }
+        ],
+        "headers": []
+    }
+}

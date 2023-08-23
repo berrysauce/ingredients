@@ -1,0 +1,39 @@
+{
+    "name": "Google Analytics",
+    "icon": "https://www.cloudflare.com/favicon.ico",
+    "checks": {
+        "tags": [
+            {
+                "tag": "link",
+                "attribute": "href",
+                "value": "google-analytics.com"
+            },
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "googletagmanager.com/gtag/js"
+            },
+            {
+                "tag": "script",
+                "attribute": "id",
+                "value": "google-analytics"
+            },
+            {
+                "tag": "script",
+                "attribute": null,
+                "value": "function gtag(){dataLayer.push(arguments);}"
+            },
+            {
+                "tag": "script",
+                "attribute": null,
+                "value": "gtag('js', new Date());"
+            },
+            {
+                "tag": "script",
+                "attribute": null,
+                "value": "merchantGoogleAnalytics"
+            }
+        ],
+        "headers": []
+    }
+}

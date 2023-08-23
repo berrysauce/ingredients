@@ -1,0 +1,14 @@
+{
+    "name": "CookieBot",
+    "icon": "https://www.cloudflare.com/favicon.ico",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "consent.cookiebot.com/uc.js"
+            }
+        ],
+        "headers": []
+    }
+}

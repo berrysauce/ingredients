@@ -1,0 +1,29 @@
+{
+    "name": "Webflow",
+    "icon": "https://www.cloudflare.com/favicon.ico",
+    "checks": {
+        "tags": [
+            {
+                "tag": "html",
+                "attribute": "data-wf-site",
+                "value": null
+            },
+            {
+                "tag": "html",
+                "attribute": "data-wf-page",
+                "value": null
+            },
+            {
+                "tag": "link",
+                "attribute": "href",
+                "value": "css/webflow.css"
+            },
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "js/webflow.js"
+            }
+        ],
+        "headers": []
+    }
+}

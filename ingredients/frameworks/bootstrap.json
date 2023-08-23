@@ -1,0 +1,24 @@
+{
+    "name": "Bootstrap",
+    "icon": "https://www.cloudflare.com/favicon.ico",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "/bootstrap.min.js"
+            },
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "/bootstrap.min.css"
+            },
+            {
+                "tag": "link",
+                "attribute": "href",
+                "value": "/bootstrap.min.css"
+            }
+        ],
+        "headers": []
+    }
+}

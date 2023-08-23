@@ -1,0 +1,19 @@
+{
+    "name": "PHP",
+    "icon": "https://www.cloudflare.com/favicon.ico",
+    "checks": {
+        "tags": [
+            {
+                "tag": "form",
+                "attribute": "action",
+                "value": ".php"
+            },
+            {
+                "tag": "script",
+                "attribute": null,
+                "value": "<?php"
+            }
+        ],
+        "headers": []
+    }
+}

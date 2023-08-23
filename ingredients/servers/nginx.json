@@ -1,0 +1,13 @@
+{
+    "name": "Nginx",
+    "icon": "https://www.cloudflare.com/favicon.ico",
+    "checks": {
+        "tags": [],
+        "headers": [
+            {
+                "header": "Server",
+                "value": "nginx"
+            }
+        ]
+    }
+}

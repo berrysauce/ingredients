@@ -1,0 +1,19 @@
+{
+    "name": "Sentry",
+    "icon": "https://www.cloudflare.com/favicon.ico",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": null,
+                "value": "Sentry.init"
+            },
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "sentry/bundle*.js"
+            }
+        ],
+        "headers": []
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "name": "Plausible Analytics",
+    "icon": "https://www.cloudflare.com/favicon.ico",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "plausible.io/js/*.js"
+            },
+            {
+                "tag": "script",
+                "attribute": null,
+                "value": "window.plausible.q"
+            }
+        ],
+        "headers": []
+    }
+}

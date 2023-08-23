@@ -1,0 +1,24 @@
+{
+    "name": "Highlight.js",
+    "icon": "https://www.cloudflare.com/favicon.ico",
+    "checks": {
+        "tags": [
+            {
+                "tag": "link",
+                "attribute": "rel",
+                "value": "/highlight.*js"
+            },
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "/highlight.*js"
+            },
+            {
+                "tag": "script",
+                "attribute": null,
+                "value": "highlight.js/lib/core"
+            }
+        ],
+        "headers": []
+    }
+}

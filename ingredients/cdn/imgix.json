@@ -1,0 +1,19 @@
+{
+    "name": "Imgix",
+    "icon": "https://www.cloudflare.com/favicon.ico",
+    "checks": {
+        "tags": [
+            {
+                "tag": "link",
+                "attribute": "href",
+                "value": "imgix.net"
+            },
+            {
+                "tag": "img",
+                "attribute": "src",
+                "value": "imgix.net"
+            }
+        ],
+        "headers": []
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "name": "Nuxt.js",
+    "icon": "https://www.cloudflare.com/favicon.ico",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "_nuxt/static"
+            },
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "_nuxt/*.js"
+            }
+        ],
+        "headers": []
+    }
+}

@@ -1,0 +1,21 @@
+{
+    "name": "Google Cloud",
+    "icon": "https://www.cloudflare.com/favicon.ico",
+    "checks": {
+        "tags": [],
+        "headers": [
+            {
+                "header": "Via",
+                "value": "google"
+            },
+            {
+                "header": "Server",
+                "value": "GSE"
+            },
+            {
+                "header": "Server",
+                "value": "Google Frontend"
+            }
+        ]
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "name": "Microsoft Ads",
+    "icon": "https://www.cloudflare.com/favicon.ico",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "bat.bing.com/bat.js"
+            }
+        ],
+        "headers": []
+    }
+}

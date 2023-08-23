@@ -1,0 +1,14 @@
+{
+    "name": "Google Ads",
+    "icon": "https://www.cloudflare.com/favicon.ico",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "googlesyndication.com/pagead/js/adsbygoogle.js"
+            }
+        ],
+        "headers": []
+    }
+}

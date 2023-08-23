@@ -1,0 +1,24 @@
+{
+    "name": "Mailchimp",
+    "icon": "https://www.cloudflare.com/favicon.ico",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "chimpstatic.com"
+            },
+            {
+                "tag": "script",
+                "attribute": null,
+                "value": "chimpstatic.com"
+            },
+            {
+                "tag": "script",
+                "attribute": "id",
+                "value": "mcjs"
+            }
+        ],
+        "headers": []
+    }
+}
