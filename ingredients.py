@@ -17,10 +17,10 @@ def scan(url):
     try:
         r = httpx.get(url)
     except httpx.ConnectError:
-        raise Exception("Invalid URL")
+        raise httpx.InvalidURL("Invalid URL")
     
     if r.status_code != 200:
-        raise Exception(f"Error: Invalid Request Status Code ({r.status_code})")
+        raise httpx.RequestError(f"Invalid Request Status Code ({r.status_code})")
     
     soup = bs4.BeautifulSoup(r.text, "html.parser")
     
