@@ -6,12 +6,12 @@
             {
                 "tag": "script",
                 "attribute": "src",
-                "value": "polyfill.io/v3/polyfill.min.js"
+                "value": "polyfill.io/*.js"
             },
             {
                 "tag": "script",
                 "attribute": "src",
-                "value": "/polyfill.min.js"
+                "value": "/polyfill.*js"
             }
         ],
         "headers": []

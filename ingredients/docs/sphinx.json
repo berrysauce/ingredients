@@ -4,6 +4,11 @@
     "checks": {
         "tags": [
             {
+                "tag": "script",
+                "attribute": "src",
+                "value": "/documentation_options.js"
+            },
+            {
                 "tag": "body",
                 "attribute": "class",
                 "value": "wy-body"

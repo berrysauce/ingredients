@@ -11,7 +11,7 @@
             {
                 "tag": "script",
                 "attribute": "src",
-                "value": "fingerprint*.js"
+                "value": "fingerprint.*js"
             }
         ],
         "headers": []

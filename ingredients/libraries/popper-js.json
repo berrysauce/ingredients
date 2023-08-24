@@ -6,7 +6,7 @@
             {
                 "tag": "script",
                 "attribute": "src",
-                "value": "/@popperjs/core"
+                "value": "popper.*js"
             }
         ],
         "headers": []
