@@ -1,0 +1,29 @@
+{
+    "name": "Cloudflare R2",
+    "icon": "/icon/cloudflare-r2.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "r2.cloudflarestorage.com"
+            },
+            {
+                "tag": "link",
+                "attribute": "href",
+                "value": "r2.cloudflarestorage.com"
+            },
+            {
+                "tag": "img",
+                "attribute": "src",
+                "value": "r2.cloudflarestorage.com"
+            },
+            {
+                "tag": "src",
+                "attribute": null,
+                "value": "r2.cloudflarestorage.com"
+            }
+        ],
+        "headers": []
+    }
+}

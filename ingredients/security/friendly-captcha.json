@@ -1,0 +1,19 @@
+{
+    "name": "Friendly Captcha",
+    "icon": "/icon/friendly-captcha.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "/friendly-challenge*/widget.module.min.js"
+            },
+            {
+                "tag": "div",
+                "attribute": "class",
+                "value": "frc-captcha"
+            }
+        ],
+        "headers": []
+    }
+}

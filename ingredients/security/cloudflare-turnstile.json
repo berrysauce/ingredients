@@ -1,0 +1,29 @@
+{
+    "name": "Cloudflare Turnstile",
+    "icon": "/icon/cloudflare-turnstile.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "challenges.cloudflare.com/turnstile/*.js"
+            },
+            {
+                "tag": "div",
+                "attribute": "class",
+                "value": "cf-turnstile"
+            },
+            {
+                "tag": "script",
+                "attribute": null,
+                "value": "turnstile.ready(function () {*}"
+            },
+            {
+                "tag": "script",
+                "attribute": null,
+                "value": "turnstile.render(*)"
+            }
+        ],
+        "headers": []
+    }
+}

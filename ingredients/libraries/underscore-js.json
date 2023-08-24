@@ -1,0 +1,14 @@
+{
+    "name": "Underscore.js",
+    "icon": "/icon/underscore-js.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "/underscore.*js"
+            }
+        ],
+        "headers": []
+    }
+}

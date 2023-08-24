@@ -1,0 +1,24 @@
+{
+    "name": "Klarna",
+    "icon": "/icon/klarna.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "klarnaservices.com/*.js"
+            },
+            {
+                "tag": "script",
+                "attribute": null,
+                "value": "Klarna.Payments.init"
+            },
+            {
+                "tag": "script",
+                "attribute": null,
+                "value": "api*.klarna.com"
+            }
+        ],
+        "headers": []
+    }
+}

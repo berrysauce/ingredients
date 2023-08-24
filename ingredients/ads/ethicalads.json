@@ -1,0 +1,19 @@
+{
+    "name": "EthicalAds",
+    "icon": "/icon/ethicalads.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "media.ethicalads.io"
+            },
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "ethicalads*.js"
+            }
+        ],
+        "headers": []
+    }
+}

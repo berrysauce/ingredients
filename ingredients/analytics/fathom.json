@@ -1,0 +1,14 @@
+{
+    "name": "Fathom Analytics",
+    "icon": "/icon/fathom.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "cdn.usefathom.com/*.js"
+            }
+        ],
+        "headers": []
+    }
+}

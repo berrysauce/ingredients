@@ -7,6 +7,10 @@
             {
                 "header": "X-Fastly-Request-Id",
                 "value": null
+            },
+            {
+                "header": "X-Cdn",
+                "value": "Fastly"
             }
         ]
     }

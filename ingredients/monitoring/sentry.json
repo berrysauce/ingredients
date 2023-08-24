@@ -12,6 +12,11 @@
                 "tag": "script",
                 "attribute": "src",
                 "value": "sentry/bundle*.js"
+            },
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "js.sentry-cdn.com/*.js"
             }
         ],
         "headers": []

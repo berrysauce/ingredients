@@ -1,0 +1,13 @@
+{
+    "name": "Caddy",
+    "icon": "/icon/caddy.png",
+    "checks": {
+        "tags": [],
+        "headers": [
+            {
+                "header": "Server",
+                "value": "Caddy"
+            }
+        ]
+    }
+}

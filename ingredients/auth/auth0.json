@@ -1,0 +1,19 @@
+{
+    "name": "Auth0",
+    "icon": "/icon/auth0.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "cdn.auth0.com/*.js"
+            }
+        ],
+        "headers": [
+            {
+                "header": "X-Auth0-Requestid",
+                "value": null
+            }
+        ]
+    }
+}

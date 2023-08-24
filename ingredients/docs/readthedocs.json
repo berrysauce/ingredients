@@ -1,0 +1,27 @@
+{
+    "name": "Read the Docs",
+    "icon": "/icon/readthedocs.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": "id",
+                "value": "READTHEDOCS_DATA"
+            }
+        ],
+        "headers": [
+            {
+                "header": "X-Rtd-Project",
+                "contains": null
+            },
+            {
+                "header": "X-Rtd-Path",
+                "contains": null
+            },
+            {
+                "header": "X-Rtd-Version",
+                "contains": null
+            }
+        ]
+    }
+}

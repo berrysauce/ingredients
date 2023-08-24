@@ -1,0 +1,14 @@
+{
+    "name": "Modernizr",
+    "icon": "/icon/modernizr.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "/modernizr.*js"
+            }
+        ],
+        "headers": []
+    }
+}

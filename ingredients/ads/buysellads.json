@@ -6,7 +6,12 @@
             {
                 "tag": "script",
                 "attribute": "src",
-                "value": "buysellads.net/pub/"
+                "value": "buysellads.net/pub"
+            },
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "buysellads.net/ads"
             },
             {
                 "tag": "div",

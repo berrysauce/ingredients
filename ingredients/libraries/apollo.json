@@ -1,0 +1,14 @@
+{
+    "name": "Apollo",
+    "icon": "/icon/apollo.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": "id",
+                "value": "__APOLLO_STATE__"
+            }
+        ],
+        "headers": []
+    }
+}

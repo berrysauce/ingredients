@@ -1,0 +1,19 @@
+{
+    "name": "Fingerprint.js",
+    "icon": "/icon/fingerprint-js.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": "id",
+                "value": "FingerprintJS"
+            },
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "fingerprint*.js"
+            }
+        ],
+        "headers": []
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "name": "Akamai",
+    "icon": "/icon/akamai.png",
+    "checks": {
+        "tags": [],
+        "headers": [
+            {
+                "header": "X-Akamai-Request-ID",
+                "value": null
+            },
+            {
+                "header": "X-Akamai-Transformed",
+                "value": null
+            }
+        ]
+    }
+}

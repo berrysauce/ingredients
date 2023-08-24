@@ -1,0 +1,19 @@
+{
+    "name": "Sphinx",
+    "icon": "/icon/sphinx.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "body",
+                "attribute": "class",
+                "value": "wy-body"
+            },
+            {
+                "tag": "div",
+                "attribute": "class",
+                "value": "wy-menu"
+            }
+        ],
+        "headers": []
+    }
+}

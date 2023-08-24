@@ -1,0 +1,14 @@
+{
+    "name": "Pygments",
+    "icon": "/icon/pygments.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "link",
+                "attribute": "href",
+                "value": "/pygments.*css"
+            }
+        ],
+        "headers": []
+    }
+}

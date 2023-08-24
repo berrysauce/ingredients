@@ -1,0 +1,29 @@
+{
+    "name": "Confirmic",
+    "icon": "/icon/confirmic.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "config.confirmic.com/*.js"
+            },
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "consent-manager.confirmic.com/*.js"
+            },
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "stats.confirmic.com/*.js"
+            },
+            {
+                "tag": "script",
+                "attribute": null,
+                "value": "Confirmic(*)"
+            }
+        ],
+        "headers": []
+    }
+}
