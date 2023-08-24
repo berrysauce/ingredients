@@ -1,0 +1,34 @@
+{
+    "name": "Google Cloud Storage",
+    "icon": "/icon/google-cloud-storage.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "storage.googleapis.com/*storage"
+            },
+            {
+                "tag": "link",
+                "attribute": "href",
+                "value": "storage.googleapis.com/*storage"
+            },
+            {
+                "tag": "img",
+                "attribute": "src",
+                "value": "storage.googleapis.com/*storage"
+            },
+            {
+                "tag": "src",
+                "attribute": null,
+                "value": "storage.googleapis.com/*storage"
+            }
+        ],
+        "headers": [
+            {
+                "header": "X-Goog-Storage-Class",
+                "value": null
+            }
+        ]
+    }
+}

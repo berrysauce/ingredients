@@ -1,0 +1,19 @@
+{
+    "name": "Raster",
+    "icon": "/icon/raster-cdn.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "img",
+                "attribute": "src",
+                "value": "cdn.raster.app"
+            },
+            {
+                "tag": "meta",
+                "attribute": "content",
+                "value": "cdn.raster.app"
+            }
+        ],
+        "headers": []
+    }
+}

@@ -9,6 +9,11 @@
                 "value": "/piwik.js"
             },
             {
+                "tag": "img",
+                "attribute": "src",
+                "value": "/piwik.php"
+            },
+            {
                 "tag": "script",
                 "attribute": "src",
                 "value": "/matomo.js"

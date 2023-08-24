@@ -1,22 +1,22 @@
 {
-    "name": "Bootstrap",
-    "icon": "/icon/bootstrap.png",
+    "name": "Tailwind CSS",
+    "icon": "/icon/tailwind.png",
     "checks": {
         "tags": [
             {
                 "tag": "script",
                 "attribute": "src",
-                "value": "/bootstrap*.js"
+                "value": "/tailwind*.js"
             },
             {
                 "tag": "script",
                 "attribute": "src",
-                "value": "/bootstrap*.css"
+                "value": "/tailwind*.css"
             },
             {
                 "tag": "link",
                 "attribute": "href",
-                "value": "/bootstrap*.css"
+                "value": "/tailwind*.css"
             }
         ],
         "headers": []

@@ -1,0 +1,14 @@
+{
+    "name": "Cloudflare Radar",
+    "icon": "/icon/cloudflare-radar.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "radar.cloudflare.com/beacon*.js"
+            }
+        ],
+        "headers": []
+    }
+}

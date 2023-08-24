@@ -1,0 +1,14 @@
+{
+    "name": "CookieLaw",
+    "icon": "/icon/cookielaw.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "cdn.cookielaw.org/*.js"
+            }
+        ],
+        "headers": []
+    }
+}

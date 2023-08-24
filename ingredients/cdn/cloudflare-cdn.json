@@ -6,12 +6,12 @@
             {
                 "tag": "script",
                 "attribute": "src",
-                "value": "cdnjs.cloudflare.com"
+                "value": "cdn.cloudflare.com"
             },
             {
                 "tag": "script",
                 "attribute": null,
-                "value": "cdnjs.cloudflare.com"
+                "value": "cdn.cloudflare.com"
             }
         ],
         "headers": [
@@ -20,7 +20,7 @@
                 "value": "cloudflare"
             },
             {
-                "header": "CF-Cache-Status",
+                "header": "cf-cache-status",
                 "value": null
             }
         ]

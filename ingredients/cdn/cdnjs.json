@@ -1,27 +1,22 @@
 {
-    "name": "Intercom",
-    "icon": "/icon/intercom.png",
+    "name": "cdnjs",
+    "icon": "/icon/cdnjs.png",
     "checks": {
         "tags": [
             {
                 "tag": "script",
                 "attribute": "src",
-                "value": "widget.intercom.io"
+                "value": "cdnjs.cloudflare.com"
             },
             {
                 "tag": "link",
                 "attribute": "href",
-                "value": "widget.intercom.io"
-            },
-            {
-                "tag": "iframe",
-                "attribute": "id",
-                "value": "intercom-frame"
+                "value": "cdnjs.cloudflare.com"
             },
             {
                 "tag": "script",
                 "attribute": null,
-                "value": "window.intercomSettings"
+                "value": "cdnjs.cloudflare.com"
             }
         ],
         "headers": []

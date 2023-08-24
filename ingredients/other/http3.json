@@ -1,0 +1,17 @@
+{
+    "name": "HTTP/3",
+    "icon": "/icon/http3.png",
+    "checks": {
+        "tags": [],
+        "headers": [
+            {
+                "header": "quic",
+                "value": null
+            },
+            {
+                "header": "Alt-Svc",
+                "value": null
+            }
+        ]
+    }
+}

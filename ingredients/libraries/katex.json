@@ -1,0 +1,19 @@
+{
+    "name": "KaTeX",
+    "icon": "/icon/katex.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "/katex.*js"
+            },
+            {
+                "tag": "link",
+                "attribute": "href",
+                "value": "/katex.*css"
+            }
+        ],
+        "headers": []
+    }
+}

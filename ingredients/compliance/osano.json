@@ -1,0 +1,14 @@
+{
+    "name": "Osano",
+    "icon": "/icon/osano.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "osano.com/*.js"
+            }
+        ],
+        "headers": []
+    }
+}

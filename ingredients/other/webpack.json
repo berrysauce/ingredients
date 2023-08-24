@@ -1,17 +1,17 @@
 {
-    "name": "hCaptcha",
-    "icon": "/icon/hcaptcha.png",
+    "name": "Webpack",
+    "icon": "/icon/webpack.png",
     "checks": {
         "tags": [
             {
                 "tag": "script",
                 "attribute": "src",
-                "value": "js.hcaptcha.com"
+                "value": "bundle.js"
             },
             {
                 "tag": "script",
                 "attribute": "src",
-                "value": "hcaptcha.com/*.js"
+                "value": "chunks*.js"
             }
         ],
         "headers": []

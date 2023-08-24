@@ -6,22 +6,22 @@
             {
                 "tag": "script",
                 "attribute": "src",
-                "value": "s3.amazonaws.com"
+                "value": "s3*.amazonaws.com"
             },
             {
                 "tag": "link",
                 "attribute": "href",
-                "value": "s3.amazonaws.com"
+                "value": "s3*.amazonaws.com"
             },
             {
                 "tag": "img",
                 "attribute": "src",
-                "value": "s3.amazonaws.com"
+                "value": "s3*.amazonaws.com"
             },
             {
                 "tag": "src",
                 "attribute": null,
-                "value": "s3.amazonaws.com"
+                "value": "s3*.amazonaws.com"
             }
         ],
         "headers": [

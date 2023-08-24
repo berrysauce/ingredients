@@ -7,6 +7,14 @@
             {
                 "header": "Server",
                 "value": "Vercel"
+            },
+            {
+                "header": "x-vercel-cache",
+                "value": null
+            },
+            {
+                "header": "x-vercel-id",
+                "value": null
             }
         ]
     }

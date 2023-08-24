@@ -1,0 +1,14 @@
+{
+    "name": "Paddle",
+    "icon": "/icon/paddle.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "cdn.paddle.com/*.js"
+            }
+        ],
+        "headers": []
+    }
+}

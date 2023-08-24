@@ -1,0 +1,24 @@
+{
+    "name": "Prismic",
+    "icon": "/icon/prismic.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "meta",
+                "attribute": "content",
+                "value": "images.prismic.io"
+            },
+            {
+                "tag": "img",
+                "attribute": "src",
+                "value": "cdn.prismic.io"
+            },
+            {
+                "tag": "img",
+                "attribute": "srcset",
+                "value": "cdn.prismic.io"
+            }
+        ],
+        "headers": []
+    }
+}

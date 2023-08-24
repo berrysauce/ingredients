@@ -1,0 +1,14 @@
+{
+    "name": "Hoefler&Co",
+    "icon": "/icon/hoefler-co.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "link",
+                "attribute": "href",
+                "value": "cloud.typography.com/*.css"
+            }
+        ],
+        "headers": []
+    }
+}

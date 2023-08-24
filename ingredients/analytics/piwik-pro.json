@@ -1,0 +1,14 @@
+{
+    "name": "Piwik Pro",
+    "icon": "/icon/piwik-pro.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "link",
+                "attribute": "href",
+                "value": ".piwik.pro"
+            }
+        ],
+        "headers": []
+    }
+}

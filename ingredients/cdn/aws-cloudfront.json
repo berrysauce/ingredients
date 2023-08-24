@@ -24,6 +24,23 @@
                 "value": "cloudfront.net"
             }
         ],
-        "headers": []
+        "headers": [
+            {
+                "header": "Server",
+                "value": "cloudfront"
+            },
+            {
+                "header": "Via",
+                "value": "cloudfront"
+            },
+            {
+                "header": "x-amz-cf-pop",
+                "value": null
+            },
+            {
+                "header": "x-amz-cf-id",
+                "value": null
+            }
+        ]
     }
 }

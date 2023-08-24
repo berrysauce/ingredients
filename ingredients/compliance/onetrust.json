@@ -1,22 +1,22 @@
 {
-    "name": "Bootstrap",
-    "icon": "/icon/bootstrap.png",
+    "name": "OneTrust",
+    "icon": "/icon/onetrust.png",
     "checks": {
         "tags": [
             {
                 "tag": "script",
                 "attribute": "src",
-                "value": "/bootstrap*.js"
+                "value": "geolocation.onetrust.com"
             },
             {
                 "tag": "script",
                 "attribute": "src",
-                "value": "/bootstrap*.css"
+                "value": "/otSDKStub.js"
             },
             {
-                "tag": "link",
-                "attribute": "href",
-                "value": "/bootstrap*.css"
+                "tag": "script",
+                "attribute": "src",
+                "value": "/OtAutoBlock.js"
             }
         ],
         "headers": []

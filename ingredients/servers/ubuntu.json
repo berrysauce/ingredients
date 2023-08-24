@@ -1,0 +1,13 @@
+{
+    "name": "Ubuntu",
+    "icon": "/icon/ubuntu.png",
+    "checks": {
+        "tags": [],
+        "headers": [
+            {
+                "header": "Server",
+                "value": "Ubuntu"
+            }
+        ]
+    }
+}

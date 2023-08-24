@@ -2,7 +2,13 @@
     "name": "Netlify",
     "icon": "/icon/netlify.png",
     "checks": {
-        "tags": [],
+        "tags": [
+            {
+                "tag": "src",
+                "attribute": "id",
+                "value": "netlify-rum-container"
+            }
+        ],
         "headers": [
             {
                 "header": "Server",

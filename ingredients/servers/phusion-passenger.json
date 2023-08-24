@@ -1,0 +1,13 @@
+{
+    "name": "Phusion Passenger",
+    "icon": "/icon/phusion-passenger.png",
+    "checks": {
+        "tags": [],
+        "headers": [
+            {
+                "header": "x-powered-by",
+                "value": "Phusion Passenger"
+            }
+        ]
+    }
+}

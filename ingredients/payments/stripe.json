@@ -9,6 +9,11 @@
                 "value": "js.stripe.com"
             },
             {
+                "tag": "script",
+                "attribute": null,
+                "value": "js.stripe.com"
+            },
+            {
                 "tag": "iframe",
                 "attribute": "src",
                 "value": "js.stripe.com"

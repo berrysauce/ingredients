@@ -6,7 +6,12 @@
             {
                 "tag": "script",
                 "attribute": "src",
-                "value": "googlesyndication.com/pagead/js/adsbygoogle.js"
+                "value": "googlesyndication.com/*.js"
+            },
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "g.doubleclick.net/*.js"
             }
         ],
         "headers": []
