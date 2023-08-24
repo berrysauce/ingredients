@@ -9,7 +9,7 @@
                 "value": "cdnjs.cloudflare.com"
             },
             {
-                "tag": "src",
+                "tag": "script",
                 "attribute": null,
                 "value": "cdnjs.cloudflare.com"
             }
