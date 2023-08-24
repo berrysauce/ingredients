@@ -19,6 +19,11 @@
                 "value": "gstatic.com/recaptcha/*.js"
             },
             {
+                "tag": "link",
+                "attribute": "href",
+                "value": "gstatic.com/recaptcha/*.css"
+            },
+            {
                 "tag": "script",
                 "attribute": "recaptcha-v3-script",
                 "value": null
@@ -32,6 +37,16 @@
                 "tag": "style",
                 "attribute": null,
                 "value": ".grecaptcha-badge"
+            },
+            {
+                "tag": "iframe",
+                "attribute": "src",
+                "value": "google.com/recaptcha"
+            },
+            {
+                "tag": "iframe",
+                "attribute": "title",
+                "value": "reCAPTCHA"
             }
         ],
         "headers": []

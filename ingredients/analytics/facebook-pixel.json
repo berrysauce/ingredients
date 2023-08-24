@@ -7,6 +7,11 @@
                 "tag": "script",
                 "attribute": "src",
                 "value": "connect.facebook.net/*.js"
+            },
+            {
+                "tag": "script",
+                "attribute": null,
+                "value": "window.fbAsyncInit"
             }
         ],
         "headers": []
