@@ -1,13 +1,8 @@
 {
-    "name": "Algolia",
-    "icon": "/icon/algolia.png",
+    "name": "InstantSearch.js by Algolia",
+    "icon": "/icon/instantsearch-js.png",
     "checks": {
         "tags": [
-            {
-                "tag": "link",
-                "attribute": "href",
-                "value": "dsn.algolia.net"
-            },
             {
                 "tag": "script",
                 "attribute": "src",
