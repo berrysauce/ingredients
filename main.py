@@ -16,7 +16,7 @@ app = FastAPI(
 )
 
 origins = [
-    "*" # allow all origins
+    "*.berrysauce.me"
 ]
 
 app.add_middleware(
