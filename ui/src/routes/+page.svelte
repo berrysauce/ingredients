@@ -1,13 +1,11 @@
 <script>
-    let loading = false;
-
     let categories = {
         "ads": "Ads",
         "analytics": "Analytics",
         "auth": "Authentication",
         "builders": "Website Builders",
-        "cdn": "Content Delivery Networks",
-        "cms": "Content Management Systems",
+        "cdn": "CDNs",
+        "cms": "CMS",
         "compliance": "Compliance",
         "docs": "Documentation Tools",
         "fonts": "Fonts",
@@ -27,17 +25,30 @@
 
     let scanURL = "";
     let ingredients = [];
+    let loading = false;
+    let requested = false;
+    let error = false;
 
     async function handleSubmit() {
         loading = true;
+        requested = false;
+        error = false;
+
         try {
             let response = await fetch(`https://ingredients.berrysauce.me/api/ingredients?url=${scanURL}`);
             let data = await response.json();
+
             loading = false;
+            requested = true;
+            error = false;
+
             ingredients = data.matches;
             console.log(ingredients)
         } catch (error) {
             loading = false;
+            requested = false;
+            error = true;
+
             console.error("Error fetching data:", error);
         }
     }
@@ -49,27 +60,6 @@
             <div style="margin-bottom: 64px;">
                 <h1 class="display-4" style="font-family: 'Inter Tight', sans-serif;font-weight: bold;margin-bottom: 8px;"> 🧪 Ingredients</h1>
                 <p style="color: rgba(33,37,41,0.5);">Ingredients is an open source tool, which can find out which technologies a website uses. Ingredients can be used right here, or in form of an API.</p>
-            </div>
-
-            <style>
-                #form {
-                    display: block;
-                }
-
-                #error {
-                    display: none;
-                }
-            </style>
-
-            <div id="error">
-                <p class="text-center" style="font-weight: 500;">
-                    <svg class="icon icon-tabler icon-tabler-alert-triangle" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" style="color: rgb(49,169,0);font-size: 26px;margin-right: 10px;margin-bottom: 2px;" name="url">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                        <path d="M12 9v2m0 4v.01"></path>
-                        <path d="M5 19h14a2 2 0 0 0 1.84 -2.75l-7.1 -12.25a2 2 0 0 0 -3.5 0l-7.1 12.25a2 2 0 0 0 1.75 2.75"></path>
-                    </svg>
-                    An error occurred while analyzing
-                </p>
             </div>
 
             <div id="form">
@@ -111,21 +101,51 @@
 
             {#if loading}
                 <div id="loading">
-                    <p class="text-center" style="font-weight: 500;"><span class="spinner-border spinner-border-sm" role="status" style="margin-right: 10px;width: 22px;height: 22px;margin-bottom: -3px;color: rgb(49,169,0);"></span>Checking ingredients</p>
+                    <p class="text-center" style="font-weight: 500;margin-bottom: 50px;"><span class="spinner-border spinner-border-sm" role="status" style="margin-right: 10px;width: 22px;height: 22px;margin-bottom: -3px;color: rgb(49,169,0);"></span>Checking ingredients</p>
                 </div>
             {/if}
 
+            {#if requested && !loading && Object.keys(ingredients).length == 0}
+                <p class="text-center" style="font-weight: 500;">
+                    <svg class="icon icon-tabler icon-tabler-alert-octagon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" style="color: rgb(242,113,58);font-size: 22px;margin-right: 10px;margin-bottom: 3px;">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M8.7 3h6.6c0.3 0 .5 .1 .7 .3l4.7 4.7c0.2 .2 .3 .4 .3 .7v6.6c0 .3 -.1 .5 -.3 .7l-4.7 4.7c-0.2 .2 -.4 .3 -.7 .3h-6.6c-0.3 0 -.5 -.1 -.7 -.3l-4.7 -4.7c-0.2 -.2 -.3 -.4 -.3 -.7v-6.6c0 -.3 .1 -.5 .3 -.7l4.7 -4.7c0.2 -.2 .4 -.3 .7 -.3z"></path>
+                        <line x1="12" y1="8" x2="12" y2="12"></line>
+                        <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                    </svg>
+                    No ingredients found
+                </p>
+            {/if}
+            
+
+            {#if error && !loading}
+                <p class="text-center" style="font-weight: 500;">
+                    <svg class="icon icon-tabler icon-tabler-alert-triangle" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" style="color: rgb(49,169,0);font-size: 26px;margin-right: 10px;margin-bottom: 2px;" name="url">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M12 9v2m0 4v.01"></path>
+                        <path d="M5 19h14a2 2 0 0 0 1.84 -2.75l-7.1 -12.25a2 2 0 0 0 -3.5 0l-7.1 12.25a2 2 0 0 0 1.75 2.75"></path>
+                    </svg>
+                    An error occurred while analyzing
+                </p>
+            {/if}
+
             {#if !loading}
-                {#each Object.keys(ingredients) as category (category)}
-                    <div style="border-width: 2px;border-top-style: solid;border-top-color: rgb(33,37,41);margin-bottom: 50px;">
-                        <h1 class="fs-5" style="font-weight: bold;margin-top: 6px;margin-bottom: 16px;">{ categories[category] }</h1>
-                        <ul class="list-unstyled">
-                            {#each ingredients[category] as ingredient}
-                                <li style="margin-bottom: 4px;font-weight: 500;"><img class="img-fluid" src="https://ingredients.berrysauce.me/api{ ingredient.icon }" width="24" height="24" style="height: 24px;padding: 3px;border-radius: 4px;margin-right: 8px;margin-bottom: 3px;border: 1px solid rgb(206,207,208) ;">{ ingredient.name }</li>
-                            {/each}
-                        </ul>
-                    </div>
-                {/each}
+                <div class="row row-cols-2">
+                    {#each Object.keys(categories) as category (category)}
+                        {#if ingredients[category]}
+                            <div class="col">
+                                <div style="border-width: 2px;border-top-style: solid;border-top-color: rgb(33,37,41);margin-bottom: 50px;">
+                                    <h1 class="fs-5" style="font-weight: bold;margin-top: 6px;margin-bottom: 16px;">{ categories[category] }</h1>
+                                    <ul class="list-unstyled">
+                                        {#each ingredients[category] as ingredient}
+                                            <li style="margin-bottom: 4px;font-weight: 500;"><img class="img-fluid" src="https://ingredients-cdn.berrysauce.me{ ingredient.icon }" width="24" height="24" style="height: 24px;padding: 3px;border-radius: 4px;margin-right: 8px;margin-bottom: 3px;border: 1px solid rgb(206,207,208) ;">{ ingredient.name }</li>
+                                        {/each}
+                                    </ul>
+                                </div>
+                            </div>
+                        {/if}
+                    {/each}
+                </div>
             {/if}
 
             <footer>
