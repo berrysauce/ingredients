@@ -5,7 +5,7 @@
         "tags": [
             {
                 "tag": "link",
-                "attribute": "src",
+                "attribute": "href",
                 "value": "fonts.bunny.net"
             }
         ],

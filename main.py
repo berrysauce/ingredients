@@ -1,11 +1,11 @@
+import json
+import httpx
 import uvicorn
+from typing import Optional
 from fastapi import FastAPI, Response, status
 from fastapi.responses import JSONResponse, HTMLResponse, FileResponse
 from fastapi.middleware.cors import CORSMiddleware
 from urllib.parse import urlparse
-import httpx
-from typing import Optional
-import json
 
 # local imports
 import ingredients
