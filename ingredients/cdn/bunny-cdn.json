@@ -1,0 +1,13 @@
+{
+    "name": "Bunny CDN",
+    "icon": "/icon/bunny.png",
+    "checks": {
+        "tags": [],
+        "headers": [
+            {
+                "header": "Server",
+                "value": "BunnyCDN"
+            }
+        ]
+    }
+}
