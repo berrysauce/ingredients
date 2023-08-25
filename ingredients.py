@@ -17,7 +17,7 @@ def scan(url):
     ingredients_count = 0
             
     try:
-        r = httpx.get(url)
+        r = httpx.get(url, follow_redirects=True)
     except httpx.ConnectError:
         raise httpx.InvalidURL("Invalid URL")
     
