@@ -1,7 +1,7 @@
-import httpx
+import os
 import bs4
 import json
-import os
+import httpx
 
 
 # ----------------------------------------
