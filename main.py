@@ -1,9 +1,11 @@
 import uvicorn
 from fastapi import FastAPI, Response, status
-from fastapi.responses import JSONResponse, HTMLResponse
+from fastapi.responses import JSONResponse, HTMLResponse, FileResponse
 from fastapi.middleware.cors import CORSMiddleware
 from urllib.parse import urlparse
 import httpx
+from typing import Optional
+import json
 
 # local imports
 import ingredients
@@ -35,14 +37,17 @@ def get_root():
 
 
 @app.get("/ingredients", response_class=JSONResponse)
-def get_scan(url: str, response: Response):
+def get_scan(url: str, response: Response, includeCategories: Optional[bool] = False):
     
     # Parse URL and remove port, query, and fragment
     r = urlparse(url)
     parsed_url = r.scheme + "://" + r.netloc.split(":")[0] + r.path
     
-    try:
+    try:        
         data = ingredients.scan(parsed_url)
+        if includeCategories:
+            with open("ingredients/categories.json", "r") as f:
+                data["categories"] = json.loads(f.read())
         return data
     except httpx.InvalidURL as e:
         response.status_code = status.HTTP_400_BAD_REQUEST

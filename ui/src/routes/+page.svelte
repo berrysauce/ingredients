@@ -1,30 +1,7 @@
 <script lang="ts">
     let year = new Date().getFullYear();
-    
-    let categories = {
-        "ads": "Ads",
-        "analytics": "Analytics",
-        "auth": "Authentication",
-        "builders": "Website Builders",
-        "cdn": "CDNs",
-        "cms": "CMS",
-        "compliance": "Compliance",
-        "docs": "Documentation Tools",
-        "fonts": "Fonts",
-        "frameworks": "Frameworks",
-        "hosts": "Hosts",
-        "libraries": "Libraries",
-        "monitoring": "Monitoring",
-        "notifications": "Notifications",
-        "payments": "Payments",
-        "search": "Search",
-        "security": "Security",
-        "servers": "Servers",
-        "storage": "Storage",
-        "widgets": "Widgets",
-        "other": "Other"
-    }
 
+    let categories = {};
     let ingredients = {};
 
     let scanURL = "";
@@ -38,7 +15,7 @@
         error = null;
 
         try {
-            let response = await fetch(`https://ingredients.berrysauce.me/api/ingredients?url=${scanURL}`);
+            let response = await fetch(`https://ingredients.berrysauce.me/api/ingredients?url=${scanURL}&includeCategories=true`);
             let data = await response.json();
 
             if (!response.ok) {
@@ -54,6 +31,7 @@
             error = null;
 
             ingredients = data.matches;
+            categories = data.categories;
             console.log(ingredients)
         } catch (error) {
             loading = false;
@@ -140,7 +118,7 @@
                 </div>
             {/if}
 
-            {#if !loading}
+            {#if !loading && error == null}
                 <div class="row row-cols-2">
                     {#each Object.keys(categories) as category (category)}
                         {#if ingredients[category]}

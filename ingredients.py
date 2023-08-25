@@ -12,6 +12,8 @@ def scan(url):
     matching_ingredients = []
     
     categories = os.listdir("ingredients")
+    if "categories.json" in categories:
+        categories.remove("categories.json")
     ingredients_count = 0
             
     try:

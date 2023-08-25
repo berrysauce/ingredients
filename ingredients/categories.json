@@ -1,0 +1,23 @@
+{
+    "ads": "Ads",
+    "analytics": "Analytics",
+    "auth": "Authentication",
+    "builders": "Website Builders",
+    "cdn": "CDNs",
+    "cms": "CMS",
+    "compliance": "Compliance",
+    "docs": "Documentation Tools",
+    "fonts": "Fonts",
+    "frameworks": "Frameworks",
+    "hosts": "Hosts",
+    "libraries": "Libraries",
+    "monitoring": "Monitoring",
+    "notifications": "Notifications",
+    "payments": "Payments",
+    "search": "Search",
+    "security": "Security",
+    "servers": "Servers",
+    "storage": "Storage",
+    "widgets": "Widgets",
+    "other": "Other"
+}
