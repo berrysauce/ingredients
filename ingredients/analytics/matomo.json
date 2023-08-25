@@ -6,7 +6,7 @@
             {
                 "tag": "script",
                 "attribute": "src",
-                "value": "/piwik.js"
+                "value": "/piwik.*js"
             },
             {
                 "tag": "img",
@@ -16,7 +16,7 @@
             {
                 "tag": "script",
                 "attribute": "src",
-                "value": "/matomo.js"
+                "value": "/matomo.*js"
             },
             {
                 "tag": "script",

@@ -1,0 +1,13 @@
+{
+    "name": "Hostinger",
+    "icon": "/icon/hostinger.png",
+    "checks": {
+        "tags": [],
+        "headers": [
+            {
+                "header": "Platform",
+                "value": "hostinger"
+            }
+        ]
+    }
+}

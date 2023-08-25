@@ -1,0 +1,14 @@
+{
+    "name": "Three.js",
+    "icon": "/icon/three-js.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "/three.*js"
+            }
+        ],
+        "headers": []
+    }
+}

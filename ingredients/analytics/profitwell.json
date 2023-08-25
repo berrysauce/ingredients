@@ -1,22 +1,22 @@
 {
-    "name": "Webpack",
-    "icon": "/icon/webpack.png",
+    "name": "Profitwell",
+    "icon": "/icon/profitwell.png",
     "checks": {
         "tags": [
             {
                 "tag": "script",
                 "attribute": "src",
-                "value": "bundle.js"
+                "value": "profitwell.com/js/*.js"
             },
             {
                 "tag": "script",
-                "attribute": "src",
-                "value": "chunks*.js"
+                "attribute": null,
+                "value": "profitwell.com/js/*.js"
             },
             {
                 "tag": "script",
-                "attribute": "src",
-                "value": "webpack*.js"
+                "attribute": "id",
+                "value": "profitwell-js"
             }
         ],
         "headers": []

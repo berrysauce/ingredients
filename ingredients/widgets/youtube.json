@@ -1,0 +1,19 @@
+{
+    "name": "YouTube",
+    "icon": "/icon/youtube.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "iframe",
+                "attribute": "src",
+                "value": "youtube.com/embed"
+            },
+            {
+                "tag": "iframe",
+                "attribute": "data-src",
+                "value": "youtube.com/embed"
+            }
+        ],
+        "headers": []
+    }
+}

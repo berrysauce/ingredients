@@ -1,5 +1,5 @@
 {
-    "name": "PWA (Progressive Web App)",
+    "name": "Progressive Web App",
     "icon": "/icon/pwa.png",
     "checks": {
         "tags": [

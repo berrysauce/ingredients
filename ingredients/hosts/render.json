@@ -1,0 +1,13 @@
+{
+    "name": "Render",
+    "icon": "/icon/render.png",
+    "checks": {
+        "tags": [],
+        "headers": [
+            {
+                "header": "X-Render-Origin-Server:",
+                "value": null
+            }
+        ]
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "name": "Svelte(Kit)",
+    "icon": "/icon/svelte.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "_app/immutable/nodes*.js"
+            },
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "_app/immutable/chunks*.js"
+            }
+        ],
+        "headers": [
+            {
+                "header": "X-Sveltekit-Page",
+                "value": true
+            }
+        ]
+    }
+}

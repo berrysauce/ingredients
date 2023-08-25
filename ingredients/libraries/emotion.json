@@ -1,0 +1,14 @@
+{
+    "name": "Emotion",
+    "icon": "/icon/emotion.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "style",
+                "attribute": "data-emotion",
+                "value": null
+            }
+        ],
+        "headers": []
+    }
+}

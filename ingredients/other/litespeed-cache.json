@@ -1,0 +1,13 @@
+{
+    "name": "LiteSpeed Cache",
+    "icon": "/icon/litespeed-cache.png",
+    "checks": {
+        "tags": [],
+        "headers": [
+            {
+                "header": "X-Turbo-Charged-By",
+                "value": "LiteSpeed"
+            }
+        ]
+    }
+}

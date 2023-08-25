@@ -1,0 +1,14 @@
+{
+    "name": "RudderStack",
+    "icon": "/icon/rudderstack.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "cdn.rudderlabs.com/.js"
+            }
+        ],
+        "headers": []
+    }
+}

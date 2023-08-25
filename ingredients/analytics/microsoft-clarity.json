@@ -1,22 +1,22 @@
 {
-    "name": "Webpack",
-    "icon": "/icon/webpack.png",
+    "name": "Microsoft Clarity",
+    "icon": "/icon/microsoft-clarity.png",
     "checks": {
         "tags": [
             {
                 "tag": "script",
                 "attribute": "src",
-                "value": "bundle.js"
+                "value": "clarity.ms/tag"
             },
             {
                 "tag": "script",
                 "attribute": "src",
-                "value": "chunks*.js"
+                "value": "microsoft-clarity/payload.*js"
             },
             {
                 "tag": "script",
-                "attribute": "src",
-                "value": "webpack*.js"
+                "attribute": null,
+                "value": "clarity.ms/tag"
             }
         ],
         "headers": []

@@ -1,0 +1,14 @@
+{
+    "name": "PostHog",
+    "icon": "/icon/posthog.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "posthog.*js"
+            }
+        ],
+        "headers": []
+    }
+}
