@@ -1,6 +1,7 @@
 import uvicorn
 from fastapi import FastAPI, Response, status
 from fastapi.responses import JSONResponse, HTMLResponse
+from fastapi.middleware.cors import CORSMiddleware
 from urllib.parse import urlparse
 import httpx
 
@@ -14,6 +15,18 @@ app = FastAPI(
     redoc_url=None
 )
 
+origins = [
+    "*" # allow all origins
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 
 @app.get("/", response_class=HTMLResponse)
 def get_root():
@@ -21,7 +34,7 @@ def get_root():
         return HTMLResponse(content=f.read())
 
 
-@app.get("/scan", response_class=JSONResponse)
+@app.get("/ingredients", response_class=JSONResponse)
 def get_scan(url: str, response: Response):
     
     # Parse URL and remove port, query, and fragment
@@ -40,10 +53,6 @@ def get_scan(url: str, response: Response):
         response.status_code = status.HTTP_400_BAD_REQUEST
         return {
             "error": str(e)
-        }
-    except:
-        return {
-            "error": "An error occured while scanning the URL"
         }
         
         

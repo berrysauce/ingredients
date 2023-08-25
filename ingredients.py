@@ -91,22 +91,32 @@ def scan(url):
     # ----------------------------------------
     
     matching_ingredients_data = []
-    
-    for ingredient in matching_ingredients:
-        with open(f"ingredients/{ingredient}", "r") as f:
-            ingredient_category = ingredient.split("/")[0]
-            ingredient_data = json.loads(f.read())
-            
-            matching_ingredients_data.append({
-                "name": ingredient_data["name"],
-                "category": ingredient_category,
-                "icon": ingredient_data["icon"]
-            })
-    
-    return {
+    matching_categories = []
+    return_data = {
         "url": url,
         "total_categories": len(categories),
         "total_ingredients": ingredients_count,
         "matching_ingredients": len(matching_ingredients),
-        "matches": matching_ingredients_data
+        "matches": {}
     }
+    
+    for ingredient in matching_ingredients:
+        if ingredient.split("/")[0] not in matching_categories:
+            matching_categories.append(ingredient.split("/")[0])
+            return_data["matches"][ingredient.split("/")[0]] = []
+            
+    for category in matching_categories:
+        for ingredient in matching_ingredients:
+            if ingredient.split("/")[0] == category:
+                with open(f"ingredients/{ingredient}", "r") as f:
+                    ingredient_category = ingredient.split("/")[0]
+                    ingredient_data = json.loads(f.read())
+                
+                return_data["matches"][ingredient.split("/")[0]].append(
+                    {
+                        "name": ingredient_data["name"],
+                        "icon": ingredient_data["icon"]
+                    }
+                )
+            
+    return return_data
