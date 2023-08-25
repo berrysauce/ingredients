@@ -4,10 +4,10 @@
     let categories = {};
     let ingredients = {};
 
-    let scanURL = "";
-    let loading = false;
-    let requested = false;
-    let error = null;
+    let scanURL: string = "";
+    let loading: boolean = false;
+    let requested: boolean = false;
+    let error: null = null;
 
     async function handleSubmit() {
         loading = true;
