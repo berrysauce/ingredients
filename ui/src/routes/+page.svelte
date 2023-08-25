@@ -42,6 +42,8 @@
             let data = await response.json();
 
             if (!response.ok) {
+                loading = false;
+                requested = false;
                 error = data.error;
                 console.log(error)
                 return;
