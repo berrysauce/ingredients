@@ -30,29 +30,36 @@
     let scanURL = "";
     let loading = false;
     let requested = false;
-    let error = false;
+    let error = null;
 
     async function handleSubmit() {
         loading = true;
         requested = false;
-        error = false;
+        error = null;
 
         try {
             let response = await fetch(`https://ingredients.berrysauce.me/api/ingredients?url=${scanURL}`);
             let data = await response.json();
 
+            if (!response.ok) {
+                error = data.error;
+                console.log(error)
+                return;
+            }
+
             loading = false;
             requested = true;
-            error = false;
+            error = null;
 
             ingredients = data.matches;
             console.log(ingredients)
         } catch (error) {
             loading = false;
             requested = false;
-            error = true;
+            error = error;
 
             console.error("Error fetching data:", error);
+            return;
         }
     }
 </script>
@@ -119,17 +126,16 @@
                     No ingredients found
                 </p>
             {/if}
-            
 
-            {#if error && !loading}
-                <p class="text-center" style="font-weight: 500;">
-                    <svg class="icon icon-tabler icon-tabler-alert-triangle" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" style="color: rgb(49,169,0);font-size: 26px;margin-right: 10px;margin-bottom: 2px;" name="url">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                        <path d="M12 9v2m0 4v.01"></path>
-                        <path d="M5 19h14a2 2 0 0 0 1.84 -2.75l-7.1 -12.25a2 2 0 0 0 -3.5 0l-7.1 12.25a2 2 0 0 0 1.75 2.75"></path>
-                    </svg>
-                    An error occurred while analyzing
-                </p>
+            {#if error != null}
+                <div>
+                    <p class="text-center" style="font-weight: 500;margin-bottom: 5px;"><svg class="icon icon-tabler icon-tabler-alert-triangle" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" style="color: rgb(204,45,35);font-size: 22px;margin-right: 10px;margin-bottom: 3px;">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M12 9v2m0 4v.01"></path>
+                            <path d="M5 19h14a2 2 0 0 0 1.84 -2.75l-7.1 -12.25a2 2 0 0 0 -3.5 0l-7.1 12.25a2 2 0 0 0 1.75 2.75"></path>
+                        </svg>An error occurred while analyzing</p>
+                    <p class="text-center" style="font-weight: 500;"><code style="color: rgb(204,45,35);padding: 5px 10px;background: rgba(204,45,35,0.1);border-radius: 5px;">{ error }</code></p>
+                </div>
             {/if}
 
             {#if !loading}
