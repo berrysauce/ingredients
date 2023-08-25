@@ -1,4 +1,6 @@
-<script>
+<script lang="ts">
+    let year = new Date().getFullYear();
+    
     let categories = {
         "ads": "Ads",
         "analytics": "Analytics",
@@ -23,8 +25,9 @@
         "other": "Other"
     }
 
+    let ingredients = {};
+
     let scanURL = "";
-    let ingredients = [];
     let loading = false;
     let requested = false;
     let error = false;
@@ -87,7 +90,7 @@
                         </svg>
                         Star on GitHub
                     </a>
-                    <a href="/api" style="font-weight: 500;color: inherit;">
+                    <a href="/api" target="_blank" style="font-weight: 500;color: inherit;">
                         <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-arrow-right" style="margin-bottom: 2px;margin-right: 2px;">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                             <line x1="5" y1="12" x2="19" y2="12"></line>
@@ -138,7 +141,7 @@
                                     <h1 class="fs-5" style="font-weight: bold;margin-top: 6px;margin-bottom: 16px;">{ categories[category] }</h1>
                                     <ul class="list-unstyled">
                                         {#each ingredients[category] as ingredient}
-                                            <li style="margin-bottom: 4px;font-weight: 500;"><img class="img-fluid" src="https://ingredients-cdn.berrysauce.me{ ingredient.icon }" width="24" height="24" style="height: 24px;padding: 3px;border-radius: 4px;margin-right: 8px;margin-bottom: 3px;border: 1px solid rgb(206,207,208) ;">{ ingredient.name }</li>
+                                            <li style="margin-bottom: 4px;font-weight: 500;"><img class="img-fluid" alt={ ingredient.name } src="https://ingredients-cdn.berrysauce.me{ ingredient.icon }" width="24" height="24" style="height: 24px;padding: 3px;border-radius: 4px;margin-right: 8px;margin-bottom: 3px;border: 1px solid rgb(206,207,208) ;">{ ingredient.name }</li>
                                         {/each}
                                     </ul>
                                 </div>
@@ -150,8 +153,8 @@
 
             <footer>
                 <hr style="margin-top: 64px;margin-bottom: 16px;">
-                <p style="color: rgba(33,37,41,0.5);font-size: 12px;font-weight: 500;">Copyright © 2023 berrysauce</p>
-                <p style="color: rgba(33,37,41,0.5);font-size: 12px;">Usage of&nbsp;Ingredients is permitted under it's&nbsp;<a href="#" style="color: inherit;">Fair-use-Policy</a>. Traffic which does not comply with this policy or the <a href="#" style="color: inherit;">Terms of Service</a>&nbsp;will be blocked.&nbsp;<a href="https://github.com/berrysauce/ingredients/blob/main/LICENSE.md" style="color:inherit;">View the license for this service here</a>.</p>
+                <p style="color: rgba(33,37,41,0.5);font-size: 12px;font-weight: 500;">Copyright © { year } berrysauce</p>
+                <p style="color: rgba(33,37,41,0.5);font-size: 12px;">Usage of&nbsp;Ingredients is permitted under it's&nbsp;<a href="https://github.com/berrysauce/ingredients/blob/main/FAIR_USE_POLICY.md" style="color: inherit;">Fair-use-Policy</a>. Traffic which does not comply with this policy or the <a href="https://berrysauce.me/terms" style="color: inherit;">Terms of Service</a>&nbsp;will be blocked.&nbsp;<a href="https://github.com/berrysauce/ingredients/blob/main/LICENSE.md" style="color:inherit;">View the license for this service here</a>.</p>
                 <p style="color: rgba(33,37,41,0.5);font-size: 12px;"></p>
                 <p style="color: rgba(33,37,41,0.5);font-size: 12px;">No personal data is collected when using Ingredients (this website or its services).</p>
             </footer>
