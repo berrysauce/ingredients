@@ -13,12 +13,14 @@ import ingredients
 
 app = FastAPI(
     title="Ingredients – API",
+    license_info="https://github.com/berrysauce/ingredients/blob/main/LICENSE.md",
     docs_url=None,
     redoc_url=None
 )
 
 origins = [
-    "*.berrysauce.me"
+    "*.berrysauce.me",
+    "*.ingredients.tech"
 ]
 
 app.add_middleware(

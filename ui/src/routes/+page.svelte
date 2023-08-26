@@ -15,7 +15,7 @@
         error = null;
 
         try {
-            let response = await fetch(`https://ingredients.berrysauce.me/api/ingredients?url=${scanURL}&includeCategories=true`);
+            let response = await fetch(`https://ingredients.tech/api/ingredients?url=${scanURL}&includeCategories=true`);
             let data = await response.json();
 
             if (!response.ok) {
@@ -127,7 +127,7 @@
                                     <h1 class="fs-5" style="font-weight: bold;margin-top: 6px;margin-bottom: 16px;">{ categories[category] }</h1>
                                     <ul class="list-unstyled">
                                         {#each ingredients[category] as ingredient}
-                                            <li style="margin-bottom: 4px;font-weight: 500;"><img class="img-fluid" alt={ ingredient.name } src="https://ingredients-cdn.berrysauce.me{ ingredient.icon }" width="24" height="24" style="height: 24px;padding: 3px;border-radius: 4px;margin-right: 8px;margin-bottom: 3px;border: 1px solid rgb(206,207,208) ;">{ ingredient.name }</li>
+                                            <li style="margin-bottom: 4px;font-weight: 500;"><img class="img-fluid" alt={ ingredient.name } src="https://cdn-api.ingredients.tech{ ingredient.icon }" width="24" height="24" style="height: 24px;padding: 3px;border-radius: 4px;margin-right: 8px;margin-bottom: 3px;border: 1px solid rgb(206,207,208) ;">{ ingredient.name }</li>
                                         {/each}
                                     </ul>
                                 </div>
