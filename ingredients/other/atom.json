@@ -1,0 +1,14 @@
+{
+    "name": "Atom",
+    "icon": "/icon/atom.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "link",
+                "attribute": "type",
+                "value": "application/atom+xml"
+            }
+        ],
+        "headers": []
+    }
+}

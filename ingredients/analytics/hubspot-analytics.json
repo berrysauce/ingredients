@@ -1,0 +1,19 @@
+{
+    "name": "HubSpot Analytics",
+    "icon": "/icon/hubspot.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "js.hs-analytics.net/*.js"
+            },
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "js.hs-scripts.com/*.js"
+            }
+        ],
+        "headers": []
+    }
+}

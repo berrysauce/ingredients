@@ -1,0 +1,19 @@
+{
+    "name": "Judge.me",
+    "icon": "/icon/judgeme.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "link",
+                "attribute": "href",
+                "value": "judge.me/*.css"
+            },
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "judge.me/*.js"
+            }
+        ],
+        "headers": []
+    }
+}

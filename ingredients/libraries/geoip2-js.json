@@ -1,12 +1,12 @@
 {
-    "name": "jQuery",
-    "icon": "/icon/jquery.png",
+    "name": "GeoIP2",
+    "icon": "/icon/maxmind.png",
     "checks": {
         "tags": [
             {
                 "tag": "script",
                 "attribute": "src",
-                "value": "/jquery*.js"
+                "value": "geoip-js.com/geoip2*.js"
             }
         ],
         "headers": []

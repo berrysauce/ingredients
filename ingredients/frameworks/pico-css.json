@@ -1,0 +1,14 @@
+{
+    "name": "Pico.css",
+    "icon": "/icon/pico-css.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "link",
+                "attribute": "href",
+                "value": "/pico.*css"
+            }
+        ],
+        "headers": []
+    }
+}
