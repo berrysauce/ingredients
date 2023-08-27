@@ -1,0 +1,19 @@
+{
+    "name": "Splide",
+    "icon": "/icon/splide-js.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "/splide.*js"
+            },
+            {
+                "tag": "link",
+                "attribute": "href",
+                "value": "/splide-core.*css"
+            }
+        ],
+        "headers": []
+    }
+}

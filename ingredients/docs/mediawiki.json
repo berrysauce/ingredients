@@ -1,0 +1,14 @@
+{
+    "name": "MediaWiki",
+    "icon": "/icon/mediawiki.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "meta",
+                "attribute": "generator",
+                "value": "MediaWiki"
+            }
+        ],
+        "headers": []
+    }
+}

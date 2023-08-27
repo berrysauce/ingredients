@@ -1,0 +1,19 @@
+{
+    "name": "JavaScript Cookie",
+    "icon": "/icon/js-cookie.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "/js.cookie.*js"
+            },
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "/js-cookie.*js"
+            }
+        ],
+        "headers": []
+    }
+}

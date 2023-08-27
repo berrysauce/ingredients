@@ -11,7 +11,7 @@
             {
                 "tag": "script",
                 "attribute": null,
-                "value": "snap.licdn.com/li.lms-analytics/insight*.js"
+                "value": "snap.licdn.com*insight*.js"
             }
         ],
         "headers": []
