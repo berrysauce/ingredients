@@ -1,0 +1,14 @@
+{
+    "name": "Google Maps",
+    "icon": "/icon/google-maps.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "maps.googleapis.com/*js"
+            }
+        ],
+        "headers": []
+    }
+}

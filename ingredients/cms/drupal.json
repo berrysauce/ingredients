@@ -1,0 +1,14 @@
+{
+    "name": "Drupal",
+    "icon": "/icon/drupal.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "meta",
+                "attribute": "generator",
+                "value": "Drupal"
+            }
+        ],
+        "headers": []
+    }
+}

@@ -7,6 +7,10 @@
             {
                 "header": "X-Turbo-Charged-By",
                 "value": "LiteSpeed"
+            },
+            {
+                "header": "Server",
+                "value": "LiteSpeed"
             }
         ]
     }
