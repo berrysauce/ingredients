@@ -7,6 +7,7 @@
     "cms": "CMS",
     "compliance": "Compliance",
     "docs": "Documentation Tools",
+    "ecommerce": "E-Commerce",
     "fonts": "Fonts",
     "frameworks": "Frameworks",
     "hosts": "Hosts",
@@ -19,5 +20,6 @@
     "servers": "Servers",
     "storage": "Storage",
     "widgets": "Widgets",
+    "wikis": "Wikis",
     "other": "Other"
 }

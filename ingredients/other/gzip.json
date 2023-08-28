@@ -1,0 +1,13 @@
+{
+    "name": "Gzip",
+    "icon": "/icon/gzip.png",
+    "checks": {
+        "tags": [],
+        "headers": [
+            {
+                "header": "content-encoding",
+                "value": "gzip"
+            }
+        ]
+    }
+}

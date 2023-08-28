@@ -1,0 +1,24 @@
+{
+    "name": "Wix",
+    "icon": "/icon/wix.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "link",
+                "attribute": "href",
+                "value": "/@wix*.css"
+            },
+            {
+                "tag": "meta",
+                "attribute": "generator",
+                "value": "Wix"
+            }
+        ],
+        "headers": [
+            {
+                "header": "x-wix-request-id",
+                "value": null
+            }
+        ]
+    }
+}

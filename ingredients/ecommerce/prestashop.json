@@ -1,0 +1,19 @@
+{
+    "name": "PrestaShop",
+    "icon": "/icon/prestashop.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "meta",
+                "attribute": "generator",
+                "value": "PrestaShop"
+            }
+        ],
+        "headers": [
+            {
+                "header": "Powered-By",
+                "value": "PrestaShop"
+            }
+        ]
+    }
+}

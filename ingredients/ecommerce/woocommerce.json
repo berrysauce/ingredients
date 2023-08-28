@@ -1,0 +1,14 @@
+{
+    "name": "WooCommerce",
+    "icon": "/icon/woocommerce.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "link",
+                "attribute": "href",
+                "value": "/wp-content/plugins/woocommerce*.css"
+            }
+        ],
+        "headers": []
+    }
+}
