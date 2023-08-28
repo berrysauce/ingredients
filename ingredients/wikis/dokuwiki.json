@@ -1,0 +1,14 @@
+{
+    "name": "DokuWiki",
+    "icon": "/icon/dokuwiki.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "meta",
+                "attribute": "generator",
+                "value": "DokuWiki"
+            }
+        ],
+        "headers": []
+    }
+}

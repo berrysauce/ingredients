@@ -1,5 +1,5 @@
 {
-    "name": "Google Signin",
+    "name": "Google Sign-In",
     "icon": "/icon/google-signin.png",
     "checks": {
         "tags": [

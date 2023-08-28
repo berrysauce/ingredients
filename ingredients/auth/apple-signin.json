@@ -1,5 +1,5 @@
 {
-    "name": "Apple ID Signin",
+    "name": "Apple ID Sign-In",
     "icon": "/icon/apple-signin.png",
     "checks": {
         "tags": [
