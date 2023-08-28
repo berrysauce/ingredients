@@ -2,7 +2,7 @@ import json
 import httpx
 import uvicorn
 from typing import Optional
-from fastapi import FastAPI, Response, status
+from fastapi import FastAPI, Response, status, HTTPException
 from fastapi.responses import JSONResponse, HTMLResponse, FileResponse
 from fastapi.middleware.cors import CORSMiddleware
 from urllib.parse import urlparse
@@ -61,6 +61,8 @@ def get_scan(url: str, response: Response, includeCategories: Optional[bool] = F
         return {
             "error": str(e)
         }
+    except:
+        raise HTTPException(status_code=500, detail="Unknown error")
         
         
 @app.get("/icon/{icon}")
