@@ -52,15 +52,9 @@ def get_scan(url: str, response: Response, includeCategories: Optional[bool] = F
                 data["categories"] = json.loads(f.read())
         return data
     except httpx.InvalidURL as e:
-        response.status_code = status.HTTP_400_BAD_REQUEST
-        return {
-            "error": str(e)
-        }
+        raise HTTPException(status_code=400, detail=str(e))
     except httpx.RequestError as e:
-        response.status_code = status.HTTP_400_BAD_REQUEST
-        return {
-            "error": str(e)
-        }
+        raise HTTPException(status_code=400, detail=str(e))
     except:
         raise HTTPException(status_code=500, detail="Unknown error")
         
@@ -78,15 +72,9 @@ def get_icon(icon: str, response: Response):
         with open("./icons/" + parsed_icon, "rb") as f:
             return Response(content=f.read(), media_type="image/png")
     except FileNotFoundError:
-        response.status_code = status.HTTP_404_NOT_FOUND
-        return {
-            "error": "Icon not found"
-        }
+        raise HTTPException(status_code=404, detail="Icon not found")
     except:
-        response.status_code = status.HTTP_400_BAD_REQUEST
-        return {
-            "error": "An error occured while fetching the icon"
-        }
+        raise HTTPException(status_code=500, detail="An error occured while fetching the icon")
         
 
 
