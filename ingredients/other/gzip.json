@@ -1,6 +1,6 @@
 {
     "name": "Gzip",
-    "icon": "/icon/gzip.png",
+    "icon": "/icon/zip.png",
     "checks": {
         "tags": [],
         "headers": [
