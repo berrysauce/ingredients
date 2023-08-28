@@ -1,0 +1,14 @@
+{
+    "name": "Apple App Banner",
+    "icon": "/icon/apple-appstore.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "meta",
+                "attribute": "name",
+                "value": "apple-itunes-app"
+            }
+        ],
+        "headers": []
+    }
+}
