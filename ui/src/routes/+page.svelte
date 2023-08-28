@@ -21,7 +21,7 @@
             if (!response.ok) {
                 loading = false;
                 requested = false;
-                error = data.error;
+                error = data.detail;
                 console.log(error)
                 return;
             }
