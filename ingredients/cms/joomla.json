@@ -2,7 +2,13 @@
     "name": "Joomla",
     "icon": "/icon/joomla.png",
     "checks": {
-        "tags": [],
+        "tags": [
+            {
+                "tag": "meta",
+                "attribute": "generator",
+                "value": "Joomla"
+            }
+        ],
         "headers": [
             {
                 "header": "x-content-encoded-by",
