@@ -1,0 +1,19 @@
+{
+    "name": "Amazon Pay",
+    "icon": "/icon/amazon.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "amazon-pay.*js"
+            },
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "payments-amazon.com/checkout.*js"
+            }
+        ],
+        "headers": []
+    }
+}
