@@ -1,0 +1,13 @@
+{
+    "name": "Joomla",
+    "icon": "/icon/joomla.png",
+    "checks": {
+        "tags": [],
+        "headers": [
+            {
+                "header": "x-content-encoded-by",
+                "value": "Joomla"
+            }
+        ]
+    }
+}
