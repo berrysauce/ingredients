@@ -1,6 +1,6 @@
 {
     "name": "GitHub Pages",
-    "icon": "/icon/github-pages.png",
+    "icon": "/icon/github.png",
     "checks": {
         "tags": [],
         "headers": [
