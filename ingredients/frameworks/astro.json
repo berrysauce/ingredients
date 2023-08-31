@@ -1,0 +1,24 @@
+{
+    "name": "Astro",
+    "icon": "/icon/astro.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "meta",
+                "attribute": "generator",
+                "value": "Astro"
+            },
+            {
+                "tag": "link",
+                "attribute": "href",
+                "value": "/_astro/"
+            },
+            {
+                "tag": "body",
+                "attribute": "class",
+                "value": "astro-"
+            }
+        ],
+        "headers": []
+    }
+}
