@@ -5,9 +5,9 @@
 [![Deploy](https://github.com/berrysauce/ingredients/actions/workflows/deta.yml/badge.svg)](https://github.com/berrysauce/ingredients/actions/workflows/deta.yml)
 
 
-Ingredients is a website scanner that is able to determine the "ingredients" of a website, like the server, host, framework, libraries, widgets, etc.
+Ingredients is a website scanner that is able to determine the "ingredients" (or technologies) behind a website.
 
-It is an online tool designed to identify the technologies that power websites. It helps users discover the various software, frameworks, content management systems, analytics tools, and other technologies that are used to build and maintain a particular website.
+It helps users discover the various software, frameworks, content management systems, analytics tools, and other technologies that are used to build and maintain a particular website.
 
 
 <br>
@@ -15,12 +15,142 @@ It is an online tool designed to identify the technologies that power websites. 
 
 ## 📚 How it works
 
-More on this soon!
+Ingredients consists of an API with a simple script, that requests websites and checks their HTML tags and HTTP headers based on filters. The filters or "ingredients" are stored in their respective category-folders in the [ingredients/](https://github.com/berrysauce/ingredients/tree/main/ingredients) folder.
+
+Each "ingredient" consists of a JSON file like the following:
+
+```json
+{
+    "name": "Cloudflare CDN",
+    "icon": "/icon/cloudflare-cdn.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "cdn.cloudflare.com"
+            },
+            {
+                "tag": "script",
+                "attribute": null,
+                "value": "cdn.cloudflare.com"
+            }
+        ],
+        "headers": [
+            {
+                "header": "Server",
+                "value": "cloudflare"
+            },
+            {
+                "header": "cf-cache-status",
+                "value": null
+            }
+        ]
+    }
+}
+```
+
+In the JSON file, you can define the HTML tags and HTTP headers the script should look for, to identify, if a website is using the ingredient.
+
+As you can also see, this JSON file mentions a path to an icon, which is used to visualize the ingredient. Each favicon has a resolution of 32x32 pixels and is located inside the [icons/](https://github.com/berrysauce/ingredients/tree/main/icons) folder.
+
+
+<br>
 
 
 ## ⚙️ How to add Ingredients
 
-More on this soon!
+To add an ingredient, create a JSON file in [ingredients/](https://github.com/berrysauce/ingredients/tree/main/ingredients) folder inside a fitting category-folder and add its icon (size 32x32 pixels, PNG format) in the [icons/](https://github.com/berrysauce/ingredients/tree/main/icons) folder.
+
+When defining an ingredient, follow this template:
+
+```json
+{
+    "name": "Ingredient Name",
+    "icon": "/icon/ingredient-name.png",
+    "checks": {
+        "tags": [
+            (TAG CHECKS GO HERE)
+        ],
+        "headers": [
+            (HEADER CHECKS GO HERE)
+        ]
+    }
+}
+```
+
+<br>
+
+### Tag checks
+
+Tag checks are filters, which search for specific HTML tags on a website, to identify if it's using the ingredient. Here's an example:
+
+```json
+{
+    "tag": "script",
+    "attribute": "src",
+    "value": "cdn.example.com"
+}
+```
+
+Here, we're checking if the website has any `<script>` tags, which have `cdn.example.com` inside their `src` attribute.
+
+And here, we're not defining an attribute (using `null`). This means, we're checking if the inside of the `<script>` tag has `cdn.example.com` inside:
+
+```json
+{
+    "tag": "script",
+    "attribute": null,
+    "value": "cdn.example.com"
+}
+```
+
+Like the following:
+
+```html
+<script>
+    const url = "cdn.example.com"
+</script>
+```
+
+Tag checks can also use wildcard values. For instance, if you need to check if a `<script>` tag's `src` attribute contains a domain and a file extension, you can do so with an asterisk (`*`). This will split your check into multiple segments. All segments must be inside the checked tag attribute somewhere. For example:
+
+```json
+{
+    "tag": "script",
+    "attribute": "src",
+    "value": "example.com/library/*.js"
+}
+```
+
+This will check if the `src` attribute of a `<script>` tag includes `example.com/library/` and `.js`.
+
+<br>
+
+### Header checks
+
+Header checks are filters, which search for specific HTTP response headers when requesting the website, to identify if it's using the ingredient. Here's an example:
+
+```json
+{
+    "header": "Server",
+    "value": "example"
+}
+```
+
+Here, we're checking if the HTTP response headers include a header called `Server` which has the value `example` inside.
+
+And here, we're not defining a header value (using `null`). This means, we're checking if the `Request-Id` header exists at all, without explicitly checking for its value:
+
+```json
+{
+    "header": "Request-Id",
+    "value": null
+}
+```
+
+
+<br>
 
 
 ## 📄 License
