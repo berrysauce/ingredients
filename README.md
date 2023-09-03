@@ -156,6 +156,7 @@ And here, we're not defining a header value (using `null`). This means, we're ch
 ## 📄 License
 
 Ingredients — Website Technology Scanner
+
 Copyright (C) 2023 Paul Haedrich (berrysauce)
 
 This program is free software: you can redistribute it and/or modify
