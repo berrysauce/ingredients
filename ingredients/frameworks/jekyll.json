@@ -1,0 +1,14 @@
+{
+    "name": "Jekyll",
+    "icon": "/icon/jekyll.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "meta",
+                "attribute": "generator",
+                "value": "Jekyll"
+            }
+        ],
+        "headers": []
+    }
+}
