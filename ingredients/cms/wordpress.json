@@ -1,5 +1,6 @@
 {
     "name": "WordPress",
+    "description": "WordPress is a widely-used open-source content management system (CMS) that enables users to create and manage websites and blogs.",
     "icon": "/icon/wordpress.png",
     "checks": {
         "tags": [

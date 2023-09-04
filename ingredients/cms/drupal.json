@@ -1,5 +1,6 @@
 {
     "name": "Drupal",
+    "description": "Drupal is an open-source content management system (CMS) that enables users to build and manage websites and web applications.",
     "icon": "/icon/drupal.png",
     "checks": {
         "tags": [

@@ -1,5 +1,6 @@
 {
     "name": "Typekit",
+    "description": "Typekit is Adobe's hosted web font service.",
     "icon": "/icon/typekit.png",
     "checks": {
         "tags": [

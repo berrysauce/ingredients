@@ -1,5 +1,6 @@
 {
-    "name": "Azure",
+    "name": "Microsoft Azure",
+    "description": "Microsoft Azure is a cloud computing platform that offers a broad range of services, including compute, storage, networking, databases, analytics, machine learning, and artificial intelligence.",
     "icon": "/icon/azure.png",
     "checks": {
         "tags": [],

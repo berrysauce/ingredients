@@ -1,5 +1,6 @@
 {
     "name": "Fastly",
+    "description": "Fastly is a content delivery network (CDN) and edge cloud platform that helps businesses accelerate content delivery and improve the performance of their web applications.",
     "icon": "/icon/fastly.png",
     "checks": {
         "tags": [],

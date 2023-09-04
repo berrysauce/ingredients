@@ -1,5 +1,6 @@
 {
     "name": "Clipboard.js",
+    "description": "Clipboard.js is a lightweight JavaScript library that makes it easy to copy and paste text, images, and other content to the clipboard.",
     "icon": "/icon/clipboard-js.png",
     "checks": {
         "tags": [

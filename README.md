@@ -21,28 +21,29 @@ Each "ingredient" consists of a JSON file like the following:
 
 ```json
 {
-    "name": "Cloudflare CDN",
-    "icon": "/icon/cloudflare-cdn.png",
+    "name": "Ingredient Name",
+    "description": "Short description of the ingredient",
+    "icon": "/icon/ingredient-name.png",
     "checks": {
         "tags": [
             {
                 "tag": "script",
                 "attribute": "src",
-                "value": "cdn.cloudflare.com"
+                "value": "cdn.example.com"
             },
             {
                 "tag": "script",
                 "attribute": null,
-                "value": "cdn.cloudflare.com"
+                "value": "cdn.example.com"
             }
         ],
         "headers": [
             {
                 "header": "Server",
-                "value": "cloudflare"
+                "value": "example"
             },
             {
-                "header": "cf-cache-status",
+                "header": "Request-Id",
                 "value": null
             }
         ]
@@ -67,6 +68,7 @@ When defining an ingredient, follow this template:
 ```json
 {
     "name": "Ingredient Name",
+    "description": "Short description of the ingredient",
     "icon": "/icon/ingredient-name.png",
     "checks": {
         "tags": [

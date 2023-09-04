@@ -1,5 +1,6 @@
 {
     "name": "Three.js",
+    "description": "Three.js is a JavaScript library for creating and displaying interactive 3D graphics on the web.",
     "icon": "/icon/three-js.png",
     "checks": {
         "tags": [

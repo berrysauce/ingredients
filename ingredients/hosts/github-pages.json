@@ -1,5 +1,6 @@
 {
     "name": "GitHub Pages",
+    "description": "GitHub Pages is a free and easy way to create a static website hosted directly from your GitHub repository.",
     "icon": "/icon/github.png",
     "checks": {
         "tags": [],

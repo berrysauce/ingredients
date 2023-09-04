@@ -1,5 +1,6 @@
 {
     "name": "Osano",
+    "description": "Osano is a privacy compliance platform and data privacy management tool.",
     "icon": "/icon/osano.png",
     "checks": {
         "tags": [

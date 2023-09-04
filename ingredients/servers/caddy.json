@@ -1,5 +1,6 @@
 {
     "name": "Caddy",
+    "description": "Caddy is a modern web server that is written in Go. It is designed to be simple, secure, and efficient.",
     "icon": "/icon/caddy.png",
     "checks": {
         "tags": [],

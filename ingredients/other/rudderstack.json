@@ -1,5 +1,6 @@
 {
     "name": "RudderStack",
+    "description": "RudderStack is a customer data platform (CDP) that helps businesses collect, unify, and activate customer data from their website, mobile app, and other sources.",
     "icon": "/icon/rudderstack.png",
     "checks": {
         "tags": [

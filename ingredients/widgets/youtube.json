@@ -1,5 +1,6 @@
 {
     "name": "YouTube",
+    "description": "YouTube is a free service that allows you to host videos and embed them on your website.",
     "icon": "/icon/youtube.png",
     "checks": {
         "tags": [

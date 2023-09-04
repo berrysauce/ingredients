@@ -1,5 +1,6 @@
 {
     "name": "Profitwell",
+    "description": "Profitwell is a subscription revenue and retention platform designed for optimizing pricing, revenue growth, and customer retention.",
     "icon": "/icon/profitwell.png",
     "checks": {
         "tags": [

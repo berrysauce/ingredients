@@ -1,5 +1,6 @@
 {
     "name": "Ubuntu",
+    "description": "Ubuntu is a Linux distribution based on Debian. It is a free and open-source operating system that runs on lots of servers.",
     "icon": "/icon/ubuntu.png",
     "checks": {
         "tags": [],

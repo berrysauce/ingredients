@@ -1,5 +1,6 @@
 {
     "name": "Tailwind CSS",
+    "description": "Tailwind CSS is a utility-first CSS framework that is designed to be fast, flexible, and easy to use.",
     "icon": "/icon/tailwind.png",
     "checks": {
         "tags": [

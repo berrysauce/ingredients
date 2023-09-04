@@ -1,5 +1,6 @@
 {
     "name": "Pygments",
+    "description": "Pygments is a Python library that provides syntax highlighting for a variety of programming languages.",
     "icon": "/icon/pygments.png",
     "checks": {
         "tags": [

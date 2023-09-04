@@ -1,5 +1,6 @@
 {
     "name": "Varnish",
+    "description": "Varnish is an open-source, high-performance HTTP accelerator. It is used to improve the performance of websites by caching static content and reducing the number of requests that are made to the origin server.",
     "icon": "/icon/varnish.png",
     "checks": {
         "tags": [],

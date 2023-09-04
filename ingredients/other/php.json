@@ -1,5 +1,6 @@
 {
     "name": "PHP",
+    "description": "PHP is a general-purpose, server-side scripting language that is especially suited for web development.",
     "icon": "/icon/php.png",
     "checks": {
         "tags": [

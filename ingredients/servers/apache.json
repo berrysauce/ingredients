@@ -1,5 +1,6 @@
 {
     "name": "Apache",
+    "description": "Apache is an open-source web server that is used by over 67% of all websites on the internet.",
     "icon": "/icon/apache.png",
     "checks": {
         "tags": [],

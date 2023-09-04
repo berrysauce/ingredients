@@ -1,5 +1,6 @@
 {
     "name": "Akamai",
+    "description": "Akamai is a prominent content delivery network (CDN) provider.",
     "icon": "/icon/akamai.png",
     "checks": {
         "tags": [],

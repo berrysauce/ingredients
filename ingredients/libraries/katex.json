@@ -1,5 +1,6 @@
 {
     "name": "KaTeX",
+    "description": "KaTeX is a fast, easy-to-use JavaScript library for typesetting mathematics on the web.",
     "icon": "/icon/katex.png",
     "checks": {
         "tags": [

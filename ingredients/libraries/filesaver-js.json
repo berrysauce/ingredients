@@ -1,5 +1,6 @@
 {
     "name": "Filesaver.js",
+    "description": "FileSaver.js is a small JavaScript library that makes it easy to download files from a web browser.",
     "icon": "/icon/filesaver-js.png",
     "checks": {
         "tags": [

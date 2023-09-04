@@ -1,5 +1,6 @@
 {
     "name": "PayPal",
+    "description": "PayPal is a payment processing service that allows businesses to accept payments from customers online.",
     "icon": "/icon/paypal.png",
     "checks": {
         "tags": [

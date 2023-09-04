@@ -1,5 +1,6 @@
 {
     "name": "Judge.me",
+    "description": "Judge.me is a product reviews app that helps businesses collect and display product and store reviews on their website.",
     "icon": "/icon/judgeme.png",
     "checks": {
         "tags": [

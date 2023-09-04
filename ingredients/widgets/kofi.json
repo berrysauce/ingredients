@@ -1,5 +1,6 @@
 {
     "name": "Ko-fi",
+    "description": "Ko-fi is a platform that allows users to support their favorite creators with small, regular donations.",
     "icon": "/icon/kofi.png",
     "checks": {
         "tags": [

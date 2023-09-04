@@ -1,5 +1,6 @@
 {
     "name": "Nginx",
+    "description": "Nginx (pronounced 'engine-x') is an open-source web server, reverse proxy, and mail proxy.",
     "icon": "/icon/nginx.png",
     "checks": {
         "tags": [],

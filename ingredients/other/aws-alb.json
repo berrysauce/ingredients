@@ -1,5 +1,6 @@
 {
     "name": "Amazon AWS ALB",
+    "description": "AWS Application Load Balancer (ALB) is a load balancer that distributes incoming traffic across multiple server instances.",
     "icon": "/icon/aws-alb.png",
     "checks": {
         "tags": [],

@@ -1,5 +1,6 @@
 {
     "name": "InstantSearch.js by Algolia",
+    "description": "InstantSearch.js is an open-source JavaScript library that makes it easy to build search interfaces on your website or web application.",
     "icon": "/icon/instantsearch-js.png",
     "checks": {
         "tags": [

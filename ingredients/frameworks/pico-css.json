@@ -1,5 +1,6 @@
 {
     "name": "Pico.css",
+    "description": "PicoCSS is a minimal CSS framework that is designed to be lightweight and easy to use.",
     "icon": "/icon/pico-css.png",
     "checks": {
         "tags": [

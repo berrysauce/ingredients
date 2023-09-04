@@ -1,5 +1,6 @@
 {
     "name": "Shopify",
+    "description": "Shopify is a popular e-commerce platform that provides businesses with the tools to create and manage online stores.",
     "icon": "/icon/shopify.png",
     "checks": {
         "tags": [

@@ -1,5 +1,6 @@
 {
     "name": "OneSignal",
+    "description": "OneSignal is a push notification service that helps website owners engage with their users.",
     "icon": "/icon/onesignal.png",
     "checks": {
         "tags": [

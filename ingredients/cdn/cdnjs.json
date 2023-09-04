@@ -1,5 +1,6 @@
 {
     "name": "cdnjs",
+    "description": "cdnjs is an open-source project that provides a free and widely-used content delivery network (CDN) for hosting JavaScript, CSS, and other web development libraries and assets.",
     "icon": "/icon/cdnjs.png",
     "checks": {
         "tags": [

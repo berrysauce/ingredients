@@ -1,5 +1,6 @@
 {
     "name": "Confirmic",
+    "description": "Confirmic is a simple and clear cookie consent solution. It helps website owners and businesses ensure their websites are in compliance with data protection and privacy regulations.",
     "icon": "/icon/confirmic.png",
     "checks": {
         "tags": [

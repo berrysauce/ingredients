@@ -1,5 +1,6 @@
 {
     "name": "Bunny CDN",
+    "description": "Bunny.net is a content delivery network (CDN) service that offers global content delivery and acceleration for websites and applications.",
     "icon": "/icon/bunny.png",
     "checks": {
         "tags": [],

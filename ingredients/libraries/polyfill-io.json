@@ -1,5 +1,6 @@
 {
-    "name": "Polyfill",
+    "name": "Polyfill.io",
+    "description": "Polyfill.io provides polyfills for JavaScript features that are not yet supported by all browsers.",
     "icon": "/icon/polyfill-io.png",
     "checks": {
         "tags": [

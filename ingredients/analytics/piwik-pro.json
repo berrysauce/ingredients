@@ -1,5 +1,6 @@
 {
     "name": "Piwik Pro",
+    "description": "Piwik PRO is a web analytics and marketing platform with a focus on data privacy and compliance.",
     "icon": "/icon/piwik-pro.png",
     "checks": {
         "tags": [

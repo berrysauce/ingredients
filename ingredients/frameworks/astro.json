@@ -1,5 +1,6 @@
 {
     "name": "Astro",
+    "description": "Astro is an all-in-one web framework for building fast, content-focused websites.",
     "icon": "/icon/astro.png",
     "checks": {
         "tags": [

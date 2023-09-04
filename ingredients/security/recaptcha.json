@@ -1,5 +1,6 @@
 {
     "name": "reCaptcha",
+    "description": "Google reCAPTCHA is a free CAPTCHA service that helps protect websites from spam and abuse.",
     "icon": "/icon/recaptcha.png",
     "checks": {
         "tags": [

@@ -1,6 +1,7 @@
 {
-    "name": "Reddit Ads",
-    "icon": "/icon/reddit-ads.png",
+    "name": "Reddit Pixel",
+    "description": "Reddit Pixel is a tracking tool offered by Reddit for advertisers.",
+    "icon": "/icon/reddit-pixel.png",
     "checks": {
         "tags": [
             {

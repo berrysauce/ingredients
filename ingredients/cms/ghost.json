@@ -1,5 +1,6 @@
 {
     "name": "Ghost",
+    "description": "Ghost is an open-source content management system (CMS) designed specifically for creating blogs and publications.",
     "icon": "/icon/ghost.png",
     "checks": {
         "tags": [

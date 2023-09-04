@@ -1,5 +1,6 @@
 {
     "name": "Clicky",
+    "description": "Clicky is a web analytics tool that provides website owners with insights into their site's performance and visitor behavior.",
     "icon": "/icon/clicky.png",
     "checks": {
         "tags": [

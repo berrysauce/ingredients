@@ -1,5 +1,6 @@
 {
     "name": "Netlify",
+    "description": "Netlify is a cloud-based platform that helps you deploy and host your web applications and static websites.",
     "icon": "/icon/netlify.png",
     "checks": {
         "tags": [

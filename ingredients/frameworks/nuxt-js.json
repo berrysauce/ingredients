@@ -1,5 +1,6 @@
 {
     "name": "Nuxt.js",
+    "description": "Nuxt.js is a Vue.js framework that provides a set of features that make it easy to build high-performance, SEO-friendly, and scalable web applications.",
     "icon": "/icon/nuxt-js.png",
     "checks": {
         "tags": [

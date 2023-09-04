@@ -1,5 +1,6 @@
 {
     "name": "Simple Analytics",
+    "description": "Simple Analytics is a web analytics service that focuses on providing essential website traffic data while respecting user privacy.",
     "icon": "/icon/simpleanalytics.png",
     "checks": {
         "tags": [

@@ -1,5 +1,6 @@
 {
     "name": "Google Cloud Storage",
+    "description": "Google Cloud Storage (GCS) is a scalable, durable, and highly available object storage service that can be used to store a variety of data.",
     "icon": "/icon/google-cloud-storage.png",
     "checks": {
         "tags": [

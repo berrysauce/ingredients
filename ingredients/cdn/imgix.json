@@ -1,5 +1,6 @@
 {
     "name": "Imgix",
+    "description": "Imgix is an image processing and optimization service that helps website and app developers deliver high-quality images efficiently.",
     "icon": "/icon/imgix.png",
     "checks": {
         "tags": [

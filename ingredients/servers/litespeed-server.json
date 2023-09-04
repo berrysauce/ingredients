@@ -1,0 +1,14 @@
+{
+    "name": "LiteSpeed Server",
+    "description": "LiteSpeed Server is a web server that is designed to be faster and more efficient than Apache.",
+    "icon": "/icon/litespeed.png",
+    "checks": {
+        "tags": [],
+        "headers": [
+            {
+                "header": "Server",
+                "value": "LiteSpeed"
+            }
+        ]
+    }
+}

@@ -1,5 +1,6 @@
 {
     "name": "unpkg",
+    "description": "unpkg is a fast and reliable content delivery network (CDN) for serving JavaScript, CSS, and other web development assets directly from the npm (Node Package Manager) registry.",
     "icon": "/icon/unpkg.png",
     "checks": {
         "tags": [

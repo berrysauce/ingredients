@@ -1,5 +1,6 @@
 {
     "name": "Apollo",
+    "description": "Apollo is a popular open-source GraphQL client library that makes it easy to interact with GraphQL APIs.",
     "icon": "/icon/apollo.png",
     "checks": {
         "tags": [

@@ -1,5 +1,6 @@
 {
     "name": "Crisp Chat",
+    "description": "Crisp is a cloud-based chat solution that helps businesses provide customer support through live chat.",
     "icon": "/icon/crisp-chat.png",
     "checks": {
         "tags": [

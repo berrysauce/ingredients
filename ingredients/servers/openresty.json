@@ -1,5 +1,6 @@
 {
     "name": "OpenResty",
+    "description": "OpenResty® is a full-fledged web platform that integrates an enhanced version of the Nginx core, LuaJIT, Lua libraries, lots of high quality 3rd-party Nginx modules, and most of their external dependencies.",
     "icon": "/icon/openresty.png",
     "checks": {
         "tags": [],

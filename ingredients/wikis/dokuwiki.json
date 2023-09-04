@@ -1,5 +1,6 @@
 {
     "name": "DokuWiki",
+    "description": "DokuWiki is a wiki software written in PHP.",
     "icon": "/icon/dokuwiki.png",
     "checks": {
         "tags": [

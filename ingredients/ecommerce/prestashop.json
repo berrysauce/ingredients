@@ -1,5 +1,6 @@
 {
     "name": "PrestaShop",
+    "description": "PrestaShop is an open-source e-commerce platform that enables businesses to create and manage online stores and sell products or services online.",
     "icon": "/icon/prestashop.png",
     "checks": {
         "tags": [

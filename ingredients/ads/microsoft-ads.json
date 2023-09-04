@@ -1,5 +1,6 @@
 {
     "name": "Microsoft Ads",
+    "description": "Microsoft Ads is an online advertising platform by Microsoft.",
     "icon": "/icon/microsoft-ads.png",
     "checks": {
         "tags": [

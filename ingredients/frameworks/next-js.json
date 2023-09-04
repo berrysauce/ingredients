@@ -1,5 +1,6 @@
 {
     "name": "Next.js",
+    "description": "Next.js is a React framework that gives you building blocks to create web applications.",
     "icon": "/icon/next-js.png",
     "checks": {
         "tags": [

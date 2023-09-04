@@ -1,5 +1,6 @@
 {
     "name": "OpenSearch",
+    "description": "The OpenSearch description format can be used to describe the web interface of a search engine. This allows a website to describe a search engine for itself, so that a browser or other client application can use that search engine.",
     "icon": "/icon/opensearch.png",
     "checks": {
         "tags": [

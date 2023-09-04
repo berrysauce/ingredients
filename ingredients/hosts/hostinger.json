@@ -1,5 +1,6 @@
 {
     "name": "Hostinger",
+    "description": "Hostinger is a popular web hosting provider that offers a variety of hosting plans, including shared hosting, VPS hosting, and dedicated hosting.",
     "icon": "/icon/hostinger.png",
     "checks": {
         "tags": [],

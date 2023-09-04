@@ -1,5 +1,6 @@
 {
     "name": "Jekyll",
+    "description": "Jekyll is a static site generator that converts plain text files into HTML pages.",
     "icon": "/icon/jekyll.png",
     "checks": {
         "tags": [

@@ -1,5 +1,6 @@
 {
-    "name": "Fontawesome",
+    "name": "Font Awesome",
+    "description": "Font Awesome is the Internet's icon library and toolkit, used by millions of designers, developers, and content creators.",
     "icon": "/icon/fontawesome.png",
     "checks": {
         "tags": [

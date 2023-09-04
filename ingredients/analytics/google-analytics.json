@@ -1,5 +1,6 @@
 {
     "name": "Google Analytics",
+    "description": "Google Analytics is a comprehensive web analytics service offered by Google.",
     "icon": "/icon/google-analytics.png",
     "checks": {
         "tags": [

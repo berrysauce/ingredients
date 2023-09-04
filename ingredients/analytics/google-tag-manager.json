@@ -1,5 +1,6 @@
 {
     "name": "Google Tag Manager",
+    "description": "Google Tag Manager is a web-based tool by Google that allows website owners and marketers to manage and deploy various tracking codes and tags on their websites.",
     "icon": "/icon/google-tag-manager.png",
     "checks": {
         "tags": [
