@@ -1,0 +1,15 @@
+{
+    "name": "Memberful",
+    "description": "Memberful is a membership management platform that helps creators, publishers, and businesses sell memberships to their audience.",
+    "icon": "/icon/memberful.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "js.memberful.com/*.js"
+            }
+        ],
+        "headers": []
+    }
+}

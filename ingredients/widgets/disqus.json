@@ -1,0 +1,20 @@
+{
+    "name": "Disqus",
+    "description": "Disqus is a comment hosting service that allows website owners to add a commenting system to their websites.",
+    "icon": "/icon/disqus.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "disquscdn.com/*.js"
+            },
+            {
+                "tag": "script",
+                "attribute": null,
+                "value": "c.disquscdn.com"
+            }
+        ],
+        "headers": []
+    }
+}

@@ -8,6 +8,11 @@
                 "tag": "img",
                 "attribute": "src",
                 "value": "gravatar.com"
+            },
+            {
+                "tag": "link",
+                "attribute": "href",
+                "value": "s.gravatar.com"
             }
         ],
         "headers": []
