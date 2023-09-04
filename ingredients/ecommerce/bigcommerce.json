@@ -1,0 +1,25 @@
+{
+    "name": "BigCommerce",
+    "description": "BigCommerce is a cloud-based e-commerce platform that allows businesses of all sizes to create, launch, and manage their online stores.",
+    "icon": "/icon/bigcommerce.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "link",
+                "attribute": "href",
+                "value": "cdn*.bigcommerce.com"
+            },
+            {
+                "tag": "meta",
+                "attribute": "platform",
+                "value": "bigcommerce"
+            },
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "bigcommerce.com/*.js"
+            }
+        ],
+        "headers": []
+    }
+}

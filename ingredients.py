@@ -101,6 +101,12 @@ def scan(url):
                         if tag_check["value"] in tag.get("content"):
                             add_ingredient(category, ingredient)
                             
+                    # check for <meta name="platform" content="platform name"> tag
+                    # to enable this check, set the tag to "meta", the attribute to "platform"
+                    elif tag_check["tag"] == "meta" and tag.get("name") == "platform":
+                        if tag_check["value"] in tag.get("content"):
+                            add_ingredient(category, ingredient)
+                            
             # TODO: Check header capitalization
                             
             for header_check in ingredient_data["checks"]["headers"]:

@@ -1,0 +1,25 @@
+{
+    "name": "LiveChat",
+    "description": "LiveChat is a live chat software that helps businesses connect with their customers in real time.",
+    "icon": "/icon/livechat.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "livechatinc.com/*.js"
+            },
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "livechat.com/*.js"
+            },
+            {
+                "tag": "iframe",
+                "attribute": "src",
+                "value": "livechatinc.com"
+            }
+        ],
+        "headers": []
+    }
+}
