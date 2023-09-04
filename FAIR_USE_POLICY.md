@@ -1,5 +1,13 @@
 # Fair Use Policy
 
+### 0. Definition of "Commercial Use"
+The term "Commercial Use" is generally defined as any use of the service that is intended to generate revenue. This includes, but is not limited to:
+
+- Using the service to create a product or service that you sell
+- Using the service to generate advertising revenue
+- Using the service to collect data that you sell
+- Using the service to create a derivative work that you sell
+
 ### 1. Purpose of Fair Use Policy
 The Fair Use Policy (the "Policy") for Ingredients (ingredients.tech) (the "Website" or the "Service") outlines the terms and conditions under which users can access and utilize the website scanning service and API provided by Foerstal (the "Operator"). This Policy is designed to ensure fair and responsible use of the service while protecting the integrity of the Website and its resources.
 
