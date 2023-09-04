@@ -172,6 +172,17 @@
                         {/if}
                     {/each}
                 </div>
+
+                <!-- A little tip -->
+                <div style="margin-bottom: 32px;padding: 16px 22px;border: 1px solid rgb(206,207,208);border-radius: 10px;background: #fbfbfb;margin-top: 32px;">
+                    <h1 class="fs-6" style="font-weight: 600;margin-top: 6px;margin-bottom: 2px;"><svg class="icon icon-tabler icon-tabler-info-circle" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" style="font-size: 18px;margin-bottom: 4px;margin-right: 8px;">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <circle cx="12" cy="12" r="9"></circle>
+                            <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                            <polyline points="11 12 12 12 12 16 13 16"></polyline>
+                        </svg>A little tip</h1>
+                    <p style="color: rgba(33,37,41,0.5);font-size: 14px;margin-bottom: 0px;">Click on ingredients to reveal scan statistics and more details about them.</p>
+                </div>
             {/if}
 
             <footer>
