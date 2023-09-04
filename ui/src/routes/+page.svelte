@@ -119,7 +119,7 @@
                 </div>
             {/if}
 
-            {#if !loading && error == null}
+            {#if !loading && error == null && Object.keys(ingredients).length != 0}
                 <div class="row row-cols-2">
                     {#each Object.keys(categories) as category (category)}
                         {#if ingredients[category]}
@@ -174,14 +174,14 @@
                 </div>
 
                 <!-- A little tip -->
-                <div style="margin-bottom: 32px;padding: 16px 22px;border: 1px solid rgb(206,207,208);border-radius: 10px;background: #fbfbfb;margin-top: 32px;">
-                    <h1 class="fs-6" style="font-weight: 600;margin-top: 6px;margin-bottom: 2px;"><svg class="icon icon-tabler icon-tabler-info-circle" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" style="font-size: 18px;margin-bottom: 4px;margin-right: 8px;">
+                <div style="margin-bottom: 32px;padding: 16px 22px;border-radius: 10px;background: rgba(49,169,0,0.02);margin-top: 32px;border: 1px solid rgb(49,169,0);">
+                    <h1 class="fs-6" style="font-weight: 600;margin-top: 6px;margin-bottom: 4px;color: rgb(49,169,0);"><svg class="icon icon-tabler icon-tabler-bulb" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" style="font-size: 20px;margin-bottom: 3px;margin-right: 6px;">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <circle cx="12" cy="12" r="9"></circle>
-                            <line x1="12" y1="8" x2="12.01" y2="8"></line>
-                            <polyline points="11 12 12 12 12 16 13 16"></polyline>
-                        </svg>A little tip</h1>
-                    <p style="color: rgba(33,37,41,0.5);font-size: 14px;margin-bottom: 0px;">Click on ingredients to reveal scan statistics and more details about them.</p>
+                            <path d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7"></path>
+                            <path d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3"></path>
+                            <line x1="9.7" y1="17" x2="14.3" y2="17"></line>
+                        </svg>Tip</h1>
+                    <p style="color: rgb(49,169,0);font-size: 14px;margin-bottom: 0px;">Click on ingredients to reveal scan statistics and more details about them.</p>
                 </div>
             {/if}
 
