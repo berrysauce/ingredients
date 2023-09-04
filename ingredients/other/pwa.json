@@ -1,6 +1,6 @@
 {
     "name": "Progressive Web App",
-    "description": "A progressive web app (PWA) is a web app that uses modern web technologies to deliver an app-like experience to users.",
+    "description": "Websites which support Progressive Web App (PWA) use modern web technologies to deliver an app-like experience to users.",
     "icon": "/icon/pwa.png",
     "checks": {
         "tags": [

@@ -26,12 +26,13 @@ app = FastAPI(
 
 origins = [
     "https://ingredients.tech",
-    "https://.*\.ingredients\.tech"
+    "https://dev.ingredients.tech",
+    "https://cdn-api.ingredients.tech"
 ]
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origin_regex=origins,
+    allow_origins=origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -107,7 +108,7 @@ def get_scan(url: str, includeCategories: Optional[bool] = False):
                             "name": ingredient_data["name"],
                             "description": ingredient_data["description"],
                             "icon": ingredient_data["icon"],
-                            "match_percentage": round((db_ingredient["matching_scans"] / db_ingredient["total_scans"]) * 100, 1)
+                            "match_percentage": round(((db_ingredient["matching_scans"] + 1) / db_ingredient["total_scans"]) * 100, 1)
                         }
                     )
         
