@@ -15,9 +15,8 @@
         error = null;
 
         try {
-            // --- DEBUG
-            // let response = await fetch(`https://ingredients.tech/api/ingredients?url=${scanURL}&includeCategories=true`);
-            let response = await fetch(`https://dev.ingredients.tech/api/ingredients?url=${scanURL}&includeCategories=true`);
+            let response = await fetch(`https://ingredients.tech/api/ingredients?url=${scanURL}&includeCategories=true`);
+            // let response = await fetch(`https://dev.ingredients.tech/api/ingredients?url=${scanURL}&includeCategories=true`);
             let data = await response.json();
 
             if (!response.ok) {
@@ -51,7 +50,7 @@
         <div class="p-4 p-lg-5">
             <div style="margin-bottom: 64px;">
                 <h1 class="display-4" style="font-family: 'Inter Tight', sans-serif;font-weight: bold;margin-bottom: 8px;"> 🧪 Ingredients</h1>
-                <p style="color: rgba(33,37,41,0.5);">Ingredients is an open source tool, which can find out which technologies a website uses. Ingredients can be used right here, or in form of an API.</p>
+                <p style="color: rgba(33,37,41,0.5);">Ingredients is a website scanner that is able to determine the "ingredients" (or technologies) behind a website. Ingredients can be used right here, or in form of an API.</p>
             </div>
 
             <div id="form">
