@@ -1,5 +1,6 @@
 {
     "name": "WooCommerce",
+    "description": "WooCommerce is a widely-used e-commerce plugin for WordPress. It allows website owners to add e-commerce functionality to their WordPress websites, transforming them into online stores.",
     "icon": "/icon/woocommerce.png",
     "checks": {
         "tags": [

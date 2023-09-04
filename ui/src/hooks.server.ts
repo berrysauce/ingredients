@@ -3,7 +3,7 @@ import type { Handle } from "@sveltejs/kit";
 export const handle: Handle = async ({ resolve, event }) => {
 
   // Apply CORS header for API routes
-  if (event.url.hostname === "ingredients.tech" || event.url.hostname === "cdn-api.ingredients.tech") {
+  if (String(event.url.hostname).endsWith("ingredients.tech")) {
     // Required for CORS to work
     if(event.request.method === "OPTIONS") {
       return new Response(null, {
@@ -17,7 +17,7 @@ export const handle: Handle = async ({ resolve, event }) => {
   }
 
   const response = await resolve(event);
-  if (event.url.hostname === "ingredients.tech" || event.url.hostname === "cdn-api.ingredients.tech") {
+  if (String(event.url.hostname).endsWith("ingredients.tech")) {
         response.headers.append("Access-Control-Allow-Origin", `*`);
   }
   return response;

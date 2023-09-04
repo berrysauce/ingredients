@@ -1,5 +1,6 @@
 {
     "name": "Paddle",
+    "description": "Paddle is a global payments platform that helps businesses accept payments online and in-app. It is a merchant of record, which means that it takes responsibility for all aspects of payments processing.",
     "icon": "/icon/paddle.png",
     "checks": {
         "tags": [

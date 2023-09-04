@@ -1,5 +1,6 @@
 {
     "name": "Fathom Analytics",
+    "description": "Fathom Analytics is a privacy-focused web analytics service that provides website owners with insights into their site's performance and visitor behavior.",
     "icon": "/icon/fathom.png",
     "checks": {
         "tags": [

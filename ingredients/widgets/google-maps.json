@@ -1,5 +1,6 @@
 {
     "name": "Google Maps",
+    "description": "Google Maps is an interactive map that can be embedded on a website or in an application. It can be used to display a map of a specific location, or to allow users to search for and explore locations.",
     "icon": "/icon/google-maps.png",
     "checks": {
         "tags": [

@@ -1,5 +1,6 @@
 {
     "name": "Webflow",
+    "description": "Webflow is a web design and development platform that allows users to create and publish responsive websites visually, without needing to write code.",
     "icon": "/icon/webflow.png",
     "checks": {
         "tags": [

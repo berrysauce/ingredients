@@ -1,5 +1,6 @@
 {
     "name": "Google Fonts",
+    "description": "Google Fonts is a free and open-source library of web fonts provided by Google.",
     "icon": "/icon/google-fonts.png",
     "checks": {
         "tags": [

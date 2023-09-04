@@ -1,5 +1,6 @@
 {
     "name": "Deta",
+    "description": "Deta is a cloud computing platform that offers a variety of services, including compute, storage, and databases.",
     "icon": "/icon/deta.png",
     "checks": {
         "tags": [],

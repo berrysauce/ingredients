@@ -1,5 +1,6 @@
 {
     "name": "Cloudflare CDN",
+    "description": "Cloudflare CDN, offered by Cloudflare, is a content delivery network (CDN) service that helps optimize the delivery of web content and applications.",
     "icon": "/icon/cloudflare-cdn.png",
     "checks": {
         "tags": [

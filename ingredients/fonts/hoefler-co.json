@@ -1,5 +1,6 @@
 {
     "name": "Hoefler&Co",
+    "description": "typography.com by Hoefler&Co is a webfont library. With over 1,500 fonts designed for print, web, office and mobile fonts by Hoefler&Co are everywhere.",
     "icon": "/icon/hoefler-co.png",
     "checks": {
         "tags": [

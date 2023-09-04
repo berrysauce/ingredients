@@ -1,5 +1,6 @@
 {
     "name": "Cloudflare Turnstile",
+    "description": "Cloudflare Turnstile is a free CAPTCHA solution that can tell real users apart from bots. It can be used to secure website forms or signups/logins.",
     "icon": "/icon/cloudflare-turnstile.png",
     "checks": {
         "tags": [

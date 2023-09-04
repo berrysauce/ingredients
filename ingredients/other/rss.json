@@ -1,5 +1,6 @@
 {
     "name": "RSS",
+    "description": "RSS stands for Really Simple Syndication. It is a format for delivering regularly updated content, such as news headlines or blog posts, to subscribers.",
     "icon": "/icon/rss.png",
     "checks": {
         "tags": [

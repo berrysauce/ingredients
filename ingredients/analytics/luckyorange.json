@@ -1,5 +1,6 @@
 {
     "name": "Lucky Orange",
+    "description": "Lucky Orange is a web analytics and user behavior tracking tool that provides website owners with real-time insights into how visitors interact with their sites.",
     "icon": "/icon/luckyorange.png",
     "checks": {
         "tags": [

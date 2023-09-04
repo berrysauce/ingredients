@@ -1,5 +1,6 @@
 {
     "name": "BuySellAds",
+    "description": "BuySellAds is an online advertising platform that connects advertisers with website owners and publishers to facilitate the buying and selling of online ad space.",
     "icon": "/icon/buysellads.png",
     "checks": {
         "tags": [

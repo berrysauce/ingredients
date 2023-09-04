@@ -1,6 +1,7 @@
 {
     "name": "Facebook Pixel",
-    "icon": "/icon/facebook-pixel.png",
+    "description": "Facebook Pixel is a tracking tool offered by Facebook (Meta) for advertisers.",
+    "icon": "/icon/facebook.png",
     "checks": {
         "tags": [
             {

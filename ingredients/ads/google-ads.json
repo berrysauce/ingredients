@@ -1,5 +1,6 @@
 {
     "name": "Google Ads",
+    "description": "Google Ads is an online advertising platform by Google.",
     "icon": "/icon/google-ads.png",
     "checks": {
         "tags": [

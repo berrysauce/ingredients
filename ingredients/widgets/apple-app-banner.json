@@ -1,5 +1,6 @@
 {
     "name": "Apple App Banner",
+    "description": "The Apple App Banner is a banner that appears at the top of a mobile website (on iOS and iPadOS) to encourage users to download the corresponding app from the App Store.",
     "icon": "/icon/apple-appstore.png",
     "checks": {
         "tags": [

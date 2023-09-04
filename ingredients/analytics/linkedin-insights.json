@@ -1,5 +1,6 @@
 {
     "name": "LinkedIn Insights",
+    "description": "The LinkedIn Insight Tag tracks user interactions and gathers data on your website's visitors who also have LinkedIn accounts.",
     "icon": "/icon/linkedin-insights.png",
     "checks": {
         "tags": [

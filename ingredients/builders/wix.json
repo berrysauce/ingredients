@@ -1,5 +1,6 @@
 {
     "name": "Wix",
+    "description": "Wix is a popular website builder that provides a user-friendly platform for creating and hosting websites.",
     "icon": "/icon/wix.png",
     "checks": {
         "tags": [

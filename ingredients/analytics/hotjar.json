@@ -1,5 +1,6 @@
 {
     "name": "Hotjar",
+    "description": "Hotjar is a website analytics and feedback tool which provides website owners and marketers with a range of features, including heatmaps and session recordings.",
     "icon": "/icon/hotjar.png",
     "checks": {
         "tags": [

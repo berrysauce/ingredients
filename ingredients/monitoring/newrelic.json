@@ -1,5 +1,6 @@
 {
     "name": "New Relic",
+    "description": "New Relic is a software platform that provides observability for software applications.  It helps developers and IT operations teams to monitor, troubleshoot, and optimize their applications.",
     "icon": "/icon/newrelic.png",
     "checks": {
         "tags": [

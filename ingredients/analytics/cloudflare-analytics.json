@@ -1,5 +1,6 @@
 {
     "name": "Cloudflare Analytics",
+    "description": "Cloudflare Analytics is a privacy-friendly web analytics service provided by Cloudflare.",
     "icon": "/icon/cloudflare-analytics.png",
     "checks": {
         "tags": [

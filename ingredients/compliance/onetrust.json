@@ -1,5 +1,6 @@
 {
     "name": "OneTrust",
+    "description": "OneTrust is a comprehensive privacy management and compliance platform used by organizations to navigate and adhere to various data privacy regulations.",
     "icon": "/icon/onetrust.png",
     "checks": {
         "tags": [

@@ -1,5 +1,6 @@
 {
     "name": "Amazon AWS S3",
+    "description": "Amazon Simple Storage Service (S3) is an object storage service that offers industry-leading scalability, availability, security, and performance.",
     "icon": "/icon/aws-s3.png",
     "checks": {
         "tags": [

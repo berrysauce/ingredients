@@ -1,5 +1,6 @@
 {
     "name": "Svelte(Kit)",
+    "description": "Svelte is a lightweight and efficient JavaScript framework with a compiler. SvelteKit is a meta-framework that builds on top of Svelte and provides features for production-ready web applications.",
     "icon": "/icon/svelte.png",
     "checks": {
         "tags": [

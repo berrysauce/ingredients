@@ -1,5 +1,6 @@
 {
     "name": "PostHog",
+    "description": "PostHog is an open-source product analytics platform that helps businesses track user behavior within their web applications.",
     "icon": "/icon/posthog.png",
     "checks": {
         "tags": [

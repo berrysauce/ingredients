@@ -1,5 +1,6 @@
 {
     "name": "Vimeo",
+    "description": "Vimeo is a free, customizable service that allows you to host videos and embed them on your website.",
     "icon": "/icon/vimeo.png",
     "checks": {
         "tags": [

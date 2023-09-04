@@ -1,5 +1,6 @@
 {
-    "name": "Helpscout",
+    "name": "Help Scout",
+    "description": "Help Scout is a cloud-based customer service platform that helps businesses provide customer support through email, live chat, and social media.",
     "icon": "/icon/helpscout.png",
     "checks": {
         "tags": [

@@ -1,0 +1,15 @@
+{
+    "name": "Instatus",
+    "description": "Instatus is a cloud-based status page platform that allows you to create and manage a status page for your website or service.",
+    "icon": "/icon/instatus.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "instatus.com/*/widget/script.js"
+            }
+        ],
+        "headers": []
+    }
+}

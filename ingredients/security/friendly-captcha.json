@@ -1,5 +1,6 @@
 {
     "name": "Friendly Captcha",
+    "description": "FriendlyCaptcha is a free, GDPR-compliant CAPTCHA solution that prevents spam and abuse of website forms, logins, and signins.",
     "icon": "/icon/friendly-captcha.png",
     "checks": {
         "tags": [

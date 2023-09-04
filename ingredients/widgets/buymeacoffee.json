@@ -1,5 +1,6 @@
 {
     "name": "Buy Me a Coffee",
+    "description": "Buy Me a Coffee is a platform that allows users to support their favorite creators with small, regular donations.",
     "icon": "/icon/buymeacoffee.png",
     "checks": {
         "tags": [

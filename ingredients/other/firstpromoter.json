@@ -1,5 +1,6 @@
 {
     "name": "FirstPromoter",
+    "description": "FirstPromoter is an all-in-one platform that helps companies track, manage, and optimize their referral and affiliate marketing programs.",
     "icon": "/icon/firstpromoter.png",
     "checks": {
         "tags": [

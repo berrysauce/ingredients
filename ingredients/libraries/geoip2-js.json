@@ -1,5 +1,6 @@
 {
-    "name": "GeoIP2",
+    "name": "Maxmind GeoIP2",
+    "description": "MaxMind GeoIP2 is a suite of databases and web services that provides geolocation data for IP addresses.",
     "icon": "/icon/maxmind.png",
     "checks": {
         "tags": [

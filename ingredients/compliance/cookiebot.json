@@ -1,5 +1,6 @@
 {
     "name": "CookieBot",
+    "description": "CookieBot is a popular website compliance and consent management platform that helps website owners and businesses ensure their websites are in compliance with data protection and privacy regulations.",
     "icon": "/icon/cookiebot.png",
     "checks": {
         "tags": [

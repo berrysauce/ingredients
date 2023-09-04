@@ -15,7 +15,9 @@
         error = null;
 
         try {
-            let response = await fetch(`https://ingredients.tech/api/ingredients?url=${scanURL}&includeCategories=true`);
+            // --- DEBUG
+            // let response = await fetch(`https://ingredients.tech/api/ingredients?url=${scanURL}&includeCategories=true`);
+            let response = await fetch(`https://dev.ingredients.tech/api/ingredients?url=${scanURL}&includeCategories=true`);
             let data = await response.json();
 
             if (!response.ok) {
@@ -125,11 +127,47 @@
                             <div class="col">
                                 <div style="border-width: 2px;border-top-style: solid;border-top-color: rgb(33,37,41);margin-bottom: 50px;">
                                     <h1 class="fs-5" style="font-weight: bold;margin-top: 6px;margin-bottom: 16px;">{ categories[category] }</h1>
+                                    
                                     <ul class="list-unstyled">
                                         {#each ingredients[category] as ingredient}
-                                            <li style="margin-bottom: 4px;font-weight: 500;"><img class="img-fluid" alt={ ingredient.name } src="https://cdn-api.ingredients.tech{ ingredient.icon }" width="24" height="24" style="height: 24px;padding: 3px;border-radius: 4px;margin-right: 8px;margin-bottom: 3px;border: 1px solid rgb(206,207,208) ;">{ ingredient.name }</li>
+                                            <!-- List item -->
+                                            <li onclick="openDetailModal('{ ingredient.id }-modal')" style="margin-bottom: 4px;font-weight: 500;"><img class="img-fluid" alt={ ingredient.name } src="https://cdn-api.ingredients.tech{ ingredient.icon }" width="24" height="24" style="height: 24px;padding: 3px;border-radius: 4px;margin-right: 8px;margin-bottom: 3px;border: 1px solid rgb(206,207,208) ;">{ ingredient.name }</li>
+                                        
+                                            <!-- Detail modal -->
+                                            <div id="{ ingredient.id }-modal" class="modal fade" role="dialog" tabindex="-1">
+                                                <div class="modal-dialog" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-body" style="padding: 32px 42px;border-style: none;">
+                                                            <h1 class="fs-5" style="font-weight: 600;margin-top: 6px;letter-spacing: -0.5px;color: rgb(33, 37, 41);margin-bottom: 10px;">
+                                                                <img class="img-fluid" alt={ ingredient.name } src="https://cdn-api.ingredients.tech{ ingredient.icon }" width="24" height="24" style="height: 26px;padding: 4px;border-radius: 4px;margin-right: 10px;margin-bottom: 4px;border: 1px solid rgb(206,207,208);width: 26px;" />
+                                                                { ingredient.name }
+                                                                <button class="btn-close float-end" type="button" data-bs-dismiss="modal" aria-label="Close" style="font-size: 12px;margin-top: 6px;"></button>
+                                                            </h1>
+                                                            <p style="color: rgba(33,37,41,0.5);margin-bottom: 32px;">
+                                                                { ingredient.description }
+                                                            </p>
+                                                            <div class="progress" style="height: 6px;border-radius: 50px;background: rgb(238,238,238);margin-bottom: 10px;">
+                                                                <div class="progress-bar" aria-valuenow="{ ingredient.match_percentage }" aria-valuemin="0" aria-valuemax="100" style="width: { ingredient.match_percentage }%;background-color: rgb(49, 169, 0);"><span class="visually-hidden">{ ingredient.match_percentage }%</span></div>
+                                                            </div>
+                                                            <p style="color: rgba(33,37,41,0.5);margin-bottom: 16px;"><span style="color: rgb(49,169,0);font-weight: 500;">{ ingredient.match_percentage }%</span> of scans use <span style="color: rgb(49,169,0);font-weight: 500;">{ ingredient.name }</span>.</p>
+                                                            <p style="color: rgba(33,37,41,0.5);margin-top: 32px;font-size: 12px;margin-bottom: 0px;padding-top: 6px;border-top: 1px solid rgba(33,37,41,0.2);"><span style="color: rgba(33, 37, 41, 0.3);">This data is based on the amount of scans that have been made since the ingredient has been added.</span></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         {/each}
                                     </ul>
+
+                                    <script>
+                                        function openDetailModal(id) {
+                                            var detailModal = new bootstrap.Modal(document.getElementById(id), {
+                                              keyboard: false
+                                            })
+                                            
+                                            detailModal.toggle()
+                                        }
+                                    </script>
+
                                 </div>
                             </div>
                         {/if}

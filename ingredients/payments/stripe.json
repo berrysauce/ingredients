@@ -1,5 +1,6 @@
 {
     "name": "Stripe",
+    "description": "Stripe is a payment processing platform that allows businesses to accept payments online and in-app.",
     "icon": "/icon/stripe.png",
     "checks": {
         "tags": [

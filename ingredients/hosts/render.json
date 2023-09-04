@@ -1,5 +1,6 @@
 {
     "name": "Render",
+    "description": "Render is a cloud-based platform that helps you build, deploy, and scale web applications.",
     "icon": "/icon/render.png",
     "checks": {
         "tags": [],

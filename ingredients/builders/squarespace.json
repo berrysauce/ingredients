@@ -1,5 +1,6 @@
 {
     "name": "Squarespace",
+    "description": "Squarespace is a website building and hosting platform that enables users to create and manage websites and online stores without requiring extensive technical expertise.",
     "icon": "/icon/squarespace.png",
     "checks": {
         "tags": [

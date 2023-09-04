@@ -1,5 +1,6 @@
 {
     "name": "Amazon AWS CloudFront",
+    "description": "AWS CloudFront is a content delivery network (CDN) service provided by Amazon Web Services (AWS) which is designed to accelerate the delivery of web content.",
     "icon": "/icon/aws-cloudfront.png",
     "checks": {
         "tags": [

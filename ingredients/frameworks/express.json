@@ -1,5 +1,6 @@
 {
     "name": "Express",
+    "description": "Express is a popular web framework for Node.js. It is a minimal framework that provides a set of essential features for building web applications.",
     "icon": "/icon/express.png",
     "checks": {
         "tags": [],

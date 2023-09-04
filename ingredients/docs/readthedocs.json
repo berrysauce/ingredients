@@ -1,5 +1,6 @@
 {
     "name": "Read the Docs",
+    "description": "Read the Docs is an open-source platform that automates the process of building, hosting, and serving documentation for software projects.",
     "icon": "/icon/readthedocs.png",
     "checks": {
         "tags": [

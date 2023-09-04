@@ -1,5 +1,6 @@
 {
-    "name": "Google Cloud",
+    "name": "Google Cloud Platform",
+    "description": "Google Cloud Platform (GCP) is a suite of cloud computing services that runs on the same infrastructure that Google uses for its end-user products.",
     "icon": "/icon/google-cloud.png",
     "checks": {
         "tags": [],

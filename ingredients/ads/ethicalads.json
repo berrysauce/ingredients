@@ -1,5 +1,6 @@
 {
     "name": "EthicalAds",
+    "description": "EthicalAds is an advertising network that focuses on serving privacy-respecting and ethical ads.",
     "icon": "/icon/ethicalads.png",
     "checks": {
         "tags": [

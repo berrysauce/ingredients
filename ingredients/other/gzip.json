@@ -1,5 +1,6 @@
 {
     "name": "Gzip",
+    "description": "Gzip compression is a lossless data compression algorithm that is used to reduce the size of files.",
     "icon": "/icon/zip.png",
     "checks": {
         "tags": [],

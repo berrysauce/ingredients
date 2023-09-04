@@ -1,5 +1,6 @@
 {
     "name": "HTTP/3",
+    "description": "HTTP/3 is the third major version of the Hypertext Transfer Protocol (HTTP), the foundation of data communication for the World Wide Web. It is a successor to HTTP/2 and uses the QUIC protocol, which is a multiplexed, secure, and connection-oriented transport protocol.",
     "icon": "/icon/http3.png",
     "checks": {
         "tags": [],

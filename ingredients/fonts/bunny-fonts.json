@@ -1,5 +1,6 @@
 {
     "name": "Bunny Fonts",
+    "description": "Bunny Fonts is a free and open-source library of web fonts provided by Bunny.net.",
     "icon": "/icon/bunny.png",
     "checks": {
         "tags": [

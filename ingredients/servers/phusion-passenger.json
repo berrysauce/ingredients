@@ -1,5 +1,6 @@
 {
     "name": "Phusion Passenger",
+    "description": "Phusion Passenger is a web application server and a web server module for Apache and Nginx.",
     "icon": "/icon/phusion-passenger.png",
     "checks": {
         "tags": [],

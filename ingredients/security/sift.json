@@ -1,5 +1,6 @@
 {
     "name": "Sift",
+    "description": "Sift is a fraud detection and prevention platform that helps businesses protect themselves from fraud, abuse, and other risks.",
     "icon": "/icon/sift.png",
     "checks": {
         "tags": [

@@ -1,5 +1,6 @@
 {
     "name": "TikTok Pixel",
+    "description": "TikTok Pixel is a tracking tool offered by TikTok for advertisers.",
     "icon": "/icon/tiktok-pixel.png",
     "checks": {
         "tags": [

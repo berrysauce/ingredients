@@ -1,5 +1,6 @@
 {
     "name": "Trustpilot",
+    "description": "Trustpilot provides online reviews and ratings of businesses by customers. Their widget makes it easy to display reviews a website.",
     "icon": "/icon/trustpilot.png",
     "checks": {
         "tags": [

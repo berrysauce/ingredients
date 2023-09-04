@@ -1,5 +1,6 @@
 {
     "name": "Segment",
+    "description": "Segment is a customer data platform (CDP) that allows businesses to collect, manage, and utilize customer data from various sources.",
     "icon": "/icon/segment.png",
     "checks": {
         "tags": [

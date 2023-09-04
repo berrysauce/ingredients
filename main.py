@@ -1,6 +1,7 @@
 import json
 import httpx
 import uvicorn
+from deta import Deta
 from typing import Optional
 from fastapi import FastAPI, Response, status, HTTPException
 from fastapi.responses import JSONResponse, HTMLResponse, FileResponse
@@ -11,6 +12,11 @@ from urllib.parse import urlparse
 import ingredients
 
 
+deta = Deta()
+
+db = deta.Base("ingredients-stats")
+cache_db = deta.Base("ingredients-cache")
+
 app = FastAPI(
     title="Ingredients – API",
     license_info="https://github.com/berrysauce/ingredients/blob/main/LICENSE.md",
@@ -19,13 +25,13 @@ app = FastAPI(
 )
 
 origins = [
-    "*.berrysauce.me",
-    "*.ingredients.tech"
+    "https://ingredients.tech",
+    "https://.*\.ingredients\.tech"
 ]
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,
+    allow_origin_regex=origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -39,24 +45,94 @@ def get_root():
 
 
 @app.get("/ingredients", response_class=JSONResponse)
-def get_scan(url: str, response: Response, includeCategories: Optional[bool] = False):
+def get_scan(url: str, includeCategories: Optional[bool] = False):
     
     # Parse URL and remove port, query, and fragment
     r = urlparse(url)
     parsed_url = r.scheme + "://" + r.netloc.split(":")[0] + r.path
     
+    # ----- CACHE -----
+    # request data from cache
+    try:
+        cache_data = cache_db.get(key=url)
+        if cache_data != None:
+            return cache_data
+    except Exception:
+        # Deta hasn't defined a specific exception for this error
+        # just ignore it
+        pass
+    # -----------------
+    
     try:        
         data = ingredients.scan(parsed_url)
+        
+        matching_ingredients = data
+        matching_categories = []
+        return_data = {
+            "url": url,
+            "matching_ingredients": len(matching_ingredients),
+            "matches": {}
+        }
+        
+        for ingredient in matching_ingredients:
+            if ingredient.split("/")[0] not in matching_categories:
+                matching_categories.append(ingredient.split("/")[0])
+                return_data["matches"][ingredient.split("/")[0]] = []
+                
+        for category in matching_categories:
+            for ingredient in matching_ingredients:
+                if ingredient.split("/")[0] == category:
+                    with open(f"ingredients/{ingredient}", "r") as f:
+                        ingredient_data = json.loads(f.read())
+                        
+                    ingredient_name = ingredient.split("/")[1].replace(".json", "")
+                        
+                    # ----- STATS -----
+                    # increment matching scans for each ingredient
+                    db_ingredient = db.get(ingredient_name)
+                    
+                    try:
+                        db.update(key=ingredient_name, updates={
+                            "matching_scans": int(db_ingredient["matching_scans"]) + 1
+                        })
+                    except Exception:
+                        # Deta hasn't defined a specific exception for this error
+                        # just ignore it
+                        pass
+                    # -----------------
+                    
+                    return_data["matches"][ingredient.split("/")[0]].append(
+                        {
+                            "id": ingredient_name,
+                            "name": ingredient_data["name"],
+                            "description": ingredient_data["description"],
+                            "icon": ingredient_data["icon"],
+                            "match_percentage": round((db_ingredient["matching_scans"] / db_ingredient["total_scans"]) * 100, 1)
+                        }
+                    )
+        
         if includeCategories:
             with open("ingredients/categories.json", "r") as f:
-                data["categories"] = json.loads(f.read())
-        return data
+                return_data["categories"] = json.loads(f.read())
+        
+        # ----- CACHE -----
+        # add data to cache
+        # expiry: 15 minutes (900 seconds)
+        try:
+            cache_db.put(key=url, data=return_data, expire_in=900)
+        except Exception:
+            # Deta hasn't defined a specific exception for this error
+            # just ignore it
+            pass
+        # -----------------
+                
+        return return_data
     except httpx.InvalidURL as e:
         raise HTTPException(status_code=400, detail=str(e))
     except httpx.RequestError as e:
         raise HTTPException(status_code=400, detail=str(e))
     except:
-        raise HTTPException(status_code=500, detail="Unknown error")
+        raise HTTPException(status_code=500, detail=f"Unknown error")
         
         
 @app.get("/icon/{icon}")

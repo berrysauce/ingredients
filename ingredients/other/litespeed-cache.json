@@ -1,15 +1,12 @@
 {
     "name": "LiteSpeed Cache",
-    "icon": "/icon/litespeed-cache.png",
+    "description": "LiteSpeed Cache is a caching plugin for WordPress that can be used to improve the performance of your website.",
+    "icon": "/icon/litespeed.png",
     "checks": {
         "tags": [],
         "headers": [
             {
                 "header": "X-Turbo-Charged-By",
-                "value": "LiteSpeed"
-            },
-            {
-                "header": "Server",
                 "value": "LiteSpeed"
             }
         ]

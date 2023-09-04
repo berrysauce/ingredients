@@ -1,5 +1,6 @@
 {
     "name": "Joomla",
+    "description": "Joomla is an open-source content management system (CMS) used for building and managing websites and web applications.",
     "icon": "/icon/joomla.png",
     "checks": {
         "tags": [

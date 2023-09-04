@@ -1,5 +1,6 @@
 {
     "name": "Sodo Search",
+    "description": "Sodo Search is a search engine for Ghost, a headless CMS. It allows you to add a search bar to your Ghost site and search for content, pages, and posts.",
     "icon": "/icon/sodo-search.png",
     "checks": {
         "tags": [

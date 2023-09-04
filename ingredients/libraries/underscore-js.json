@@ -1,5 +1,6 @@
 {
     "name": "Underscore.js",
+    "description": "Underscore.js is a JavaScript library that provides a number of utility functions for common programming tasks.",
     "icon": "/icon/underscore-js.png",
     "checks": {
         "tags": [

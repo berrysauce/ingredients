@@ -1,5 +1,6 @@
 {
     "name": "Microsoft Clarity",
+    "description": "Microsoft Clarity is a web analytics tool that provides website owners with insights into user behavior on their websites.",
     "icon": "/icon/microsoft-clarity.png",
     "checks": {
         "tags": [

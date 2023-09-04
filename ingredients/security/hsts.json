@@ -1,5 +1,6 @@
 {
     "name": "HSTS",
+    "description": "HSTS (HTTP Strict Transport Security) is a security mechanism that forces browsers to only connect to a website over HTTPS.",
     "icon": "/icon/hsts.png",
     "checks": {
         "tags": [],

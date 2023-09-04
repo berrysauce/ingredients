@@ -1,5 +1,6 @@
 {
-    "name": "Google Sign-In",
+    "name": "Sign in with Google",
+    "description": "Sign in with Google allows users to sign in to third-party apps and websites using their Google account.",
     "icon": "/icon/google-signin.png",
     "checks": {
         "tags": [
