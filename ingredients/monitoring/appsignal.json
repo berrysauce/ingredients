@@ -1,0 +1,25 @@
+{
+    "name": "AppSignal",
+    "description": "AppSignal is an application performance monitoring (APM) tool which provides a comprehensive view of an application's health, including errors and performance.",
+    "icon": "/icon/appsignal.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": null,
+                "value": "new Appsignal({*})"
+            },
+            {
+                "tag": "script",
+                "attribute": null,
+                "value": "@appsignal/javascript"
+            },
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "@appsignal/javascript"
+            }
+        ],
+        "headers": []
+    }
+}
