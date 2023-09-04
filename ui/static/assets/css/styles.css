@@ -6,10 +6,6 @@
   --bs-progress-bar-bg: rgb(49,169,0);
 }
 
-.btn:hover {
-  background-color: #f4f4f4!important;
-}
-
 .modal {
   --bs-modal-border-radius: 10px!important;
   --bs-modal-border-color: none;
