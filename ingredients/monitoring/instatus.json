@@ -7,7 +7,12 @@
             {
                 "tag": "script",
                 "attribute": "src",
-                "value": "instatus.com/*/widget/script.js"
+                "value": "instatus.com/*widget/*.js"
+            },
+            {
+                "tag": "iframe",
+                "attribute": "src",
+                "value": "instatus.com/embed-status"
             }
         ],
         "headers": []
