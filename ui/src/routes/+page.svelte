@@ -174,7 +174,7 @@
                 </div>
 
                 <!-- A little tip -->
-                <div style="margin-bottom: 32px;margin-top: 32px;padding-left: 16px;border-left: 2px solid rgb(49,169,0);">
+                <div style="margin-bottom: 32px;padding-left: 16px;border-left: 2px solid rgb(49,169,0);">
                     <h1 class="fs-6" style="font-weight: 600;margin-top: 6px;margin-bottom: 4px;color: rgb(49,169,0);">
                         <svg class="icon icon-tabler icon-tabler-bulb" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" style="font-size: 20px;margin-bottom: 3px;margin-right: 6px;">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
