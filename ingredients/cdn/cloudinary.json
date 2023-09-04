@@ -1,0 +1,20 @@
+{
+    "name": "Cloudinary",
+    "description": "Cloudinary is a cloud-based content delivery network that helps to deliver your media assets, such as images, videos, and files, with high performance and low latency.",
+    "icon": "/icon/cloudinary.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "link",
+                "attribute": "href",
+                "value": "res.cloudinary.com"
+            },
+            {
+                "tag": "img",
+                "attribute": "src",
+                "value": "res.cloudinary.com"
+            }
+        ],
+        "headers": []
+    }
+}

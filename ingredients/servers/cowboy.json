@@ -1,0 +1,14 @@
+{
+    "name": "Cowboy",
+    "description": "Cowboy is a small, fast, and modular HTTP server written in Erlang.",
+    "icon": "/icon/cowboy.png",
+    "checks": {
+        "tags": [],
+        "headers": [
+            {
+                "header": "Server",
+                "value": "Cowboy"
+            }
+        ]
+    }
+}

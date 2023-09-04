@@ -1,0 +1,15 @@
+{
+    "name": "Web Monetization",
+    "description": "Web Monetization is a new way to pay for online content that uses a micropayment system based on the Interledger Protocol.",
+    "icon": "/icon/web-monetization.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "meta",
+                "attribute": "name",
+                "value": "monetization"
+            }
+        ],
+        "headers": []
+    }
+}
