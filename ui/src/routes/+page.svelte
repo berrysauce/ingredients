@@ -191,7 +191,7 @@
             <footer>
                 <hr style="margin-top: 64px;margin-bottom: 16px;">
                 <p style="color: rgba(33,37,41,0.5);font-size: 12px;font-weight: 500;">Copyright © { year } berrysauce</p>
-                <p style="color: rgba(33,37,41,0.5);font-size: 12px;">Usage of&nbsp;Ingredients is permitted under it's&nbsp;<a href="https://github.com/berrysauce/ingredients/blob/main/FAIR_USE_POLICY.md" style="color: inherit;">Fair-use-Policy</a>. Traffic which does not comply with this policy or the <a href="https://berrysauce.me/terms" style="color: inherit;">Terms of Service</a>&nbsp;will be blocked.&nbsp;<a href="https://github.com/berrysauce/ingredients/blob/main/LICENSE.md" style="color:inherit;">View the license for this service here</a>.</p>
+                <p style="color: rgba(33,37,41,0.5);font-size: 12px;">Usage of&nbsp;Ingredients is permitted under its&nbsp;<a href="https://github.com/berrysauce/ingredients/blob/main/FAIR_USE_POLICY.md" style="color: inherit;">Fair-use-Policy</a>. Traffic which does not comply with this policy or the <a href="https://berrysauce.me/terms" style="color: inherit;">Terms of Service</a>&nbsp;will be blocked.&nbsp;<a href="https://github.com/berrysauce/ingredients/blob/main/LICENSE.md" style="color:inherit;">View the license for this service here</a>.</p>
                 <p style="color: rgba(33,37,41,0.5);font-size: 12px;"></p>
                 <p style="color: rgba(33,37,41,0.5);font-size: 12px;">No personal data is collected when using Ingredients (this website or its services).</p>
             </footer>
