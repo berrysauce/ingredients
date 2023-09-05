@@ -58,7 +58,7 @@ def get_scan(url: str, includeCategories: Optional[bool] = False):
         cache_data = cache_db.get(key=url)
         if cache_data != None:
             # move "other" to the end of the dict
-            cache_data["matches"]["other"] = cache_data["matches"].pop("other")
+            cache_data["other"] = cache_data.pop("other")
             return cache_data
     except Exception:
         # Deta hasn't defined a specific exception for this error
