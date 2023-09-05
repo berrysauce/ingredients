@@ -56,13 +56,10 @@ def get_scan(url: str, includeCategories: Optional[bool] = False):
     # request data from cache
     try:
         cache_data = cache_db.get(key=url)
-        try:
-            # move "other" to the end of the dict
-            cache_data["matches"]["other"] = cache_data["matches"].pop("other")
-        except NameError:
-            # "other" not in matches
-            pass
         if cache_data != None:
+            if cache_data["matches"].get("other"):
+                # move "other" to the end of the dict
+                cache_data["matches"]["other"] = cache_data["matches"].pop("other")
             return cache_data
     except Exception:
         # Deta hasn't defined a specific exception for this error
