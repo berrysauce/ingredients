@@ -57,8 +57,6 @@ def get_scan(url: str, includeCategories: Optional[bool] = False):
     try:
         cache_data = cache_db.get(key=url)
         if cache_data != None:
-            # move "other" to the end of the dict
-            cache_data["other"] = cache_data.pop("other")
             return cache_data
     except Exception:
         # Deta hasn't defined a specific exception for this error
@@ -122,7 +120,10 @@ def get_scan(url: str, includeCategories: Optional[bool] = False):
         # add data to cache
         # expiry: 15 minutes (900 seconds)
         try:
-            cache_db.put(key=url, data=return_data, expire_in=900)
+            # move "other" to the end of the dict
+            new_cache_data = return_data
+            new_cache_data["other"] = new_cache_data.pop("other")
+            cache_db.put(key=url, data=new_cache_data, expire_in=900)
         except Exception:
             # Deta hasn't defined a specific exception for this error
             # just ignore it
