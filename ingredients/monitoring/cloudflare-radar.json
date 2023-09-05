@@ -1,6 +1,6 @@
 {
     "name": "Cloudflare Radar",
-    "description": "Cloudflare Radar is a free tool that provides insights into global Internet traffic, attacks, and technology trends.",
+    "description": "Cloudflare Radar is a tool that provides insights into global Internet traffic, attacks, and technology trends.",
     "icon": "/icon/cloudflare-radar.png",
     "checks": {
         "tags": [
