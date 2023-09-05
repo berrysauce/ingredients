@@ -130,7 +130,7 @@
                                     <ul class="list-unstyled">
                                         {#each ingredients[category] as ingredient}
                                             <!-- List item -->
-                                            <li onclick="openDetailModal('{ ingredient.id }-modal')" style="margin-bottom: 4px;font-weight: 500;"><img class="img-fluid" alt={ ingredient.name } src="https://cdn-api.ingredients.tech{ ingredient.icon }" width="24" height="24" style="height: 24px;padding: 3px;border-radius: 4px;margin-right: 8px;margin-bottom: 3px;border: 1px solid rgb(206,207,208) ;">{ ingredient.name }</li>
+                                            <li onclick="openDetailModal('{ ingredient.id }-modal')" class="pointer" style="margin-bottom: 4px;font-weight: 500;"><img class="img-fluid" alt={ ingredient.name } src="https://cdn-api.ingredients.tech{ ingredient.icon }" width="24" height="24" style="height: 24px;padding: 3px;border-radius: 4px;margin-right: 8px;margin-bottom: 3px;border: 1px solid rgb(206,207,208) ;">{ ingredient.name }</li>
                                         
                                             <!-- Detail modal -->
                                             <div id="{ ingredient.id }-modal" class="modal fade" role="dialog" tabindex="-1">

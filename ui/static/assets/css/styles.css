@@ -11,3 +11,11 @@
   --bs-modal-border-color: none;
 }
 
+li.pointer {
+  cursor: pointer;
+}
+
+li.pointer:hover {
+  text-decoration: underline;
+  text-decoration-color: #ccc;
+}
