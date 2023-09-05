@@ -1,0 +1,15 @@
+{
+    "name": "Pingdom",
+    "description": "Pingdom is a website monitoring service that helps businesses ensure the uptime and performance of their websites.",
+    "icon": "/icon/pingdom.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "pingdom.net/*.js"
+            }
+        ],
+        "headers": []
+    }
+}

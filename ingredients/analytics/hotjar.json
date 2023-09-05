@@ -13,6 +13,11 @@
                 "tag": "script",
                 "attribute": "id",
                 "value": "hotjar-init-script"
+            },
+            {
+                "tag": "script",
+                "attribute": null,
+                "value": "static.hotjar.com/*.js"
             }
         ],
         "headers": []
