@@ -18,6 +18,11 @@
                 "tag": "iframe",
                 "attribute": "src",
                 "value": "ko-fi.com"
+            },
+            {
+                "tag": "script",
+                "attribute": null,
+                "value": "kofiWidgetOverlay"
             }
         ],
         "headers": []
