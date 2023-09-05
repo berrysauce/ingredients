@@ -1,0 +1,15 @@
+{
+    "name": "Cove Chat",
+    "description": "Cove Chat is a comment plugin for Ghost blogs that allows website owners to add comments to their site.",
+    "icon": "/icon/cove-chat.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "cdn.cove.chat/*.js"
+            }
+        ],
+        "headers": []
+    }
+}
