@@ -7,7 +7,7 @@
             {
                 "tag": "script",
                 "attribute": "src",
-                "value": "static.hotjar.com"
+                "value": "static.hotjar.com/*.js"
             },
             {
                 "tag": "script",
