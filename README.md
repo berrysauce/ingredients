@@ -64,6 +64,8 @@ As you can also see, this JSON file mentions a path to an icon, which is used to
 
 ## ⚙️ How to add Ingredients
 
+> Before you contribute, please take a look at the [CONTRIBUTING.md](https://github.com/berrysauce/ingredients/blob/main/CONTRIBUTING.md) file
+
 To add an ingredient, create a JSON file in [ingredients/](https://github.com/berrysauce/ingredients/tree/main/ingredients) folder inside a fitting category-folder and add its icon (size 32x32 pixels, PNG format) in the [icons/](https://github.com/berrysauce/ingredients/tree/main/icons) folder.
 
 When defining an ingredient, follow this template:
