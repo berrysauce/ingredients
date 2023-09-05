@@ -38,11 +38,11 @@
     </script>
 		%sveltekit.head%
     </head>
-    <body data-sveltekit-preload-data="hover" style="font-family: Inter, sans-serif;"></body>
+    <body data-sveltekit-preload-data="hover" style="font-family: Inter, sans-serif; font-display: swap;"></body>
 		<div style="display: contents">%sveltekit.body%</div>
 	</body>
     <!-- Ko-fi Widget -->
-    <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+    <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js' async></script>
     <script>
     kofiWidgetOverlay.draw('berrysauce', {
         'type': 'floating-chat',
