@@ -13,6 +13,11 @@
                 "tag": "script",
                 "attribute": "src",
                 "value": "js.hs-scripts.com/*.js"
+            },
+            {
+                "tag": "link",
+                "attribute": "href",
+                "value": "js.hs-analytics.net"
             }
         ],
         "headers": []

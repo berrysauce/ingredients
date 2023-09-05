@@ -1,0 +1,20 @@
+{
+    "name": "Snowplow Analytics",
+    "description": "Snowplow Analytics is an open-source event-level analytics platform that enables data collection from multiple platforms for advanced data analytics.",
+    "icon": "/icon/snowplow.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": null,
+                "value": "GlobalSnowplowNamespace"
+            },
+            {
+                "tag": "script",
+                "attribute": null,
+                "value": "@snowplow/javascript-tracker"
+            }
+        ],
+        "headers": []
+    }
+}

@@ -5,9 +5,14 @@
     "checks": {
         "tags": [
             {
-                "tag": "script",
-                "attribute": "src",
+                "tag": "link",
+                "attribute": "href",
                 "value": "use.typekit.net"
+            },
+            {
+                "tag": "link",
+                "attribute": "href",
+                "value": "p.typekit.net"
             }
         ],
         "headers": []

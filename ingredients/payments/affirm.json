@@ -1,0 +1,15 @@
+{
+    "name": "Affirm",
+    "description": "Affirm is a payment solution that makes it easy for e-commerce merchants to offer payments in installment loans to customers.",
+    "icon": "/icon/affirm.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "affirm.com/js/*.js"
+            }
+        ],
+        "headers": []
+    }
+}
