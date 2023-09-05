@@ -3,8 +3,8 @@ import httpx
 import uvicorn
 from deta import Deta
 from typing import Optional
-from fastapi import FastAPI, Response, status, HTTPException
-from fastapi.responses import JSONResponse, HTMLResponse, FileResponse
+from fastapi import FastAPI, Response, HTTPException
+from fastapi.responses import JSONResponse, HTMLResponse, RedirectResponse
 from fastapi.middleware.cors import CORSMiddleware
 from urllib.parse import urlparse
 
@@ -43,6 +43,11 @@ app.add_middleware(
 def get_root():
     with open("pages/api.html", "r") as f:
         return HTMLResponse(content=f.read())
+    
+
+@app.get("/docs")
+def get_docs():
+    return RedirectResponse(url="https://github.com/berrysauce/ingredients", status_code=301)
 
 
 @app.get("/ingredients", response_class=JSONResponse)
