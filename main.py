@@ -47,7 +47,7 @@ def get_root():
 
 @app.get("/docs")
 def get_docs():
-    return RedirectResponse(url="https://github.com/berrysauce/ingredients", status_code=301)
+    return RedirectResponse(url="https://github.com/berrysauce/ingredients/blob/main/README.md#-using-the-api", status_code=301)
 
 
 @app.get("/ingredients", response_class=JSONResponse)
