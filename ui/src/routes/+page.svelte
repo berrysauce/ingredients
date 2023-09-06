@@ -172,21 +172,21 @@
                         {/if}
                     {/each}
                 </div>
-
-                <!-- A little tip -->
-                <div style="margin-bottom: 32px;padding-left: 16px;border-left: 2px solid rgb(49,169,0);">
-                    <h1 class="fs-6" style="font-weight: 600;margin-top: 6px;margin-bottom: 4px;color: rgb(49,169,0);">
-                        <svg class="icon icon-tabler icon-tabler-bulb" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" style="font-size: 20px;margin-bottom: 3px;margin-right: 6px;">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7"></path>
-                            <path d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3"></path>
-                            <line x1="9.7" y1="17" x2="14.3" y2="17"></line>
-                        </svg>
-                        Tip
-                    </h1>
-                    <p style="color: rgba(33,37,41,0.5);font-size: 14px;margin-bottom: 0px;">Click on ingredients to reveal scan statistics and more details about them.</p>
-                </div>
             {/if}
+
+            <!-- Supporting options -->
+            <div style="border-top: 1px solid rgb(206,207,208);padding-top: 16px;margin-top: 100px;margin-bottom: -60px;">
+                <div class="text-center d-xl-flex justify-content-xl-center">
+                    <!-- Ko-fi -->
+                    <a href="https://ko-fi.com/berrysauce" target="_blank">
+                        <img alt="Support me on Ko-fi" src="/assets/img/kofi-button.png" style="height: 45px;border: 1px solid rgb(217,225,236);border-radius: 10px;margin-bottom: 10px;" />
+                    </a>
+                    <!-- ProductHunt -->
+                    <a href="https://www.producthunt.com/posts/ingredients?utm_source=badge-featured&amp;utm_medium=badge&amp;utm_souce=badge-ingredients" target="_blank">
+                        <img alt="Find us on Product Hunt" src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=413274&amp;theme=neutral" style="width: 250px;height: 45px;" />
+                    </a>
+                </div>
+            </div>
 
             <footer>
                 <hr style="margin-top: 64px;margin-bottom: 16px;">
