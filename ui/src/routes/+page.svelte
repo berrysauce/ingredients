@@ -91,25 +91,27 @@
             </div>
 
             {#if loading}
-                <div id="loading">
+                <div id="loading" style="margin-bottom: 100px;">
                     <p class="text-center" style="font-weight: 500;margin-bottom: 50px;"><span class="spinner-border spinner-border-sm" role="status" style="margin-right: 10px;width: 22px;height: 22px;margin-bottom: -3px;color: rgb(49,169,0);"></span>Checking ingredients</p>
                 </div>
             {/if}
 
             {#if requested && !loading && Object.keys(ingredients).length == 0}
-                <p class="text-center" style="font-weight: 500;">
-                    <svg class="icon icon-tabler icon-tabler-alert-octagon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" style="color: rgb(242,113,58);font-size: 22px;margin-right: 10px;margin-bottom: 3px;">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                        <path d="M8.7 3h6.6c0.3 0 .5 .1 .7 .3l4.7 4.7c0.2 .2 .3 .4 .3 .7v6.6c0 .3 -.1 .5 -.3 .7l-4.7 4.7c-0.2 .2 -.4 .3 -.7 .3h-6.6c-0.3 0 -.5 -.1 -.7 -.3l-4.7 -4.7c-0.2 -.2 -.3 -.4 -.3 -.7v-6.6c0 -.3 .1 -.5 .3 -.7l4.7 -4.7c0.2 -.2 .4 -.3 .7 -.3z"></path>
-                        <line x1="12" y1="8" x2="12" y2="12"></line>
-                        <line x1="12" y1="16" x2="12.01" y2="16"></line>
-                    </svg>
-                    No ingredients found
-                </p>
+                <div style="margin-bottom: 100px;">
+                    <p class="text-center" style="font-weight: 500;">
+                        <svg class="icon icon-tabler icon-tabler-alert-octagon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" style="color: rgb(242,113,58);font-size: 22px;margin-right: 10px;margin-bottom: 3px;">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M8.7 3h6.6c0.3 0 .5 .1 .7 .3l4.7 4.7c0.2 .2 .3 .4 .3 .7v6.6c0 .3 -.1 .5 -.3 .7l-4.7 4.7c-0.2 .2 -.4 .3 -.7 .3h-6.6c-0.3 0 -.5 -.1 -.7 -.3l-4.7 -4.7c-0.2 -.2 -.3 -.4 -.3 -.7v-6.6c0 -.3 .1 -.5 .3 -.7l4.7 -4.7c0.2 -.2 .4 -.3 .7 -.3z"></path>
+                            <line x1="12" y1="8" x2="12" y2="12"></line>
+                            <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                        </svg>
+                        No ingredients found
+                    </p>
+                </div>
             {/if}
 
             {#if error != null}
-                <div>
+                <div style="margin-bottom: 100px;">
                     <p class="text-center" style="font-weight: 500;margin-bottom: 5px;"><svg class="icon icon-tabler icon-tabler-alert-triangle" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" style="color: rgb(204,45,35);font-size: 22px;margin-right: 10px;margin-bottom: 3px;">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                             <path d="M12 9v2m0 4v.01"></path>

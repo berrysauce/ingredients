@@ -4,6 +4,12 @@
   font-display: swap;
 }
 
+/* Remove Bootstrap's blue highlight border */
+.form-control {
+  outline: 0;
+  box-shadow: none;
+}
+
 .form-control::placeholder {
   color: rgba(33,37,41,0.3)!important;
 }
