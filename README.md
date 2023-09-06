@@ -58,6 +58,20 @@ In the JSON file, you can define the HTML tags and HTTP headers the script shoul
 
 As you can also see, this JSON file mentions a path to an icon, which is used to visualize the ingredient. Each favicon has a resolution of 32x32 pixels and is located inside the [icons/](https://github.com/berrysauce/ingredients/tree/main/icons) folder.
 
+<br>
+
+
+## 🤖 Using the API
+
+Ingredients has an API you can use. This API can be used to scan sites.
+
+> **Note**: The API has a set of CORS origins in place as of know, so might only work locally! This might change later.
+
+You can start a scan with one `GET` call. Just provide the URL you want to scan as a query parameter.
+
+```http
+GET  https://ingredients.tech/api/ingredients?url=https://example.com
+```
 
 <br>
 
