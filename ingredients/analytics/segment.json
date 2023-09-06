@@ -7,7 +7,7 @@
             {
                 "tag": "script",
                 "attribute": "src",
-                "value": "cdn.segment.com/analytics.js"
+                "value": "segment.com/*.js"
             }
         ],
         "headers": []

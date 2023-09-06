@@ -1,0 +1,14 @@
+{
+    "name": "Flywheel",
+    "description": "Flywheel is a managed WordPress hosting provider.",
+    "icon": "/icon/flywheel.png",
+    "checks": {
+        "tags": [],
+        "headers": [
+            {
+                "header": "X-Fw-Server",
+                "value": "Flywheel"
+            }
+        ]
+    }
+}

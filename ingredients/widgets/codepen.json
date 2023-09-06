@@ -1,0 +1,20 @@
+{
+    "name": "CodePen",
+    "description": "CodePen functions as an online code editor and open-source learning environment, where developers can create, test, and embed code snippets.",
+    "icon": "/icon/codepen.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "link",
+                "attribute": "href",
+                "value": "static.codepen.io"
+            },
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "codepen.io/*embed/*.js"
+            }
+        ],
+        "headers": []
+    }
+}

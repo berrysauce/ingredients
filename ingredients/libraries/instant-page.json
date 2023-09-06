@@ -1,0 +1,20 @@
+{
+    "name": "Instant.page",
+    "description": "Instant.page JS is a JavaScript library that can be used to improve the loading speed of your website.",
+    "icon": "/icon/instant-page.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "instant.page"
+            },
+            {
+                "tag": "a",
+                "attribute": "data-instant-preload",
+                "value": null
+            }
+        ],
+        "headers": []
+    }
+}

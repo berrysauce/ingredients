@@ -1,0 +1,25 @@
+{
+    "name": "Optimizely",
+    "description": "Optimizely is a digital experience platform (DXP) that offers businesses a variety of tools and features for A/B testing, personalization, and feature flags.",
+    "icon": "/icon/optimizely.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "link",
+                "attribute": "href",
+                "value": "cdn.optimizely.com/*.js"
+            },
+            {
+                "tag": "link",
+                "attribute": "href",
+                "value": "logx.optimizely.com"
+            },
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "cdn.optimizely.com/*.js"
+            }
+        ],
+        "headers": []
+    }
+}

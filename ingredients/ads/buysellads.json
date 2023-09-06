@@ -15,9 +15,14 @@
                 "value": "buysellads.net/ads"
             },
             {
-                "tag": "div",
-                "attribute": "id",
-                "value": "bsa-zone_"
+                "tag": "link",
+                "attribute": "href",
+                "value": "s3.buysellads.com"
+            },
+            {
+                "tag": "link",
+                "attribute": "href",
+                "value": "srv.buysellads.com"
             }
         ],
         "headers": []

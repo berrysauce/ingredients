@@ -1,0 +1,25 @@
+{
+    "name": "BugSnag",
+    "description": "BugSnag is an error monitoring and reporting tool that helps developers find and fix bugs in their applications.",
+    "icon": "/icon/bugsnag.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": null,
+                "value": "window.BUGSNAG"
+            },
+            {
+                "tag": "script",
+                "attribute": null,
+                "value": "@bugsnag"
+            },
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "@bugsnag"
+            }
+        ],
+        "headers": []
+    }
+}

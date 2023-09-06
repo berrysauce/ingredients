@@ -1,0 +1,15 @@
+{
+    "name": "Amazon Ads",
+    "description": "Amazon Ads is a suite of advertising products that help businesses reach Amazon customers on Amazon.com and other websites.",
+    "icon": "/icon/amazon.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": null,
+                "value": "amazon-adsystem.com/*.js"
+            }
+        ],
+        "headers": []
+    }
+}

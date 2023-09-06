@@ -13,6 +13,16 @@
                 "tag": "script",
                 "attribute": "src",
                 "value": "g.doubleclick.net/*.js"
+            },
+            {
+                "tag": "link",
+                "attribute": "href",
+                "value": "securepubads.g.doubleclick.net"
+            },
+            {
+                "tag": "link",
+                "attribute": "href",
+                "value": "stats.g.doubleclick.net"
             }
         ],
         "headers": []
