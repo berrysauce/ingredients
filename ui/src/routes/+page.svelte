@@ -56,7 +56,7 @@
             <div id="form">
                 <form on:submit|preventDefault={handleSubmit} style="margin-bottom: 32px;" method="get" enctype="application/x-www-form-urlencoded">
                     <div class="input-group" style="margin-bottom: -16px;">
-                        <input class="form-control ingredients-input" type="url" name="url" style="padding: 8px 16px;border-radius: 10px;background: rgba(255,255,255,0);border-top-right-radius: 0px;border-bottom-right-radius: 0px;font-weight: 500;border: 2px solid #212529 ;" placeholder="https://example.com" bind:value={scanURL} required >
+                        <input class="form-control ingredients-input" type="url" name="url" style="padding: 8px 16px;border-radius: 10px;background: rgba(255,255,255,0);border-top-right-radius: 0px;border-bottom-right-radius: 0px;font-weight: 500;border: 2px solid #212529 ;outline: 0!important;box-shadow: none!important;" placeholder="https://example.com" bind:value={scanURL} required >
                         <button class="btn btn-primary float-end" type="submit" style="border-radius: 10px;background: #212529;font-weight: 500;color: #ffffff;border-top-left-radius: 0px;border-bottom-left-radius: 0px;margin-left: -2px;padding: 8px 16px;border: 2px solid #212529;">
                             <svg class="icon icon-tabler icon-tabler-scan" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" style="font-size: 18px;margin-bottom: 3px;margin-right: 5px;">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
