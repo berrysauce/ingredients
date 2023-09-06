@@ -8,6 +8,11 @@
                 "tag": "script",
                 "attribute": "src",
                 "value": "segment.com/*.js"
+            },
+            {
+                "tag": "script",
+                "attribute": null,
+                "value": "segment.com/*.js"
             }
         ],
         "headers": []

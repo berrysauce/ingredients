@@ -1,0 +1,29 @@
+{
+    "name": "Medium",
+    "description": "Medium is an online publishing platform where writers can share their thoughts and ideas with the world.",
+    "icon": "/icon/medium.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "link",
+                "attribute": "href",
+                "value": "miro.medium.com"
+            },
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "cdn-client.medium.com/*.js"
+            }
+        ],
+        "headers": [
+            {
+                "header": "Medium-Fulfilled-By",
+                "value": null
+            },
+            {
+                "header": "Medium-Missing-Time",
+                "value": null
+            }
+        ]
+    }
+}

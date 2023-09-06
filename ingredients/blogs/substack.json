@@ -1,0 +1,25 @@
+{
+    "name": "Substack",
+    "description": "Substack is a newsletter publishing platform that allows writers to create and publish newsletters that readers can subscribe to.",
+    "icon": "/icon/substack.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "link",
+                "attribute": "href",
+                "value": "substackcdn.com"
+            },
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "substackcdn.com/*.js"
+            }
+        ],
+        "headers": [
+            {
+                "header": "X-Served-By",
+                "value": "Substack"
+            }
+        ]
+    }
+}
