@@ -1,3 +1,9 @@
+/* Improves PageSpeed results */
+/* with this, text remains visible during webfont load */
+@font-face {
+  font-display: swap;
+}
+
 .form-control::placeholder {
   color: rgba(33,37,41,0.3)!important;
 }
@@ -11,6 +17,7 @@
   --bs-modal-border-color: none;
 }
 
+/* Ingredient styling */
 li.pointer {
   cursor: pointer;
 }

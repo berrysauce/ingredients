@@ -175,15 +175,15 @@
             {/if}
 
             <!-- Supporting options -->
-            <div style="border-top: 1px solid rgb(206,207,208);padding-top: 16px;margin-top: 100px;margin-bottom: -60px;">
+            <div style="border-top: 1px solid rgb(206,207,208);padding-top: 16px;margin-bottom: -60px;">
                 <div class="text-center d-xl-flex justify-content-xl-center">
                     <!-- Ko-fi -->
                     <a href="https://ko-fi.com/berrysauce" target="_blank">
-                        <img alt="Support me on Ko-fi" src="/assets/img/kofi-button.png" style="height: 45px;border: 1px solid rgb(217,225,236);border-radius: 10px;margin-bottom: 10px;" />
+                        <img alt="Support me on Ko-fi" src="/assets/img/kofi-button.png" style="height: 45px;border: 1px solid rgb(217,225,236);border-radius: 10px;margin-bottom: 10px;" width="160" height="45" />
                     </a>
                     <!-- ProductHunt -->
                     <a href="https://www.producthunt.com/posts/ingredients?utm_source=badge-featured&amp;utm_medium=badge&amp;utm_souce=badge-ingredients" target="_blank">
-                        <img alt="Find us on Product Hunt" src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=413274&amp;theme=neutral" style="width: 250px;height: 45px;" />
+                        <img alt="Find us on Product Hunt" src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=413274&amp;theme=neutral" style="width: 250px;height: 45px;margin-bottom: 10px;" width="250" height="45" />
                     </a>
                 </div>
             </div>
