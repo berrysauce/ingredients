@@ -53,6 +53,11 @@ def get_docs():
 @app.get("/ingredients", response_class=JSONResponse)
 def get_scan(url: str, includeCategories: Optional[bool] = False):
     
+    # increase compatibility
+    if url[:4] != "http":
+        # muhahaha! HTTPS for the win!
+        url = "https://" + url
+    
     # Parse URL and remove port, query, and fragment
     r = urlparse(url)
     parsed_url = r.scheme + "://" + r.netloc.split(":")[0] + r.path
