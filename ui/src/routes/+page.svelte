@@ -15,8 +15,7 @@
         error = null;
 
         try {
-            let response = await fetch(`https://ingredients.tech/api/ingredients?url=${scanURL}&includeCategories=true`);
-            // let response = await fetch(`https://dev.ingredients.tech/api/ingredients?url=${scanURL}&includeCategories=true`);
+            let response = await fetch(`/api/ingredients?url=${scanURL}&includeCategories=true`);
             let data = await response.json();
 
             if (!response.ok) {

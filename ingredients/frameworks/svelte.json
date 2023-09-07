@@ -18,7 +18,7 @@
         "headers": [
             {
                 "header": "X-Sveltekit-Page",
-                "value": true
+                "value": null
             }
         ]
     }
