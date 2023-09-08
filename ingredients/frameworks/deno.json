@@ -1,0 +1,14 @@
+{
+    "name": "Deno",
+    "description": "Deno is a new JavaScript and TypeScript runtime that was created by Ryan Dahl, the original creator of Node.js. Deno is designed to be a more secure, reliable, and productive alternative to Node.js.",
+    "icon": "/icon/deno.png",
+    "checks": {
+        "tags": [],
+        "headers": [
+            {
+                "header": "Server",
+                "value": "deno"
+            }
+        ]
+    }
+}
