@@ -1,8 +1,8 @@
 <script lang="ts">
     let year = new Date().getFullYear();
 
-    let categories = {};
-    let ingredients = {};
+    let categories: any = {};
+    let ingredients: any = {};
 
     let scanURL: string = "";
     let loading: boolean = false;
