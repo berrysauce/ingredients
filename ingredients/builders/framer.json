@@ -1,0 +1,20 @@
+{
+    "name": "Framer",
+    "description": "Framer is an interactive design tool for websites and prototyping.",
+    "icon": "/icon/framer.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "meta",
+                "attribute": "generator",
+                "value": "Framer"
+            }
+        ],
+        "headers": [
+            {
+                "header": "Server",
+                "value": "Framer"
+            }
+        ]
+    }
+}
