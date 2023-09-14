@@ -65,7 +65,7 @@ As you can also see, this JSON file mentions a path to an icon, which is used to
 
 Ingredients has an API you can use. This API can be used to scan sites.
 
-> **Note**: The API has a set of CORS origins in place as of know, so might only work locally! This might change later.
+> **Note**: The API has a set of CORS origins in place as of now, so might only work locally! This might change later.
 
 You can start a scan with one `GET` call. Just provide the URL you want to scan as a query parameter.
 
