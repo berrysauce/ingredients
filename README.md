@@ -65,7 +65,8 @@ As you can also see, this JSON file mentions a path to an icon, which is used to
 
 Ingredients has an API you can use. This API can be used to scan sites.
 
-> **Note**: The API has a set of CORS origins in place as of now, so might only work locally! This might change later.
+> [!NOTE]  
+> The API has a set of CORS origins in place as of now, so might only work locally! This might change later.
 
 You can start a scan with one `GET` call. Just provide the URL you want to scan as a query parameter.
 
@@ -78,6 +79,7 @@ GET  https://ingredients.tech/api/ingredients?url=https://example.com
 
 ## ⚙️ How to add Ingredients
 
+> [!NOTE]  
 > Before you contribute, please take a look at the [CONTRIBUTING.md](https://github.com/berrysauce/ingredients/blob/main/CONTRIBUTING.md) file
 
 To add an ingredient, create a JSON file in [ingredients/](https://github.com/berrysauce/ingredients/tree/main/ingredients) folder inside a fitting category-folder and add its icon (size 32x32 pixels, `.png` format) in the [icons/](https://github.com/berrysauce/ingredients/tree/main/icons) folder.
