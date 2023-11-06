@@ -8,6 +8,11 @@
                 "tag": "div",
                 "attribute": "id",
                 "value": "clerk-components"
+            },
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "scdn.clerk.com"
             }
         ],
         "headers": []
