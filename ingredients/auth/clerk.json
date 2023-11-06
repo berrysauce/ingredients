@@ -1,0 +1,15 @@
+{
+    "name": "Clerk",
+    "description": "Drop-in authentication for React and React Native. Clerk offers a complete user management system complete with ready-to-go UI components.",
+    "icon": "/icon/clerk.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "div",
+                "attribute": "id",
+                "value": "clerk-components"
+            }
+        ],
+        "headers": []
+    }
+}
