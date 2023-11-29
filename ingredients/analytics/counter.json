@@ -1,0 +1,15 @@
+{
+    "name": "Counter",
+    "description": "Counter is an open-source privacy aware web analytics platform",
+    "icon": "/icon/counter.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "cdn.counter.dev/*.js"
+            }
+        ],
+        "headers": []
+    }
+}
