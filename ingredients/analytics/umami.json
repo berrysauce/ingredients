@@ -1,0 +1,15 @@
+{
+    "name": "Umami",
+    "description": "Umami is an open-source analytics platform to collect, analyze, and understand your web data",
+    "icon": "/icon/umami.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "analytics.umami.is/*.js"
+            }
+        ],
+        "headers": []
+    }
+}
