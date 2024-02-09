@@ -5,8 +5,8 @@
     "checks": {
         "tags": [
             {
-                "tag": "link",
-                "attribute": "href",
+                "tag": "script",
+                "attribute": "src",
                 "value": "/oneallsociallogin.js"
             }
         ],

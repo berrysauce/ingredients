@@ -10,8 +10,8 @@
                 "value": "PrestaShop"
             },
             {
-                "tag": "link",
-                "attribute": "href",
+                "tag": "script",
+                "attribute": "src",
                 "value": "/ps_shoppingcart/ps_shoppingcart.js"
             }
         ],
