@@ -1,0 +1,15 @@
+{
+    "name": "OneAll",
+    "description": "OneAll is a social login solution enables your users to sign into their accounts on your website or mobile app using their login details from networking sites.",
+    "icon": "/icon/oneall.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "/oneallsociallogin.js"
+            }
+        ],
+        "headers": []
+    }
+}
