@@ -8,6 +8,11 @@
                 "tag": "script",
                 "attribute": "src",
                 "value": "analytics.umami.is/*.js"
+            },
+            {
+                "tag": "script",
+                "attribute": null,
+                "value": "data-umami-event-*"
             }
         ],
         "headers": []
