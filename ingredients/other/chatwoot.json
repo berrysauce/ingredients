@@ -1,0 +1,20 @@
+{
+    "name": "Chatwoot",
+    "description": "Chatwoot gives you all the tools to manage conversations, build relationships and delight your customers from one place.",
+    "icon": "/icon/chatwoot.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "script",
+                "attribute": null,
+                "value": "window.chatwootSDK"
+            },
+            {
+                "tag": "div",
+                "attribute": "id",
+                "value": "woot-widget*"
+            }
+        ],
+        "headers": []
+    }
+}

@@ -13,7 +13,8 @@
                 "tag": "link",
                 "attribute": "href",
                 "value": "/ps_shoppingcart/ps_shoppingcart.js"
-            }     ],
+            }
+        ],
         "headers": [
             {
                 "header": "Powered-By",
