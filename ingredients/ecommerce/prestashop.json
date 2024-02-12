@@ -8,6 +8,11 @@
                 "tag": "meta",
                 "attribute": "generator",
                 "value": "PrestaShop"
+            },
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "/ps_shoppingcart/ps_shoppingcart.js"
             }
         ],
         "headers": [
