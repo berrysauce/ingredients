@@ -1,6 +1,6 @@
 {
     "name": "OneAll",
-    "description": "OneAll is a social login solution enables your users to sign into their accounts on your website or mobile app using their login details from networking sites.",
+    "description": "OneAll is a cloud-based service that helps you integrate and store user data from different social networks in a secure and GDPR-compliant environment.",
     "icon": "/icon/oneall.png",
     "checks": {
         "tags": [
@@ -8,6 +8,16 @@
                 "tag": "script",
                 "attribute": "src",
                 "value": "/oneallsociallogin.js"
+            },
+            {
+                "tag": "script",
+                "attribute": "src",
+                "value": "api.oneall.com/socialize/library*.js"
+            },
+            {
+                "tag": "link",
+                "attribute": "href",
+                "value": "secure.oneallcdn.com/css/lib"
             }
         ],
         "headers": []

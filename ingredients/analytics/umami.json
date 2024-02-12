@@ -10,9 +10,14 @@
                 "value": "analytics.umami.is/*.js"
             },
             {
-                "tag": "script",
-                "attribute": null,
-                "value": "data-umami-event-*"
+                "tag": "a",
+                "attribute": "data-umami-event",
+                "value": null
+            },
+            {
+                "tag": "button",
+                "attribute": "data-umami-event",
+                "value": null
             }
         ],
         "headers": []

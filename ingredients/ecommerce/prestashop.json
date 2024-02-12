@@ -12,7 +12,7 @@
             {
                 "tag": "script",
                 "attribute": "src",
-                "value": "/ps_shoppingcart/ps_shoppingcart.js"
+                "value": "/ps_shoppingcart/ps_shoppingcart*.js"
             }
         ],
         "headers": [
