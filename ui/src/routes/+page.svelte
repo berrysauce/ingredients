@@ -1,5 +1,9 @@
 <script lang="ts">
     let year = new Date().getFullYear();
+    let hostname = "ingredients.work";
+    if (typeof window !== "undefined") {
+        hostname = window.location.hostname;
+    }
 
     let categories: any = {};
     let ingredients: any = {};
@@ -132,7 +136,7 @@
                                     <ul class="list-unstyled">
                                         {#each ingredients[category] as ingredient}
                                             <!-- List item -->
-                                            <li onclick="openDetailModal('{ ingredient.id }-modal')" class="pointer" style="margin-bottom: 4px;font-weight: 500;"><img class="img-fluid" alt={ ingredient.name } src="https://cdn-api.{window.location.hostname}{ ingredient.icon }" width="24" height="24" style="height: 24px;padding: 3px;border-radius: 4px;margin-right: 8px;margin-bottom: 3px;border: 1px solid rgb(206,207,208) ;">{ ingredient.name }</li>
+                                            <li onclick="openDetailModal('{ ingredient.id }-modal')" class="pointer" style="margin-bottom: 4px;font-weight: 500;"><img class="img-fluid" alt={ ingredient.name } src="https://cdn-api.{ hostname }{ ingredient.icon }" width="24" height="24" style="height: 24px;padding: 3px;border-radius: 4px;margin-right: 8px;margin-bottom: 3px;border: 1px solid rgb(206,207,208) ;">{ ingredient.name }</li>
                                         
                                             <!-- Detail modal -->
                                             <div id="{ ingredient.id }-modal" class="modal fade" role="dialog" tabindex="-1">
@@ -140,7 +144,7 @@
                                                     <div class="modal-content">
                                                         <div class="modal-body" style="padding: 32px 42px;border-style: none;">
                                                             <h1 class="fs-5" style="font-weight: 600;margin-top: 6px;letter-spacing: -0.5px;color: rgb(33, 37, 41);margin-bottom: 10px;">
-                                                                <img class="img-fluid" alt={ ingredient.name } src="https://cdn-api.{window.location.hostname}{ ingredient.icon }" width="24" height="24" style="height: 26px;padding: 4px;border-radius: 4px;margin-right: 10px;margin-bottom: 4px;border: 1px solid rgb(206,207,208);width: 26px;" />
+                                                                <img class="img-fluid" alt={ ingredient.name } src="https://cdn-api.{ hostname }{ ingredient.icon }" width="24" height="24" style="height: 26px;padding: 4px;border-radius: 4px;margin-right: 10px;margin-bottom: 4px;border: 1px solid rgb(206,207,208);width: 26px;" />
                                                                 { ingredient.name }
                                                                 <button class="btn-close float-end" type="button" data-bs-dismiss="modal" aria-label="Close" style="font-size: 12px;margin-top: 6px;"></button>
                                                             </h1>
