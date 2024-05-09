@@ -27,7 +27,10 @@ app = FastAPI(
 origins = [
     "https://ingredients.tech",
     "https://dev.ingredients.tech",
-    "https://cdn-api.ingredients.tech"
+    "https://cdn-api.ingredients.tech",
+    "https://ingredients.work",
+    "https://dev.ingredients.work",
+    "https://cdn-api.ingredients.work"
 ]
 
 app.add_middleware(
