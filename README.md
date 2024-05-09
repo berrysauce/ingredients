@@ -5,6 +5,9 @@
 [![Deploy](https://github.com/berrysauce/ingredients/actions/workflows/deta.yml/badge.svg)](https://github.com/berrysauce/ingredients/actions/workflows/deta.yml)
 
 
+> [!IMPORTANT]
+> The domain for ingredients is being switched from "ingredients.tech" to "ingredients.work". Requests to the old domain will be redirected.
+
 Ingredients is a website scanner that is able to determine the "ingredients" (or technologies) behind a website.
 
 It helps users discover the various software, frameworks, content management systems, analytics tools, and other technologies that are used to build and maintain a particular website.
