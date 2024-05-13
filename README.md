@@ -74,7 +74,7 @@ Ingredients has an API you can use. This API can be used to scan sites.
 You can start a scan with one `GET` call. Just provide the URL you want to scan as a query parameter.
 
 ```http
-GET  https://ingredients.tech/api/ingredients?url=https://example.com
+GET  https://ingredients.work/api/ingredients?url=https://example.com
 ```
 
 <br>
