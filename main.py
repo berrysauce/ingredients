@@ -1,3 +1,4 @@
+import os
 import json
 import httpx
 import uvicorn
@@ -12,7 +13,7 @@ from urllib.parse import urlparse
 import ingredients
 
 
-deta = Deta()
+deta = Deta(project_key=os.environ.get("DETA_DATA_KEY"))
 
 db = deta.Base("ingredients-stats")
 cache_db = deta.Base("ingredients-cache")
