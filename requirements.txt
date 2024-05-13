@@ -4,7 +4,7 @@ beautifulsoup4==4.12.2
 certifi==2023.7.22
 click==8.1.7
 deta==1.2.0
-fastapi==0.104.1
+fastapi==0.109.1
 h11==0.14.0
 httpcore==1.0.1
 httpx==0.25.1
