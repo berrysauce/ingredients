@@ -1,18 +1,11 @@
 # Spacefile Docs: https://go.deta.dev/docs/spacefile/v0
 v: 0
 micros:
-  - name: ingredients-ui
-    src: ./ui
-    engine: svelte-kit
-    primary: true
-    public: true
-    path: /
-    dev: npm run dev
   - name: ingredients-api
     src: ./
     engine: python3.9
     primary: false
     public: true
-    path: /api
+    path: /
     run: uvicorn main:app
     dev: .venv/bin/uvicorn main:app --reload

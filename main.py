@@ -13,7 +13,8 @@ from urllib.parse import urlparse
 import ingredients
 
 
-deta = Deta(project_key=os.environ.get("DETA_PROJECT_KEY"), project_id=os.environ.get("DETA_PROJECT_ID"))
+deta = Deta()
+#deta = Deta(project_key=os.environ.get("DETA_PROJECT_KEY"), project_id=os.environ.get("DETA_PROJECT_ID"))
 
 db = deta.Base("ingredients-stats")
 cache_db = deta.Base("ingredients-cache")
