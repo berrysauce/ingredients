@@ -14,5 +14,5 @@ micros:
     primary: false
     public: true
     path: /api
-    dev: python3.9 main.py
-
+    run: uvicorn main:app
+    dev: .venv/bin/uvicorn main:app --reload

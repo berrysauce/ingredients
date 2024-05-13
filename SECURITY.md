@@ -5,7 +5,7 @@ Although Ingredients doesn't save any personal user data, I take security vulner
 
 1. **Confirm the vulnerability:** Before reporting a potential security vulnerability, please make sure it is a genuine issue. I encourage you to test thoroughly and ensure that the behavior you're observing is indeed a security vulnerability.
 
-2. **Privately notify me:** Please report security vulnerabilities by emailing me at security@ingredients.tech. Please refrain from disclosing the vulnerability publicly until I had an opportunity to address it.
+2. **Privately notify me:** Please report security vulnerabilities by emailing me at security@ingredients.work. Please refrain from disclosing the vulnerability publicly until I had an opportunity to address it.
 
 3. **Provide necessary details:** When reporting the vulnerability, please include detailed information such as:
     - A brief description of the vulnerability.

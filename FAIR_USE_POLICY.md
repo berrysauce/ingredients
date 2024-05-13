@@ -9,7 +9,7 @@ The term "Commercial Use" is generally defined as any use of the service that is
 - Using the service to create a derivative work that you sell
 
 ### 1. Purpose of Fair Use Policy
-The Fair Use Policy (the "Policy") for Ingredients (ingredients.tech) (the "Website" or the "Service") outlines the terms and conditions under which users can access and utilize the website scanning service and API provided by Foerstal (the "Operator"). This Policy is designed to ensure fair and responsible use of the service while protecting the integrity of the Website and its resources.
+The Fair Use Policy (the "Policy") for Ingredients (ingredients.work) (the "Website" or the "Service") outlines the terms and conditions under which users can access and utilize the website scanning service and API provided by Foerstal (the "Operator"). This Policy is designed to ensure fair and responsible use of the service while protecting the integrity of the Website and its resources.
 
 ### 2. Prohibited Commercial Use
 The use of the Ingredients API and website scanning service for commercial purposes is strictly prohibited under this Policy. Users are not allowed to utilize the service to extract, compile, or otherwise gather information with the intent of creating products, services, or applications for commercial gain.
