@@ -6,7 +6,7 @@
         "tags": [],
         "headers": [
             {
-                "header": "X-Render-Origin-Server:",
+                "header": "X-Render-Origin-Server",
                 "value": null
             }
         ]
