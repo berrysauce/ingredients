@@ -8,6 +8,16 @@
                 "tag": "script",
                 "attribute": "src",
                 "value": "cdn.onesignal.com/sdks/OneSignalSDK.js"
+            },
+            {
+                "tag": "script",
+                "attribute": null,
+                "value": "ONESIGNAL_VENDOR_APP_KEY"
+            },
+            {
+                "tag": "script",
+                "attribute": null,
+                "value": "ONESIGNAL_WEBHOOK_URL"
             }
         ],
         "headers": []
