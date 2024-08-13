@@ -1,5 +1,5 @@
 {
-    "name": "Matomo Analytics",
+    "name": "Matomo",
     "description": "Matomo Analytics, formerly known as Piwik, is an open-source web analytics platform that allows website owners to collect and analyze data about their website's visitors.",
     "icon": "/icon/matomo.png",
     "checks": {
