@@ -1,4 +1,3 @@
-#import os
 import json
 import httpx
 import uvicorn
@@ -7,26 +6,10 @@ from fastapi import FastAPI, Response, HTTPException
 from fastapi.responses import JSONResponse, HTMLResponse, RedirectResponse
 from fastapi.middleware.cors import CORSMiddleware
 from urllib.parse import urlparse
-#import redis
-#from dotenv import load_dotenv
 
 # local imports
 import ingredients
 
-# env variables
-"""
-load_dotenv()
-REDIS_HOST = os.getenv("REDIS_HOST")
-REDIS_PORT = os.getenv("REDIS_PORT")
-REDIS_PASSWORD = os.getenv("REDIS_PASSWORD")
-
-r = redis.Redis(
-  host=REDIS_HOST,
-  port=REDIS_PORT,
-  password=REDIS_PASSWORD,
-  ssl=True
-)
-"""
 
 app = FastAPI(
     title="Ingredients – API",
@@ -95,7 +78,7 @@ def get_scan(url: str, includeCategories: Optional[bool] = False):
             for ingredient in matching_ingredients:
                 if ingredient.split("/")[0] == category:
                     with open(f"ingredients/{ingredient}", "r") as f:
-                        ingredient_data = json.loads(f.read())
+                        ingredient_data = json.load(f)
                         
                     ingredient_name = ingredient.split("/")[1].replace(".json", "")
                     
@@ -116,15 +99,15 @@ def get_scan(url: str, includeCategories: Optional[bool] = False):
         
         if includeCategories:
             with open("ingredients/categories.json", "r") as f:
-                return_data["categories"] = json.loads(f.read())
+                return_data["categories"] = json.load(f)
                 
         return return_data
     except httpx.InvalidURL as e:
         raise HTTPException(status_code=400, detail=str(e))
     except httpx.RequestError as e:
         raise HTTPException(status_code=400, detail=str(e))
-    #except:
-    #    raise HTTPException(status_code=500, detail=f"Unknown error")
+    except:
+        raise HTTPException(status_code=500, detail=f"Unknown error")
         
         
 @app.get("/icon/{icon}")

@@ -46,7 +46,7 @@ def scan(url):
         
         for ingredient in ingredients:
             with open(f"ingredients/{category}/{ingredient}", "r") as f:
-                ingredient_data = json.loads(f.read())
+                ingredient_data = json.load(f)
             
             
             # ----- STATS -----
@@ -59,11 +59,11 @@ def scan(url):
                 tags = soup.find_all(tag_check["tag"])
                 for tag in tags:
                     # check for tag attribute (value is None)
-                    if tag_check["value"] is None and tag.get(tag_check["attribute"]) != None:
+                    if tag_check["value"] is None and tag.get(tag_check["attribute"]) is not None:
                         add_ingredient(category, ingredient)
                             
                     # check for tag content (attribute is not None) with wildcards      
-                    elif tag.get(tag_check["attribute"]) != None and "*" in tag_check["value"]:
+                    elif tag.get(tag_check["attribute"]) is not None and "*" in tag_check["value"]:
                         checks = tag_check["value"].split("*")
                         successful_checks = 0
                         for check in checks:
@@ -74,7 +74,7 @@ def scan(url):
                             add_ingredient(category, ingredient)
                                     
                     # check for tag content (attribute is not None)
-                    elif tag.get(tag_check["attribute"]) != None and tag_check["value"] in tag.get(tag_check["attribute"]):
+                    elif tag.get(tag_check["attribute"]) is not None and tag_check["value"] in tag.get(tag_check["attribute"]):
                         add_ingredient(category, ingredient)
                             
                     # check for tag content (attribute is None)
