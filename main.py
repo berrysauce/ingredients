@@ -108,7 +108,7 @@ async def get_scan(url: str, includeCategories: Optional[bool] = False):
     except httpx.RequestError as e:
         raise HTTPException(status_code=400, detail=str(e))
     except:
-        raise HTTPException(status_code=500, detail=f"Unknown error")
+        raise HTTPException(status_code=500, detail=f"Server error")
         
         
 @app.get("/icon/{icon}")

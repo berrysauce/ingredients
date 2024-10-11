@@ -15,8 +15,12 @@ async def scan(url):
     def add_ingredient(category: str, ingredient: str):
         if f"{category}/{ingredient}" not in matching_ingredients:
             matching_ingredients.append(f"{category}/{ingredient}")
+            
+    async def listdir_async(path):
+        loop = asyncio.get_event_loop()
+        return await loop.run_in_executor(None, os.listdir, path)
     
-    categories = await aiofiles.os.listdir("ingredients")
+    categories = await listdir_async("ingredients")
     
     if "categories.json" in categories:
         categories.remove("categories.json")
@@ -41,7 +45,7 @@ async def scan(url):
     # ----------------------------------------
     
     for category in categories:
-        ingredients = await aiofiles.os.listdir(f"ingredients/{category}")
+        ingredients = await listdir_async(f"ingredients/{category}")
         
         if ".DS_Store" in ingredients:
             ingredients.remove(".DS_Store") # macOS only, improves compatibility
