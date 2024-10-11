@@ -5,7 +5,7 @@
 
 
 > [!IMPORTANT]
-> The domain for ingredients is being switched from "ingredients.tech" to "ingredients.work". I no longer own the old domain. 
+> The domain for Ingredients was switched from "ingredients.tech" to "ingredients.work". I no longer own the old domain. 
 
 Ingredients is a website scanner that is able to determine the "ingredients" (or technologies) behind a website.
 
