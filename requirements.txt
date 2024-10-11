@@ -3,7 +3,7 @@ anyio==3.7.1
 beautifulsoup4==4.12.2
 certifi==2024.7.4
 click==8.1.7
-deta==1.2.0
+#deta==1.2.0
 fastapi==0.111.0
 h11==0.14.0
 httpcore==1.0.1
@@ -16,3 +16,5 @@ soupsieve==2.5
 starlette==0.37.2
 typing_extensions==4.8.0
 uvicorn==0.24.0.post1
+redis==5.1.1
+python-dotenv==1.0.1
