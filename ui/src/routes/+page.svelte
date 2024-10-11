@@ -157,11 +157,14 @@
                                                             <p style="color: rgba(33,37,41,0.5);margin-bottom: 32px;">
                                                                 { ingredient.description }
                                                             </p>
+
+                                                            <!--
                                                             <div class="progress" style="height: 6px;border-radius: 50px;background: rgb(238,238,238);margin-bottom: 10px;">
                                                                 <div class="progress-bar" aria-valuenow="{ ingredient.match_percentage }" aria-valuemin="0" aria-valuemax="100" style="width: { ingredient.match_percentage }%;background-color: rgb(49, 169, 0);"><span class="visually-hidden">{ ingredient.match_percentage }%</span></div>
                                                             </div>
                                                             <p style="color: rgba(33,37,41,0.5);margin-bottom: 16px;"><span style="color: rgb(49,169,0);font-weight: 500;">{ ingredient.match_percentage }%</span> of scans use <span style="color: rgb(49,169,0);font-weight: 500;">{ ingredient.name }</span>.</p>
                                                             <p style="color: rgba(33,37,41,0.5);margin-top: 32px;font-size: 12px;margin-bottom: 0px;padding-top: 6px;border-top: 1px solid rgba(33,37,41,0.2);"><span style="color: rgba(33, 37, 41, 0.3);">This data is based on the amount of scans that have been made since the ingredient has been added.</span></p>
+                                                            -->
                                                         </div>
                                                     </div>
                                                 </div>

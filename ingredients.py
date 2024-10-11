@@ -2,12 +2,6 @@ import os
 import bs4
 import json
 import httpx
-from deta import Deta
-
-
-deta = Deta()
-db = deta.Base("ingredients-stats")
-
 
 # ----------------------------------------
 # FUNCTIONS
@@ -21,8 +15,11 @@ def scan(url):
             matching_ingredients.append(f"{category}/{ingredient}")
     
     categories = os.listdir("ingredients")
+    
     if "categories.json" in categories:
         categories.remove("categories.json")
+    if ".DS_Store" in categories:
+        categories.remove(".DS_Store") # macOS only, improves compatibility
             
     try:
         r = httpx.get(url, follow_redirects=True)
@@ -44,6 +41,9 @@ def scan(url):
     for category in categories:
         ingredients = os.listdir(f"ingredients/{category}")
         
+        if ".DS_Store" in ingredients:
+            ingredients.remove(".DS_Store") # macOS only, improves compatibility
+        
         for ingredient in ingredients:
             with open(f"ingredients/{category}/{ingredient}", "r") as f:
                 ingredient_data = json.loads(f.read())
@@ -51,21 +51,7 @@ def scan(url):
             
             # ----- STATS -----
             # increment total scans for each ingredient
-            db_ingredient = db.get(ingredient.replace(".json", ""))
-            if db_ingredient == None:
-                try:
-                    db.insert(key=ingredient.replace(".json", ""), data={
-                        "total_scans": 1,
-                        "matching_scans": 0
-                    })
-                except Exception:
-                    # Deta hasn't defined a specific exception for this error
-                    # just ignore it
-                    pass
-            else:
-                db.update(key=ingredient.replace(".json", ""), updates={
-                    "total_scans": db_ingredient["total_scans"] + 1
-                })
+            # <PLACEHOLDER>
             # -----------------
             
             

@@ -1,35 +1,41 @@
-import os
+#import os
 import json
 import httpx
 import uvicorn
-from deta import Deta
 from typing import Optional
 from fastapi import FastAPI, Response, HTTPException
 from fastapi.responses import JSONResponse, HTMLResponse, RedirectResponse
 from fastapi.middleware.cors import CORSMiddleware
 from urllib.parse import urlparse
+#import redis
+#from dotenv import load_dotenv
 
 # local imports
 import ingredients
 
+# env variables
+"""
+load_dotenv()
+REDIS_HOST = os.getenv("REDIS_HOST")
+REDIS_PORT = os.getenv("REDIS_PORT")
+REDIS_PASSWORD = os.getenv("REDIS_PASSWORD")
 
-deta = Deta()
-#deta = Deta(project_key=os.environ.get("DETA_PROJECT_KEY"), project_id=os.environ.get("DETA_PROJECT_ID"))
-
-db = deta.Base("ingredients-stats")
-cache_db = deta.Base("ingredients-cache")
+r = redis.Redis(
+  host=REDIS_HOST,
+  port=REDIS_PORT,
+  password=REDIS_PASSWORD,
+  ssl=True
+)
+"""
 
 app = FastAPI(
     title="Ingredients – API",
-    license_info="https://github.com/berrysauce/ingredients/blob/main/LICENSE.md",
-    docs_url=None,
+    #license_info="https://github.com/berrysauce/ingredients/blob/main/LICENSE.md",
+    #docs_url=None,
     redoc_url=None
 )
 
 origins = [
-    "https://ingredients.tech",
-    "https://dev.ingredients.tech",
-    "https://cdn.ingredients.tech",
     "https://ingredients.work",
     "https://dev.ingredients.work",
     "https://cdn.ingredients.work"
@@ -50,9 +56,11 @@ def get_root():
         return HTMLResponse(content=f.read())
     
 
+"""
 @app.get("/docs")
 def get_docs():
     return RedirectResponse(url="https://github.com/berrysauce/ingredients/blob/main/README.md#-using-the-api", status_code=301)
+"""
 
 
 @app.get("/ingredients", response_class=JSONResponse)
@@ -66,21 +74,6 @@ def get_scan(url: str, includeCategories: Optional[bool] = False):
     # Parse URL and remove port, query, and fragment
     r = urlparse(url)
     parsed_url = r.scheme + "://" + r.netloc.split(":")[0] + r.path
-    
-    # ----- CACHE -----
-    # request data from cache
-    try:
-        cache_data = cache_db.get(key=url)
-        if cache_data != None:
-            if cache_data["categories"].get("other"):
-                # move "other" to the end of the dict
-                cache_data["categories"]["other"] = cache_data["categories"].pop("other")
-            return cache_data
-    except Exception:
-        # Deta hasn't defined a specific exception for this error
-        # just ignore it
-        pass
-    # -----------------
     
     try:        
         data = ingredients.scan(parsed_url)
@@ -105,19 +98,10 @@ def get_scan(url: str, includeCategories: Optional[bool] = False):
                         ingredient_data = json.loads(f.read())
                         
                     ingredient_name = ingredient.split("/")[1].replace(".json", "")
-                        
+                    
                     # ----- STATS -----
                     # increment matching scans for each ingredient
-                    db_ingredient = db.get(ingredient_name)
-                    
-                    try:
-                        db.update(key=ingredient_name, updates={
-                            "matching_scans": int(db_ingredient["matching_scans"]) + 1
-                        })
-                    except Exception:
-                        # Deta hasn't defined a specific exception for this error
-                        # just ignore it
-                        pass
+                    # <PLACEHOLDER>
                     # -----------------
                     
                     return_data["matches"][ingredient.split("/")[0]].append(
@@ -126,32 +110,21 @@ def get_scan(url: str, includeCategories: Optional[bool] = False):
                             "name": ingredient_data["name"],
                             "description": ingredient_data["description"],
                             "icon": ingredient_data["icon"],
-                            "match_percentage": round(((db_ingredient["matching_scans"] + 1) / db_ingredient["total_scans"]) * 100, 1)
+                            #"match_percentage": round(((db_ingredient["matching_scans"] + 1) / db_ingredient["total_scans"]) * 100, 1)
                         }
                     )
         
         if includeCategories:
             with open("ingredients/categories.json", "r") as f:
                 return_data["categories"] = json.loads(f.read())
-        
-        # ----- CACHE -----
-        # add data to cache
-        # expiry: 15 minutes (900 seconds)
-        try:
-            cache_db.put(key=url, data=return_data, expire_in=900)
-        except Exception:
-            # Deta hasn't defined a specific exception for this error
-            # just ignore it
-            pass
-        # -----------------
                 
         return return_data
     except httpx.InvalidURL as e:
         raise HTTPException(status_code=400, detail=str(e))
     except httpx.RequestError as e:
         raise HTTPException(status_code=400, detail=str(e))
-    except:
-        raise HTTPException(status_code=500, detail=f"Unknown error")
+    #except:
+    #    raise HTTPException(status_code=500, detail=f"Unknown error")
         
         
 @app.get("/icon/{icon}")
