@@ -2,11 +2,10 @@
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/berrysauce/ingredients)
 [![CodeQL](https://github.com/berrysauce/ingredients/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/berrysauce/ingredients/actions/workflows/github-code-scanning/codeql)
-[![Deploy](https://github.com/berrysauce/ingredients/actions/workflows/deta.yml/badge.svg)](https://github.com/berrysauce/ingredients/actions/workflows/deta.yml)
 
 
 > [!IMPORTANT]
-> The domain for ingredients is being switched from "ingredients.tech" to "ingredients.work". Requests to the old domain will be redirected.
+> The domain for ingredients is being switched from "ingredients.tech" to "ingredients.work". I no longer own the old domain. 
 
 Ingredients is a website scanner that is able to determine the "ingredients" (or technologies) behind a website.
 
