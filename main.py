@@ -30,8 +30,8 @@ r = redis.Redis(
 
 app = FastAPI(
     title="Ingredients – API",
-    #license_info="https://github.com/berrysauce/ingredients/blob/main/LICENSE.md",
-    #docs_url=None,
+    license_info="https://github.com/berrysauce/ingredients/blob/main/LICENSE.md",
+    docs_url=None,
     redoc_url=None
 )
 
@@ -56,11 +56,9 @@ def get_root():
         return HTMLResponse(content=f.read())
     
 
-"""
 @app.get("/docs")
 def get_docs():
     return RedirectResponse(url="https://github.com/berrysauce/ingredients/blob/main/README.md#-using-the-api", status_code=301)
-"""
 
 
 @app.get("/ingredients", response_class=JSONResponse)
