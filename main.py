@@ -1,11 +1,12 @@
 import json
 import httpx
 import uvicorn
+import aiofiles
 from typing import Optional
+from urllib.parse import urlparse
 from fastapi import FastAPI, Response, HTTPException
 from fastapi.responses import JSONResponse, HTMLResponse, RedirectResponse
 from fastapi.middleware.cors import CORSMiddleware
-from urllib.parse import urlparse
 
 # local imports
 import ingredients
@@ -34,9 +35,9 @@ app.add_middleware(
 
 
 @app.get("/", response_class=HTMLResponse)
-def get_root():
-    with open("pages/api.html", "r") as f:
-        return HTMLResponse(content=f.read())
+async def get_root():
+    async with aiofiles.open("pages/api.html", "r") as f:
+        return HTMLResponse(content=await f.read())
     
 
 @app.get("/docs")
@@ -45,7 +46,7 @@ def get_docs():
 
 
 @app.get("/ingredients", response_class=JSONResponse)
-def get_scan(url: str, includeCategories: Optional[bool] = False):
+async def get_scan(url: str, includeCategories: Optional[bool] = False):
     
     # increase compatibility
     if url[:4] != "http":
@@ -57,7 +58,7 @@ def get_scan(url: str, includeCategories: Optional[bool] = False):
     parsed_url = r.scheme + "://" + r.netloc.split(":")[0] + r.path
     
     try:        
-        data = ingredients.scan(parsed_url)
+        data = await ingredients.scan(parsed_url)
         
         matching_ingredients = data
         matching_categories = []
@@ -75,8 +76,9 @@ def get_scan(url: str, includeCategories: Optional[bool] = False):
         for category in matching_categories:
             for ingredient in matching_ingredients:
                 if ingredient.split("/")[0] == category:
-                    with open(f"ingredients/{ingredient}", "r") as f:
-                        ingredient_data = json.load(f)
+                    async with aiofiles.open(f"ingredients/{ingredient}", "r") as f:
+                        f_content = await f.read()
+                        ingredient_data = json.loads(f_content)
                         
                     ingredient_name = ingredient.split("/")[1].replace(".json", "")
                     
@@ -96,8 +98,9 @@ def get_scan(url: str, includeCategories: Optional[bool] = False):
                     )
         
         if includeCategories:
-            with open("ingredients/categories.json", "r") as f:
-                return_data["categories"] = json.load(f)
+            async with aiofiles.open("ingredients/categories.json", "r") as f:
+                f_content = await f.read()
+                return_data["categories"] = json.loads(f_content)
                 
         return return_data
     except httpx.InvalidURL as e:
@@ -109,7 +112,7 @@ def get_scan(url: str, includeCategories: Optional[bool] = False):
         
         
 @app.get("/icon/{icon}")
-def get_icon(icon: str, response: Response):
+async def get_icon(icon: str, response: Response):
     # increase compatibility
     if ".png" not in icon:
         icon += ".png"
@@ -118,8 +121,8 @@ def get_icon(icon: str, response: Response):
     parsed_icon = icon.lower().split("/")[0].split("?")[0].split("#")[0]
     
     try:
-        with open("./icons/" + parsed_icon, "rb") as f:
-            return Response(content=f.read(), media_type="image/png")
+        async with aiofiles.open("./icons/" + parsed_icon, "rb") as f:
+            return Response(content=await f.read(), media_type="image/png")
     except FileNotFoundError:
         raise HTTPException(status_code=404, detail="Icon not found")
     except:

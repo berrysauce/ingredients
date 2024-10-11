@@ -2,34 +2,36 @@ import os
 import bs4
 import json
 import httpx
+import asyncio
+import aiofiles
 
 # ----------------------------------------
 # FUNCTIONS
 # ----------------------------------------
 
-def scan(url):
+async def scan(url):
     matching_ingredients = []
     
     def add_ingredient(category: str, ingredient: str):
         if f"{category}/{ingredient}" not in matching_ingredients:
             matching_ingredients.append(f"{category}/{ingredient}")
     
-    categories = os.listdir("ingredients")
+    categories = await aiofiles.os.listdir("ingredients")
     
     if "categories.json" in categories:
         categories.remove("categories.json")
     if ".DS_Store" in categories:
         categories.remove(".DS_Store") # macOS only, improves compatibility
             
-    try:
-        r = httpx.get(url, follow_redirects=True)
-    except httpx.ConnectError:
-        raise httpx.InvalidURL("Invalid URL")
+    async with httpx.AsyncClient() as client:
+        r = await client.get(url, follow_redirects=True)
     
+    # other exceptions handled in main.py
     if r.status_code != 200:
         raise httpx.RequestError(f"Invalid Request Status Code ({r.status_code})")
     
-    soup = bs4.BeautifulSoup(r.text, "html.parser")
+    # Run BeautifulSoup in a separate thread to avoid blocking the event loop
+    soup = await asyncio.to_thread(bs4.BeautifulSoup, r.text, "html.parser")
     
     headers = r.headers
     
@@ -39,21 +41,20 @@ def scan(url):
     # ----------------------------------------
     
     for category in categories:
-        ingredients = os.listdir(f"ingredients/{category}")
+        ingredients = await aiofiles.os.listdir(f"ingredients/{category}")
         
         if ".DS_Store" in ingredients:
             ingredients.remove(".DS_Store") # macOS only, improves compatibility
         
         for ingredient in ingredients:
-            with open(f"ingredients/{category}/{ingredient}", "r") as f:
-                ingredient_data = json.load(f)
-            
+            async with aiofiles.open(f"ingredients/{category}/{ingredient}", "r") as f:
+                f_content = await f.read()
+                ingredient_data = json.loads(f_content)
             
             # ----- STATS -----
             # increment total scans for each ingredient
             # <PLACEHOLDER>
             # -----------------
-            
             
             for tag_check in ingredient_data["checks"]["tags"]:
                 tags = soup.find_all(tag_check["tag"])
