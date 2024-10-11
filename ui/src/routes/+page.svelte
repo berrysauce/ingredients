@@ -148,18 +148,18 @@
                                             <div id="{ ingredient.id }-modal" class="modal fade" role="dialog" tabindex="-1">
                                                 <div class="modal-dialog" role="document">
                                                     <div class="modal-content">
-                                                        <div class="modal-body" style="padding: 32px 42px;border-style: none;">
-                                                            <h1 class="fs-5" style="font-weight: 600;margin-top: 6px;letter-spacing: -0.5px;color: rgb(33, 37, 41);margin-bottom: 10px;">
+                                                        <div class="modal-body" style="padding: 48px;border-style: none;">
+                                                            <h1 class="fs-5" style="font-weight: 600;margin-bottom: 24px;letter-spacing: -0.5px;color: rgb(33, 37, 41);">
                                                                 <img class="img-fluid" alt={ ingredient.name } src="https://cdn.ingredients.work{ ingredient.icon }" width="24" height="24" style="height: 26px;padding: 4px;border-radius: 4px;margin-right: 10px;margin-bottom: 4px;border: 1px solid rgb(206,207,208);width: 26px;" />
                                                                 { ingredient.name }
                                                                 <button class="btn-close float-end" type="button" data-bs-dismiss="modal" aria-label="Close" style="font-size: 12px;margin-top: 6px;"></button>
                                                             </h1>
-                                                            <p style="color: rgba(33,37,41,0.5);margin-bottom: 32px;">
+                                                            <p style="color: rgba(33,37,41,0.5);margin-bottom: 0px;">
                                                                 { ingredient.description }
                                                             </p>
 
                                                             <!--
-                                                            <div class="progress" style="height: 6px;border-radius: 50px;background: rgb(238,238,238);margin-bottom: 10px;">
+                                                            <div class="progress" style="height: 6px;border-radius: 50px;background: rgb(238,238,238);margin-top: 32px;margin-bottom: 10px;">
                                                                 <div class="progress-bar" aria-valuenow="{ ingredient.match_percentage }" aria-valuemin="0" aria-valuemax="100" style="width: { ingredient.match_percentage }%;background-color: rgb(49, 169, 0);"><span class="visually-hidden">{ ingredient.match_percentage }%</span></div>
                                                             </div>
                                                             <p style="color: rgba(33,37,41,0.5);margin-bottom: 16px;"><span style="color: rgb(49,169,0);font-weight: 500;">{ ingredient.match_percentage }%</span> of scans use <span style="color: rgb(49,169,0);font-weight: 500;">{ ingredient.name }</span>.</p>
