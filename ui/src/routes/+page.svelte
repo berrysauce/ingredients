@@ -56,64 +56,74 @@
 
 <section class="py-4 py-xl-5">
     <div class="container" style="max-width: 600px;">
-        <div class="p-4 p-lg-5">
-            <div style="margin-bottom: 64px;">
-                <h1 class="display-4" style="font-family: 'Inter Tight', sans-serif;font-weight: bold;margin-bottom: 8px;"> 🧪 Ingredients</h1>
-                <p style="color: rgba(33,37,41,0.5);">Ingredients is a website scanner that is able to determine the "ingredients" (or technologies) behind a website. Ingredients can be used right here, or in form of an API.</p>
-            </div>
+        <div class="text-center p-4 p-lg-5">
+            <h1 class="display-4 text-start" style="font-family: Lora, serif;font-weight: 700;letter-spacing: -1px;margin-bottom: 16px;"><img class="img-fluid" src="/assets/img/icon.webp?h=6199c6e4c61a3c3f687615cbe0b81e75" style="height: 56px;margin-top: -10px;margin-right: 10px;" alt="Salat bowl">Ingredients</h1>
+            <p class="text-start" style="color: rgb(135,135,135);">Ingredients is a website scanner that is able to determine the "ingredients" (or technologies) behind a website.</p>
+            
+            <form on:submit|preventDefault={handleSubmit} style="margin-bottom: 32px;margin-top: 48px;" method="get" enctype="application/x-www-form-urlencoded">
+                <div class="input-group" style="margin-bottom: -16px;">
+                    <input class="form-control" type="url" style="padding: 8px 16px;border-radius: 6px;background: rgba(255,255,255,0);border-top-right-radius: 0px;border-bottom-right-radius: 0px;font-weight: 500;outline: 0px !important;box-shadow: none !important;border: 2px solid #c5c5c5 ;border-right-style: none;" placeholder="https://example.com" name="url">
+                    <button class="btn btn-primary float-end" type="submit" style="border-radius: 6px;background: rgba(255,255,255,0);font-weight: 600;border-top-left-radius: 0px;border-bottom-left-radius: 0px;margin-left: -2px;padding: 8px 16px;color: rgb(33,37,41);outline: 0px !important;box-shadow: none !important;border: 2px solid #c5c5c5 ;border-left-style: none;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-scan" style="font-size: 18px;margin-bottom: 3px;margin-right: 5px;">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M4 7v-1a2 2 0 0 1 2 -2h2"></path>
+                            <path d="M4 17v1a2 2 0 0 0 2 2h2"></path>
+                            <path d="M16 4h2a2 2 0 0 1 2 2v1"></path>
+                            <path d="M16 20h2a2 2 0 0 0 2 -2v-1"></path>
+                            <path d="M5 12l14 0"></path>
+                        </svg>
+                        Scan
+                    </button>
+                </div>
+            </form>
 
-            <div id="form">
-                <form on:submit|preventDefault={handleSubmit} style="margin-bottom: 32px;" method="get" enctype="application/x-www-form-urlencoded">
-                    <div class="input-group" style="margin-bottom: -16px;">
-                        <input class="form-control ingredients-input" type="url" name="url" style="padding: 8px 16px;border-radius: 10px;background: rgba(255,255,255,0);border-top-right-radius: 0px;border-bottom-right-radius: 0px;font-weight: 500;border: 2px solid #212529 ;outline: 0!important;box-shadow: none!important;" placeholder="https://example.com" bind:value={scanURL} required >
-                        <button class="btn btn-primary float-end" type="submit" style="border-radius: 10px;background: #212529;font-weight: 500;color: #ffffff;border-top-left-radius: 0px;border-bottom-left-radius: 0px;margin-left: -2px;padding: 8px 16px;border: 2px solid #212529;">
-                            <svg class="icon icon-tabler icon-tabler-scan" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" style="font-size: 18px;margin-bottom: 3px;margin-right: 5px;">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                <path d="M4 7v-1a2 2 0 0 1 2 -2h2"></path>
-                                <path d="M4 17v1a2 2 0 0 0 2 2h2"></path>
-                                <path d="M16 4h2a2 2 0 0 1 2 2v1"></path>
-                                <path d="M16 20h2a2 2 0 0 0 2 -2v-1"></path>
-                                <line x1="5" y1="12" x2="19" y2="12"></line>
-                            </svg>
-                            Scan
-                        </button>
-                    </div>
-                </form>
-                
-                <p class="text-center" style="color: rgba(33,37,41,0.5);margin-bottom: 64px;font-size: 14px;">
-                    <a href="https://github.com/berrysauce/ingredients" target="_blank" style="font-weight: 500;color: inherit;margin-right: 16px;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-star" style="margin-bottom: 2px;margin-right: 2px;">
+            <ul class="list-inline text-start" style="font-size: 14px;margin-bottom: 32px;">
+                <li class="list-inline-item" style="margin-right: 12px;">
+                    <a href="https://buymeacoffee.com/berrysauce" style="color: inherit;text-decoration: underline;text-decoration-color: #c5c5c5;" target="_blank">
+                        Donate
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-arrow-up-right" style="margin-top: -2px;margin-left: 2px;">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"></path>
+                            <path d="M17 7l-10 10"></path>
+                            <path d="M8 7l9 0l0 9"></path>
                         </svg>
-                        Star on GitHub
                     </a>
-                    <a href="https://api.{ hostname }" target="_blank" style="font-weight: 500;color: inherit;">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-arrow-right" style="margin-bottom: 2px;margin-right: 2px;">
+                </li>
+                <li class="list-inline-item" style="margin-right: 12px;">
+                    <a href="https://github.com/berrysauce/ingredients" style="color: inherit;text-decoration: underline;text-decoration-color: #c5c5c5;">
+                        GitHub
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-arrow-up-right" style="margin-top: -2px;margin-left: 2px;">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                            <line x1="13" y1="18" x2="19" y2="12"></line>
-                            <line x1="13" y1="6" x2="19" y2="12"></line>
+                            <path d="M17 7l-10 10"></path>
+                            <path d="M8 7l9 0l0 9"></path>
                         </svg>
-                        Ingredients also has an API
                     </a>
-                </p>
-            </div>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://api.ingredients.work/" style="color: inherit;text-decoration: underline;text-decoration-color: #c5c5c5;">
+                        API
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-arrow-up-right" style="margin-top: -2px;margin-left: 2px;">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M17 7l-10 10"></path>
+                            <path d="M8 7l9 0l0 9"></path>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
 
             {#if loading}
-                <div id="loading" style="margin-bottom: 100px;">
-                    <p class="text-center" style="font-weight: 500;margin-bottom: 50px;"><span class="spinner-border spinner-border-sm" role="status" style="margin-right: 10px;width: 22px;height: 22px;margin-bottom: -3px;color: rgb(49,169,0);"></span>Checking ingredients</p>
+                <div id="loading" style="margin-top:64px;margin-bottom: 64px;">
+                    <p class="text-center" style="font-weight: 500;"><span class="spinner-border spinner-border-sm" role="status" style="margin-right: 10px;width: 20px;height: 20px;margin-bottom: -3px;color: rgb(33,37,41);font-size: 12px;"></span>Checking ingredients</p>
                 </div>
             {/if}
 
             {#if requested && !loading && Object.keys(ingredients).length == 0}
-                <div style="margin-bottom: 100px;">
+                <div style="margin-top:64px;margin-bottom: 64px;">
                     <p class="text-center" style="font-weight: 500;">
-                        <svg class="icon icon-tabler icon-tabler-alert-octagon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" style="color: rgb(242,113,58);font-size: 22px;margin-right: 10px;margin-bottom: 3px;">
+                        <svg class="icon icon-tabler icon-tabler-alert-circle" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" style="color: rgb(214,70,9);font-size: 22px;margin-right: 10px;margin-bottom: 3px;">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                            <path d="M8.7 3h6.6c0.3 0 .5 .1 .7 .3l4.7 4.7c0.2 .2 .3 .4 .3 .7v6.6c0 .3 -.1 .5 -.3 .7l-4.7 4.7c-0.2 .2 -.4 .3 -.7 .3h-6.6c-0.3 0 -.5 -.1 -.7 -.3l-4.7 -4.7c-0.2 -.2 -.3 -.4 -.3 -.7v-6.6c0 -.3 .1 -.5 .3 -.7l4.7 -4.7c0.2 -.2 .4 -.3 .7 -.3z"></path>
-                            <line x1="12" y1="8" x2="12" y2="12"></line>
-                            <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                            <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"></path>
+                            <path d="M12 8v4"></path>
+                            <path d="M12 16h.01"></path>
                         </svg>
                         No ingredients found
                     </p>
@@ -121,7 +131,7 @@
             {/if}
 
             {#if error != null}
-                <div style="margin-bottom: 100px;">
+                <div style="margin-top:64px;margin-bottom: 64px;">
                     <p class="text-center" style="font-weight: 500;margin-bottom: 5px;"><svg class="icon icon-tabler icon-tabler-alert-triangle" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" style="color: rgb(204,45,35);font-size: 22px;margin-right: 10px;margin-bottom: 3px;">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                             <path d="M12 9v2m0 4v.01"></path>
@@ -132,82 +142,41 @@
             {/if}
 
             {#if !loading && error == null && Object.keys(ingredients).length != 0}
-                <div class="row row-cols-2">
-                    {#each Object.keys(categories) as category (category)}
-                        {#if ingredients[category]}
-                            <div class="col">
-                                <div style="border-width: 2px;border-top-style: solid;border-top-color: rgb(33,37,41);margin-bottom: 50px;">
-                                    <h1 class="fs-5" style="font-weight: bold;margin-top: 6px;margin-bottom: 16px;">{ categories[category] }</h1>
-                                    
-                                    <ul class="list-unstyled">
-                                        {#each ingredients[category] as ingredient}
-                                            <!-- List item -->
-                                            <li onclick="openDetailModal('{ ingredient.id }-modal')" class="pointer" style="margin-bottom: 4px;font-weight: 500;"><img class="img-fluid" alt={ ingredient.name } src="https://cdn.ingredients.work{ ingredient.icon }" width="24" height="24" style="height: 24px;padding: 3px;border-radius: 4px;margin-right: 8px;margin-bottom: 3px;border: 1px solid rgb(206,207,208) ;">{ ingredient.name }</li>
-                                        
-                                            <!-- Detail modal -->
-                                            <div id="{ ingredient.id }-modal" class="modal fade" role="dialog" tabindex="-1">
-                                                <div class="modal-dialog" role="document">
-                                                    <div class="modal-content">
-                                                        <div class="modal-body" style="padding: 48px;border-style: none;">
-                                                            <h1 class="fs-5" style="font-weight: 600;margin-bottom: 24px;letter-spacing: -0.5px;color: rgb(33, 37, 41);">
-                                                                <img class="img-fluid" alt={ ingredient.name } src="https://cdn.ingredients.work{ ingredient.icon }" width="24" height="24" style="height: 26px;padding: 4px;border-radius: 4px;margin-right: 10px;margin-bottom: 4px;border: 1px solid rgb(206,207,208);width: 26px;" />
-                                                                { ingredient.name }
-                                                                <button class="btn-close float-end" type="button" data-bs-dismiss="modal" aria-label="Close" style="font-size: 12px;margin-top: 6px;"></button>
-                                                            </h1>
-                                                            <p style="color: rgba(33,37,41,0.5);margin-bottom: 0px;">
-                                                                { ingredient.description }
-                                                            </p>
-
-                                                            <!--
-                                                            <div class="progress" style="height: 6px;border-radius: 50px;background: rgb(238,238,238);margin-top: 32px;margin-bottom: 10px;">
-                                                                <div class="progress-bar" aria-valuenow="{ ingredient.match_percentage }" aria-valuemin="0" aria-valuemax="100" style="width: { ingredient.match_percentage }%;background-color: rgb(49, 169, 0);"><span class="visually-hidden">{ ingredient.match_percentage }%</span></div>
-                                                            </div>
-                                                            <p style="color: rgba(33,37,41,0.5);margin-bottom: 16px;"><span style="color: rgb(49,169,0);font-weight: 500;">{ ingredient.match_percentage }%</span> of scans use <span style="color: rgb(49,169,0);font-weight: 500;">{ ingredient.name }</span>.</p>
-                                                            <p style="color: rgba(33,37,41,0.5);margin-top: 32px;font-size: 12px;margin-bottom: 0px;padding-top: 6px;border-top: 1px solid rgba(33,37,41,0.2);"><span style="color: rgba(33, 37, 41, 0.3);">This data is based on the amount of scans that have been made since the ingredient has been added.</span></p>
-                                                            -->
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        {/each}
-                                    </ul>
-
-                                    <script>
-                                        function openDetailModal(id) {
-                                            var detailModal = new bootstrap.Modal(document.getElementById(id), {
-                                              keyboard: false
-                                            })
-                                            
-                                            detailModal.toggle()
-                                        }
-                                    </script>
-
+                <div class="text-start" style="margin-top: 64px;margin-bottom: 64px;">
+                    <div class="row row-cols-2">
+                        {#each Object.keys(categories) as category (category)}
+                            {#if ingredients[category]}
+                                <div class="col">
+                                    <div style="border-width: 2px;border-top-style: solid;border-top-color: rgb(33,37,41);margin-bottom: 50px;">
+                                        <h2 class="fs-5" style="font-weight: bold;margin-top: 6px;margin-bottom: 16px;font-family: Lora, serif;">{ categories[category] }</h2>
+                                        <ul class="list-unstyled">
+                                            {#each ingredients[category] as ingredient}
+                                                <li style="margin-bottom: 4px;font-weight: 500;"><img class="img-fluid" alt={ ingredient.name } src="https://cdn.ingredients.work{ ingredient.icon }" width="24" height="24" style="height: 24px;padding: 3px;border-radius: 4px;margin-right: 8px;margin-bottom: 3px;border: 1px solid rgb(206,207,208) ;">
+                                                    { ingredient.name }
+                                                </li>
+                                            {/each}
+                                        </ul>
+                                    </div>
                                 </div>
-                            </div>
-                        {/if}
-                    {/each}
+                            {/if}
+                        {/each}
+                    </div>
                 </div>
             {/if}
 
-            <!-- Supporting options -->
-            <div style="border-top: 1px solid rgb(206,207,208);padding-top: 16px;margin-bottom: -60px;">
-                <div class="text-center d-xl-flex justify-content-xl-center">
-                    <!-- Ko-fi -->
-                    <a href="https://ko-fi.com/berrysauce" target="_blank">
-                        <img alt="Support me on Ko-fi" src="/assets/img/kofi-button.png" style="height: 45px;border: 1px solid rgb(217,225,236);border-radius: 10px;margin-bottom: 10px;" width="160" height="45" />
+            <footer class="text-start" style="margin-top: 70px;padding-top: 24px;border-top: 2px solid rgb(197,197,197) ;">
+                <p style="color: rgba(33,37,41,0.5);font-size: 12px;font-weight: 500;">
+                    Copyright © 2023-{ year } 
+                    <a href="https://berrysauce.me" target="_blank" style="color: inherit;">
+                        berrysauce
+                        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-arrow-up-right" style="margin-top: -2px;margin-left: 1px;">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M17 7l-10 10"></path>
+                            <path d="M8 7l9 0l0 9"></path>
+                        </svg>
                     </a>
-                    <!-- ProductHunt -->
-                    <a href="https://www.producthunt.com/posts/ingredients?utm_source=badge-featured&amp;utm_medium=badge&amp;utm_souce=badge-ingredients" target="_blank">
-                        <img alt="Find us on Product Hunt" src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=413274&amp;theme=neutral" style="width: 250px;height: 45px;margin-bottom: 10px;" width="250" height="45" />
-                    </a>
-                </div>
-            </div>
-
-            <footer>
-                <hr style="margin-top: 64px;margin-bottom: 16px;">
-                <p style="color: rgba(33,37,41,0.5);font-size: 12px;font-weight: 500;">Copyright © { year } berrysauce</p>
-                <p style="color: rgba(33,37,41,0.5);font-size: 12px;">Usage of&nbsp;Ingredients is permitted under its&nbsp;<a href="https://github.com/berrysauce/ingredients/blob/main/FAIR_USE_POLICY.md" style="color: inherit;">Fair-use-Policy</a>. Traffic which does not comply with this policy or the <a href="https://berrysauce.me/terms" style="color: inherit;">Terms of Service</a>&nbsp;will be blocked.&nbsp;<a href="https://github.com/berrysauce/ingredients/blob/main/LICENSE.md" style="color:inherit;">View the license for this service here</a>.</p>
-                <p style="color: rgba(33,37,41,0.5);font-size: 12px;"></p>
+                </p>
+                <p style="color: rgba(33,37,41,0.5);font-size: 12px;">Usage of Ingredients is permitted under it's <a href="https://github.com/berrysauce/ingredients/blob/main/FAIR_USE_POLICY.md" style="color: inherit;">Fair-use-Policy</a>. Traffic which does not comply with this policy or the <a href="https://berrysauce.me/terms" style="color: inherit;">Terms of Service</a>&nbsp;will be blocked. <a href="https://github.com/berrysauce/ingredients/blob/main/LICENSE.md" style="color: inherit;">View the license for this service here</a>.</p>
                 <p style="color: rgba(33,37,41,0.5);font-size: 12px;">No personal data is collected when using Ingredients (this website or its services).</p>
             </footer>
         </div>
