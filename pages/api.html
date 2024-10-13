@@ -1,47 +1,66 @@
 <!DOCTYPE html>
 <html data-bs-theme="light" lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
-        <title>Ingredients API</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
-        <link rel="preconnect" href="https://fonts.bunny.net">
-        <link href="https://fonts.bunny.net/css?family=inter:100,200,300,400,500,600,700,800,900|inter-tight:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|plus-jakarta-sans:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i" rel="stylesheet">
-    </head>
-    <body>
-        <section class="py-4 py-xl-5">
-            <div class="container" style="max-width: 700px; margin-top: 15vh;">
-                <div class="text-center p-4 p-lg-5">
-                    <h1 class="display-4 text-center" style="font-family: 'Inter Tight', sans-serif;font-weight: bold;margin-bottom: 16px;">🧪 Ingredients <span style="font-weight: 300;">API</span></h1>
-                    
-                    <div style="margin-top: 32px;margin-bottom: 32px;">
-                        <a class="btn btn-primary" role="button" style="padding: 3px 20px;background: rgba(255,255,255,0);color: rgb(33,37,41);border-style: solid;border-color: rgb(225,225,225);margin-right: 12px;" href="https://github.com/berrysauce/ingredients">
-                            <svg class="icon icon-tabler icon-tabler-star" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" style="margin-bottom: 3px;margin-right: 6px;">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Ingredients API</title>
+    <link rel="canonical" href="https://api.ingredients.work">
+    <meta property="og:url" content="https://api.ingredients.work">
+    <meta name="description" content="Ingredients is a website scanner that is able to determine the &quot;ingredients&quot; (or technologies) behind a website.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://ingredients.work/assets/img/og-img.png">
+    <meta property="og:description" content="Ingredients is a website scanner that is able to determine the &quot;ingredients&quot; (or technologies) behind a website.">
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "WebSite",
+            "name": "Ingredients API",
+            "url": "https://api.ingredients.work"
+        }
+    </script>
+    <link rel="apple-touch-icon" type="image/png" sizes="180x180" href="https://ingredients.work/assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="https://ingredients.work/assets/img/favicons/favicon-48x48.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="https://ingredients.work/assets/img/favicons/favicon-48x48.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="48x48" href="https://ingredients.work/assets/img/favicons/favicon-48x48.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="https://ingredients.work/assets/img/favicons/favicon-48x48.png" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="180x180" href="https://ingredients.work/assets/img/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="https://ingredients.work/assets/img/favicons/web-app-manifest-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="https://ingredients.work/assets/img/favicons/web-app-manifest-512x512.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=inter:100,200,300,400,500,600,700,800,900|lora:400,400i,500,500i,600,600i,700,700i" rel="stylesheet" />
+    <link rel="stylesheet" hef="https://ingredients.work/assets/css/styles.min.css">
+</head>r
+
+<body style="font-family: Inter, sans-serif;">
+    <section class="py-4 py-xl-5">
+        <div class="container" style="max-width: 600px;">
+            <div class="text-center p-4 p-lg-5">
+                <h1 class="display-4" style="font-weight: bold;margin-bottom: 32px;margin-top: 15vh;font-family: Lora, serif;"><img class="img-fluid" src="https://ingredients.work/assets/img/icon.webp" alt="Salad bowl" style="width: 56px;margin-top: -8px;margin-right: 10px;">Ingredients&nbsp;<span style="font-weight: 300;">API</span></h1>
+                <ul class="list-inline text-center" style="font-size: 16px;margin-bottom: 32px;">
+                    <li class="list-inline-item" style="margin-right: 12px;"><a href="https://buymeacoffee.com/berrysauce" style="color: inherit;text-decoration: underline;text-decoration-color: #c5c5c5;" target="_blank">Donate<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-arrow-up-right" style="margin-top: -2px;margin-left: 2px;">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"></path>
-                            </svg>
-                            Star on GitHub
-                        </a>
-                        <a class="btn btn-primary" role="button" style="padding: 3px 20px;background: rgba(255,255,255,0);color: rgb(33,37,41);border-style: solid;border-color: rgb(225,225,225);" href="https://ingredients.work/api/docs">
-                            API Documentation
-                            <svg class="icon icon-tabler icon-tabler-arrow-right" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" style="margin-left: 6px;margin-bottom: 3px;">
+                                <path d="M17 7l-10 10"></path>
+                                <path d="M8 7l9 0l0 9"></path>
+                            </svg></a></li>
+                    <li class="list-inline-item" style="margin-right: 12px;"><a href="https://github.com/berrysauce/ingredients" style="color: inherit;text-decoration: underline;text-decoration-color: #c5c5c5;">GitHub<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-arrow-up-right" style="margin-top: -2px;margin-left: 2px;">
                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                                <line x1="5" y1="12" x2="19" y2="12"></line>
-                                <line x1="13" y1="18" x2="19" y2="12"></line>
-                                <line x1="13" y1="6" x2="19" y2="12"></line>
-                            </svg>
-                        </a>
-                    </div>
-                    
-                    <p style="font-family: Inter; font-size: 12px; color: rgb(197, 197, 197);">
-                        By using this service, you agree to the Privacy Policy and Terms of Service of berrysauce.me&nbsp;and any listed third-party providers. This API is available under a <a href="https://github.com/berrysauce/ingredients/blob/main/FAIR_USE_POLICY.md" style="color: inherit;">Fair-use-Policy</a>. Contents on this API (e.g. logos)
-                        may be subject to Copyright by their respective owners. <a href="https://github.com/berrysauce/ingredients/blob/main/LICENSE.md" style="color: inherit;">View the license for this API here</a>.<br />
-                        <br />
-                        <!--sse-->If you would like to get content removed from this API, please <a href="mailto:webmaster@ingredients.work" style="color: inherit;">contact the administrator</a>.<!--/sse-->
-                    </p>
-                </div>
+                                <path d="M17 7l-10 10"></path>
+                                <path d="M8 7l9 0l0 9"></path>
+                            </svg></a></li>
+                    <li class="list-inline-item"><a href="https://api.ingredients.work/docs" style="color: inherit;text-decoration: underline;text-decoration-color: #c5c5c5;">API Documentation<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-arrow-up-right" style="margin-top: -2px;margin-left: 2px;">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M17 7l-10 10"></path>
+                                <path d="M8 7l9 0l0 9"></path>
+                            </svg></a></li>
+                </ul>
+                <p style="font-size: 12px;color: rgb(197, 197, 197);"> By using this service, you agree to the Privacy Policy and Terms of Service of berrysauce.me&nbsp;and any listed third-party providers. This API is available under a fair-use-policy. Contents on this API (e.g. logos) may be subject to Copyright by their respective owners. <a href="https://github.com/berrysauce/ingredients/blob/main/LICENSE.md" style="color:inherit;">View the license for this API here</a>.<br><br> If you would like to get content removed from this API, please <a href="mailto:webmaster@berrysauce.me" style="color:inherit;">contact the administrator</a>. </p>
             </div>
-        </section>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    </body>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
