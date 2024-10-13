@@ -57,7 +57,7 @@
 <section class="py-4 py-xl-5">
     <div class="container" style="max-width: 600px;">
         <div class="text-center p-4 p-lg-5">
-            <h1 class="display-4 text-start" style="font-family: Lora, serif;font-weight: 700;letter-spacing: -1px;margin-bottom: 16px;"><img class="img-fluid" src="/assets/img/icon.webp?h=6199c6e4c61a3c3f687615cbe0b81e75" style="height: 56px;margin-top: -10px;margin-right: 10px;" alt="Salat bowl">Ingredients</h1>
+            <h1 class="display-4 text-start" style="font-family: Lora, serif;font-weight: 700;letter-spacing: -1px;margin-bottom: 16px;"><img class="img-fluid" src="/assets/img/icon.webp" style="height: 56px;margin-top: -10px;margin-right: 10px;" alt="Salat bowl">Ingredients</h1>
             <p class="text-start" style="color: rgb(135,135,135);">Ingredients is a website scanner that is able to determine the "ingredients" (or technologies) behind a website.</p>
             
             <form on:submit|preventDefault={handleSubmit} style="margin-bottom: 32px;margin-top: 48px;" method="get" enctype="application/x-www-form-urlencoded">
