@@ -146,7 +146,7 @@
                     <div class="row row-cols-2">
                         {#each Object.keys(categories) as category (category)}
                             {#if ingredients[category]}
-                                <div class="col">
+                                <div class="col-12 col-sm-6">
                                     <div style="border-width: 2px;border-top-style: solid;border-top-color: rgb(33,37,41);margin-bottom: 50px;">
                                         <h2 class="fs-5" style="font-weight: bold;margin-top: 6px;margin-bottom: 16px;font-family: Lora, serif;">{ categories[category] }</h2>
                                         <ul class="list-unstyled">
