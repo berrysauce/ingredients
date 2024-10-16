@@ -17,7 +17,7 @@ Ingredients (or technologies) make this project so powerful. They're basically f
 If you would like to add ingredients, follow the ["How to add Ingredients"](https://github.com/berrysauce/ingredients?tab=readme-ov-file#%EF%B8%8F-how-to-add-ingredients) guide. Please also fork the repository and when you're done, submit a pull request.
 
 **An ingredient consists of:**
-- a `.json`file with the ingredient's information
+- a `.json` file with the ingredient's information
 - a `.png` icon (32px x 32px)
 
 > ⚠️ If you're adding a new category (a new folder inside the [ingredients/](https://github.com/berrysauce/ingredients/tree/main/ingredients) folder) remember to add it to the `categories.json` file (inside the [ingredients/](https://github.com/berrysauce/ingredients/tree/main/ingredients) folder). Insert your new category in **ALPHABETICAL ORDER** & **BEFORE "Other"**.
