@@ -1,6 +1,6 @@
 {
   "name": "HubSpot CMS",
-  "description": "HubSpot CMS is a content management system designed to help businesses build and manage their websites effectively",
+  "description": "HubSpot CMS is a content management system designed to help businesses build and manage their websites effectively.",
   "icon": "/icon/hubspot.png",
   "checks": {
     "tags": [],
