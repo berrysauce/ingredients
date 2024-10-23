@@ -1,0 +1,14 @@
+{
+  "name": "Craft CMS",
+  "description": "Craft CMS is a flexible and user-friendly content management system designed for creating custom digital experiences across various platforms.",
+  "icon": "/icon/craft-cms.png",
+  "checks": {
+    "tags": [],
+    "headers": [
+      {
+        "header": "x-powered-by",
+        "value": "Craft CMS"
+      }
+    ]
+  }
+}
