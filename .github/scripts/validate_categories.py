@@ -12,8 +12,8 @@ def validate_category(category):
     try:
         if not os.path.exists(f"ingredients/{category}"):
             return False, "Category folder does not exist"
-        else:
-            return True, f"Category is valid"
+        
+        return True, f"Category is valid"
     except Exception as e:
         return False, f"Error: {e}"
     
