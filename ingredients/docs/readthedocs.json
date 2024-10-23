@@ -13,15 +13,15 @@
         "headers": [
             {
                 "header": "X-Rtd-Project",
-                "contains": null
+                "value": null
             },
             {
                 "header": "X-Rtd-Path",
-                "contains": null
+                "value": null
             },
             {
                 "header": "X-Rtd-Version",
-                "contains": null
+                "value": null
             }
         ]
     }
