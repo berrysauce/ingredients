@@ -13,12 +13,12 @@ def validate_image(path):
         with Image.open(path) as img:
             if img.size != (32, 32):
                 return False, f"Invalid size: expected (32, 32) but got {img.size}"
-            elif img.format != "PNG":
+            if img.format != "PNG":
                 return False, f"Invalid format: expected PNG but got {img.format}"
-            elif os.path.splitext(path)[1] != ".png":
+            if os.path.splitext(path)[1] != ".png":
                 return False, f"Incorrect file extension: expected .png but got {os.path.splitext(path)[1]}"
-            else:
-                return True, f"Icon is valid"
+            
+            return True, f"Icon is valid"
     except Exception as e:
         return False, f"Error: {e}"
     
