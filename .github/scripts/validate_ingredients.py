@@ -8,6 +8,7 @@ folder and checks if they have the right structure.
 import os
 import json
 
+
 def validate_ingredient(data):
     # Check required top-level keys
     required_keys = ["name", "description", "icon", "checks"]
@@ -53,7 +54,8 @@ def validate_ingredient(data):
 
     # All checks passed
     return True, "Ingredient is valid"
-    
+
+
 if __name__ == "__main__":
     all_checks_passed = True
     categories = json.load(open("ingredients/categories.json"))
@@ -71,4 +73,3 @@ if __name__ == "__main__":
     else:
         print("Some checks failed. See errors for details.")
         exit(1) # Exit with failure
-            

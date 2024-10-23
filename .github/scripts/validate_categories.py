@@ -1,22 +1,24 @@
 """
 .github/scripts/validate_categories.py
 
-This script validates the categories in the 
+This script validates the categories in the
 categories.json file and in the /ingredients folder.
 """
 
 import os
 import json
 
+
 def validate_category(category):
     try:
         if not os.path.exists(f"ingredients/{category}"):
             return False, "Category folder does not exist"
         
-        return True, f"Category is valid"
+        return True, "Category is valid"
     except Exception as e:
         return False, f"Error: {e}"
-    
+
+
 if __name__ == "__main__":
     all_checks_passed = True
     
@@ -43,4 +45,3 @@ if __name__ == "__main__":
     else:
         print("Some checks failed. See errors for details.")
         exit(1) # Exit with failure
-            

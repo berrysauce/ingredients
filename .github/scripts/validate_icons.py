@@ -8,6 +8,7 @@ if they have right dimensions and are in the right format.
 import os
 from PIL import Image
 
+
 def validate_image(path):
     try:
         with Image.open(path) as img:
@@ -18,10 +19,11 @@ def validate_image(path):
             if os.path.splitext(path)[1] != ".png":
                 return False, f"Incorrect file extension: expected .png but got {os.path.splitext(path)[1]}"
             
-            return True, f"Icon is valid"
+            return True, "Icon is valid"
     except Exception as e:
         return False, f"Error: {e}"
-    
+
+
 if __name__ == "__main__":
     all_checks_passed = True
     
@@ -37,4 +39,3 @@ if __name__ == "__main__":
     else:
         print("Some checks failed. See errors for details.")
         exit(1) # Exit with failure
-            
