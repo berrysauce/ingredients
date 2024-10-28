@@ -1,25 +1,30 @@
 {
-    "name": "Fresh JS",
-    "description": "Fresh is a full stack web framework for JavaScript and TypeScript developers, designed to make it trivial to create high-quality, performant, and personalized web applications. It is built on top of Deno.",
-    "icon": "/icon/fresh-js.png",
-    "checks": {
-        "tags": [
-            {
-                "tag": "link",
-                "attribute": "href",
-                "value": "/_frsh/*.css"
-            },
-            {
-                "tag": "script",
-                "attribute": "src",
-                "value": "/_frsh/*.js"
-            },
-            {
-                "tag": "script",
-                "attribute": "id",
-                "value": "__FRSH"
-            }
-        ],
-        "headers": []
-    }
+  "name": "Fresh",
+  "description": "Fresh is a full stack web framework for JavaScript and TypeScript developers, designed to make it trivial to create high-quality, performant, and personalized web applications. It is built on top of Deno.",
+  "icon": "/icon/fresh-js.png",
+  "checks": {
+    "tags": [
+      {
+        "tag": "link",
+        "attribute": "href",
+        "value": "/_frsh/*.css"
+      },
+      {
+        "tag": "script",
+        "attribute": "src",
+        "value": "/_frsh/*.js"
+      },
+      {
+        "tag": "script",
+        "attribute": "id",
+        "value": "__FRSH"
+      }
+    ],
+    "headers": [
+      {
+        "header": "x-fresh-uuid",
+        "value": null
+      }
+    ]
+  }
 }
