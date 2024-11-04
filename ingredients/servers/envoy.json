@@ -1,0 +1,14 @@
+{
+    "name": "Envoy",
+    "description": "Envoy is an open source edge and service proxy, designed for cloud-native applications.",
+    "icon": "/icon/envoy-proxy.png",
+    "checks": {
+        "tags": [],
+        "headers": [
+            {
+                "header": "x-envoy-upstream-service-time",
+                "value": null
+            }
+        ]
+    }
+}

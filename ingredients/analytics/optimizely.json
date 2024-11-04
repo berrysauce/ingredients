@@ -20,6 +20,11 @@
                 "value": "cdn.optimizely.com/*.js"
             }
         ],
-        "headers": []
+        "headers": [
+            {
+                "header": "x-optimizely-worker",
+                "value": null
+            }
+        ]
     }
 }

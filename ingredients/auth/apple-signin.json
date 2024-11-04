@@ -1,7 +1,7 @@
 {
     "name": "Sign in with Apple",
     "description": "Sign in with Apple allows users to sign in to third-party apps and websites using their Apple ID.",
-    "icon": "/icon/apple-signin.png",
+    "icon": "/icon/apple.png",
     "checks": {
         "tags": [
             {

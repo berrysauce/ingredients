@@ -1,0 +1,20 @@
+{
+    "name": "React",
+    "description": "A library for web and native user interfaces.",
+    "icon": "/icon/react.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "main",
+                "attribute": "data-testid",
+                "value": "react-root"
+            },
+            {
+                "tag": "main",
+                "attribute": "id",
+                "value": "react-root"
+            }
+        ],
+        "headers": []
+    }
+}

@@ -1,0 +1,15 @@
+{
+    "name": "Tilda",
+    "description": "Tilda is a platform that lets you create websites without any code.",
+    "icon": "/icon/tilda.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "link",
+                "attribute": "href",
+                "value": "tildacdn.com"
+            }
+        ],
+        "headers": []
+    }
+}
