@@ -1,0 +1,15 @@
+{
+	"name": "VitePress",
+	"description": "VitePress is a Markdown-based Static Site Generator (SSG) designed for building fast, content-centric websites.",
+	"icon": "/icon/vitepress.png",
+	"checks": {
+		"tags": [
+			{
+				"tag": "meta",
+				"attribute": "generator",
+				"value": "VitePress"
+			}
+		],
+		"headers": []
+	}
+}
