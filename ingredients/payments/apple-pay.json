@@ -1,7 +1,7 @@
 {
     "name": "Apple Pay",
     "description": "Apple Pay is a mobile payment and digital wallet service by Apple that allows users to make payments in person, in apps, and on the web using their iPhone, iPad, Apple Watch, or Mac.",
-    "icon": "/icon/apple-pay.png",
+    "icon": "/icon/apple.png",
     "checks": {
         "tags": [
             {
