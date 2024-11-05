@@ -51,6 +51,19 @@ def validate_ingredient(data):
                 return False, "Each 'headers' check must contain 'header' and 'value' keys"
             if not (isinstance(header_entry["header"], str) or header_entry["header"] is None):
                 return False, "'header' in 'headers' check must be a string"
+            
+            
+    # Validate the "icon" path
+    if not data["icon"].startswith("/icon/"):
+        return False, "Icon should start with '/icon/'"
+            
+    # Validate if the icon exists
+    if not os.path.exists(f"icons/{data['icon'].split('/icon/')[1]}"):
+        return False, f"Icon '{data['icon'].split('/icon/')[1]}' does not exist"
+
+    # Validate description
+    if not data["description"][-1] == ".":
+        return False, "Description should end with a period"
 
     # All checks passed
     return True, "Ingredient is valid"
