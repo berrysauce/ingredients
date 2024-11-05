@@ -1,6 +1,6 @@
 {
     "name": "Counter",
-    "description": "Counter is an open-source privacy aware web analytics platform",
+    "description": "Counter is an open-source privacy aware web analytics platform.",
     "icon": "/icon/counter.png",
     "checks": {
         "tags": [
