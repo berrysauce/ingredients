@@ -1,0 +1,15 @@
+{
+    "name": "Bluesky",
+    "description": "Bluesky is a decentralized social media platform built on the open AT Protocol.",
+    "icon": "/icon/bluesky.png",
+    "checks": {
+        "tags": [
+            {
+                "tag": "meta",
+                "attribute": "generator",
+                "value": "bskyweb"
+            }
+        ],
+        "headers": []
+    }
+}
