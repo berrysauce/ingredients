@@ -101,7 +101,7 @@
                     </a>
                 </li>
                 <li class="list-inline-item">
-                    <a href="https://api.ingredients.work/" style="color: inherit;text-decoration: underline;text-decoration-color: #c5c5c5;">
+                    <a href="https://ingredients-api.berrysauce.dev" style="color: inherit;text-decoration: underline;text-decoration-color: #c5c5c5;">
                         API
                         <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-arrow-up-right" style="margin-top: -2px;margin-left: 2px;">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
@@ -153,7 +153,7 @@
                                         <h2 class="fs-5" style="font-weight: bold;margin-top: 6px;margin-bottom: 16px;font-family: Lora, serif;">{ categories[category] }</h2>
                                         <ul class="list-unstyled">
                                             {#each ingredients[category] as ingredient}
-                                                <li style="margin-bottom: 4px;font-weight: 500;"><img class="img-fluid" alt={ ingredient.name } src="https://cdn.ingredients.work{ ingredient.icon }" width="24" height="24" style="height: 24px;padding: 3px;border-radius: 4px;margin-right: 8px;margin-bottom: 3px;border: 1px solid rgb(206,207,208) ;">
+                                                <li style="margin-bottom: 4px;font-weight: 500;"><img class="img-fluid" alt={ ingredient.name } src="https://ingredients.berrycdn.com{ ingredient.icon }" width="24" height="24" style="height: 24px;padding: 3px;border-radius: 4px;margin-right: 8px;margin-bottom: 3px;border: 1px solid rgb(206,207,208) ;">
                                                     { ingredient.name }
                                                 </li>
                                             {/each}
