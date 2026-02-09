@@ -20,9 +20,9 @@ app = FastAPI(
 )
 
 origins = [
-    "https://ingredients.work",
-    "https://dev.ingredients.work",
-    "https://cdn.ingredients.work"
+    "https://ingredients.berrysauce.dev",
+    "https://ingredients-api.berrysauce.dev",
+    "https://ingredients.berrycdn.com",
 ]
 
 app.add_middleware(
