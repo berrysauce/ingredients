@@ -5,7 +5,7 @@
 
 
 > [!IMPORTANT]
-> The domain for Ingredients was switched from "ingredients.tech" to "ingredients.work". I no longer own the old domain. 
+> Neither `ingredients.tech` or `ingredients.work` are owned or used by me for this project anymore. The project will be available under [ingredients.berrysauce.dev](https://ingredients.berrysauce.dev) from now on.
 
 Ingredients is a website scanner that is able to determine the "ingredients" (or technologies) behind a website.
 
@@ -73,7 +73,7 @@ Ingredients has an API you can use. This API can be used to scan sites.
 You can start a scan with one `GET` call. Just provide the URL you want to scan as a query parameter.
 
 ```http
-GET  https://api.ingredients.work/ingredients?url=https://example.com
+GET  https://ingredients-api.berrysauce.dev/ingredients?url=https://example.com
 ```
 
 <br>
@@ -180,6 +180,7 @@ And here, we're not defining a header value (using `null`). This means, we're ch
 
 ## 📄 License
 
+```
 Ingredients — Website Technology Scanner
 
 Copyright (C) 2023 Paul Haedrich (berrysauce)
@@ -196,3 +197,4 @@ GNU Affero General Public License for more details.
 
 You should have received a copy of the GNU Affero General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
+```
