@@ -1,8 +1,10 @@
 <script lang="ts">
     let year = new Date().getFullYear();
-    let hostname = "ingredients.work";
+    let api_hostname = "ingredients-api.berrysauce.dev";
     
     /*
+    let hostname = "ingredients.berrysauce.dev";
+
     import { browser } from '$app/environment';
     if (browser) {
         if (typeof window !== "undefined") {
@@ -25,7 +27,7 @@
         error = null;
 
         try {
-            let response = await fetch(`https://api.${hostname}/ingredients?url=${scanURL}&includeCategories=true`);
+            let response = await fetch(`https://${api_hostname}/ingredients?url=${scanURL}&includeCategories=true`);
             let data = await response.json();
 
             if (!response.ok) {
@@ -79,7 +81,7 @@
 
             <ul class="list-inline text-start" style="font-size: 14px;margin-bottom: 32px;">
                 <li class="list-inline-item" style="margin-right: 12px;">
-                    <a href="https://buymeacoffee.com/berrysauce" style="color: inherit;text-decoration: underline;text-decoration-color: #c5c5c5;" target="_blank">
+                    <a href="https://github.com/sponsors/berrysauce" style="color: inherit;text-decoration: underline;text-decoration-color: #c5c5c5;" target="_blank">
                         Donate
                         <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-arrow-up-right" style="margin-top: -2px;margin-left: 2px;">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
