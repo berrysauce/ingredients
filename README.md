@@ -7,18 +7,18 @@
 > [!IMPORTANT]
 > Neither `ingredients.tech` or `ingredients.work` are owned or used by me for this project anymore. The project will be available under [ingredients.berrysauce.dev](https://ingredients.berrysauce.dev) from now on.
 
-Ingredients is a website scanner that is able to determine the "ingredients" (or technologies) behind a website.
+**Ingredients is a website scanner that is able to determine the "ingredients" (or technologies) behind a website.**
 
 It helps users discover the various software, frameworks, content management systems, analytics tools, and other technologies that are used to build and maintain a particular website.
 
 
-<img alt="Ingredients Screenshot" src="https://bcdn.berrysauce.me/shared/ingredients-screenshot-new.png">
+<img alt="Ingredients Screenshot" src="https://berrycdn.com/brand/ingredients/screenshot-with-bg.png">
 
 
 <br>
 
 
-## 📚 How it works
+## How it works
 
 Ingredients consists of a frontend application (made with SvelteKit) and an API (made with FastAPI) with a simple script, that requests websites and checks their HTML tags and HTTP headers based on filters. The filters or "ingredients" are stored in their respective category-folders in the [ingredients/](https://github.com/berrysauce/ingredients/tree/main/ingredients) folder.
 
@@ -63,7 +63,7 @@ As you can also see, this JSON file mentions a path to an icon, which is used to
 <br>
 
 
-## 🤖 Using the API
+## Using the API
 
 Ingredients has an API you can use. This API can be used to scan sites.
 
@@ -79,7 +79,7 @@ GET  https://ingredients-api.berrysauce.dev/ingredients?url=https://example.com
 <br>
 
 
-## ⚙️ How to add Ingredients
+## Adding ingredients
 
 > [!NOTE]  
 > Before you contribute, please take a look at the [CONTRIBUTING.md](https://github.com/berrysauce/ingredients/blob/main/CONTRIBUTING.md) file
@@ -178,23 +178,23 @@ And here, we're not defining a header value (using `null`). This means, we're ch
 <br>
 
 
-## 📄 License
+## License
 
 ```
-Ingredients — Website Technology Scanner
+Ingredients — A Website Technology Scanner
 
 Copyright (C) 2023 Paul Haedrich (berrysauce)
 
 This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU Affero General Public License as published
-by the Free Software Foundation, either version 3 of the License, or
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
 (at your option) any later version.
 
 This program is distributed in the hope that it will be useful,
 but WITHOUT ANY WARRANTY; without even the implied warranty of
 MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU Affero General Public License for more details.
+GNU General Public License for more details.
 
-You should have received a copy of the GNU Affero General Public License
-along with this program.  If not, see <https://www.gnu.org/licenses/>.
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see https://www.gnu.org/licenses/.
 ```
