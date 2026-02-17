@@ -12,7 +12,7 @@
 It helps users discover the various software, frameworks, content management systems, analytics tools, and other technologies that are used to build and maintain a particular website.
 
 
-<img alt="Ingredients Screenshot" src="https://berrycdn.com/brand/ingredients/screenshot-with-bg.png">
+<img alt="Ingredients Showcase" src="https://berrycdn.b-cdn.net/brand/ingredients/screenshare-showcase.gif">
 
 
 <br>
